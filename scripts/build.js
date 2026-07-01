@@ -8,8 +8,38 @@ const contact = {
   name: "Amy Sun",
   phone: "+86 17755518921",
   email: "amy@railwheel.com",
-  whatsapp: "8617755518921"
+  whatsapp: "8617755518921",
+  address: "Ma'anshan City, Anhui Province, China"
 };
+
+const primaryKeywords = [
+  "Railway Wheels",
+  "Railway Wheel",
+  "Railway Wheel Manufacturer",
+  "Railway Wheel Supplier",
+  "Railway Wheel Exporter",
+  "Railway Wheelset",
+  "Railway Wheelsets",
+  "Railway Bogie",
+  "Railway Side Frame",
+  "Railway Bolster",
+  "Railway Axle",
+  "Railway Axle Box",
+  "Railway Components",
+  "Train Wheel",
+  "Train Wheels",
+  "Railroad Wheel",
+  "Railroad Wheels",
+  "Rail Car Wheels",
+  "Freight Wagon Wheels",
+  "Locomotive Wheel",
+  "Passenger Train Wheel",
+  "Forged Railway Wheel",
+  "UIC Railway Wheel",
+  "AAR Railway Wheel",
+  "EN Railway Wheel",
+  "Railway Wheel Supplier China"
+];
 
 const nav = [
   ["Home", "/"],
@@ -22,26 +52,109 @@ const nav = [
 ];
 
 const products = [
-  ["Railway Wheels", "railway-wheels", "railway wheel manufacturer", "Forged and rolled railway wheels for freight wagons, passenger coaches, locomotives and transit systems."],
-  ["Wheelsets", "wheelsets", "railway wheelset supplier", "Complete wheelset assemblies with wheels, axles, bearings and axle boxes prepared for project requirements."],
-  ["Bogies / Truck Assemblies", "bogies-truck-assemblies", "railway bogie parts", "Bogie frames, truck assemblies and related running gear components for railway rolling stock."],
-  ["Side Frames", "side-frames", "railway side frame supplier", "Cast and fabricated side frames designed for dependable load transfer and long service life."],
-  ["Bolsters", "bolsters", "railway bolster manufacturer", "Bolsters for freight bogies and rail vehicle suspension systems."],
-  ["Axles", "axles", "train axle supplier", "Railway axles manufactured for high fatigue resistance, precise geometry and strict inspection."],
-  ["Axle Boxes", "axle-boxes", "railway axle box supplier", "Axle boxes and housings for reliable wheelset bearing protection and guided rotation."],
-  ["Bearings", "bearings", "railway bearing supplier", "Railway bearings selected for rolling stock reliability, load capacity and maintenance planning."],
-  ["Bearing Housings", "bearing-housings", "railway bearing housing supplier", "Bearing housings for rail wheelsets, axle boxes and bogie systems."],
-  ["Other Railway Components", "other-railway-components", "railway components China", "Custom railway components and spare parts sourced for freight, passenger and industrial rail projects."]
-].map(([title, slug, keyword, description]) => ({ title, slug, keyword, description }));
+  {
+    title: "Railway Wheels",
+    slug: "railway-wheels",
+    keyword: "railway wheel manufacturer",
+    image: "railway-wheel.webp",
+    aliases: "train wheels, railroad wheels, rail car wheels, freight wagon wheels, locomotive wheels, passenger train wheels",
+    description: "Forged railway wheels and steel railway wheels for freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways."
+  },
+  {
+    title: "Railway Wheelsets",
+    slug: "wheelsets",
+    keyword: "railway wheelset supplier",
+    image: "railway-wheelset.webp",
+    aliases: "train wheelsets, railroad wheelsets, wheelset assemblies",
+    description: "Complete railway wheelsets with railway wheels, axles, bearings and axle boxes prepared for OEM projects, maintenance programs and export supply."
+  },
+  {
+    title: "Railway Bogies",
+    slug: "bogies-truck-assemblies",
+    keyword: "railway bogie parts",
+    image: "railway-bogie.webp",
+    aliases: "train bogie, railroad bogie, truck assemblies",
+    description: "Railway bogies and truck assemblies for rolling stock manufacturers, operators and spare parts buyers requiring stable running gear performance."
+  },
+  {
+    title: "Railway Side Frames",
+    slug: "side-frames",
+    keyword: "railway side frame supplier",
+    image: "railway-side-frame.webp",
+    aliases: "railway side frame, bogie side frame",
+    description: "Railway side frames for bogies and freight wagon running gear, supplied with drawing review, material confirmation and inspection documentation."
+  },
+  {
+    title: "Railway Bolsters",
+    slug: "bolsters",
+    keyword: "railway bolster manufacturer",
+    image: "railway-bolster.webp",
+    aliases: "railway bolster, bogie bolster",
+    description: "Railway bolsters for bogie suspension systems, freight wagons and railway spare parts programs requiring dependable load transfer."
+  },
+  {
+    title: "Railway Axles",
+    slug: "axles",
+    keyword: "railway axle supplier",
+    image: "railway-axle.webp",
+    aliases: "train axle, railroad axle, wheelset axle",
+    description: "Railway axles manufactured for wheelset assemblies with strict dimensional accuracy, fatigue resistance and international inspection support."
+  },
+  {
+    title: "Railway Axle Boxes",
+    slug: "axle-boxes",
+    keyword: "railway axle box supplier",
+    image: "railway-axle-box.webp",
+    aliases: "train axle box, railroad axle box, axle box housing",
+    description: "Railway axle boxes and housings for bearing protection, wheelset guidance and long-service railway maintenance applications."
+  },
+  {
+    title: "Railway Bearings",
+    slug: "bearings",
+    keyword: "railway bearing supplier",
+    image: "railway-components.webp",
+    aliases: "railway rolling stock bearings, wheelset bearings",
+    description: "Railway bearings selected for wheelsets, axle boxes and bogie systems where load capacity, reliability and maintenance planning matter."
+  },
+  {
+    title: "Railway Bearing Housings",
+    slug: "bearing-housings",
+    keyword: "railway bearing housing supplier",
+    image: "railway-components.webp",
+    aliases: "railway bearing housing, bearing seats",
+    description: "Railway bearing housings and related machined parts for axle box systems, wheelsets and bogie applications."
+  },
+  {
+    title: "Railway Parts",
+    slug: "other-railway-components",
+    keyword: "railway components China",
+    image: "railway-components.webp",
+    aliases: "railway spare parts, railway components, train parts, railroad components",
+    description: "Railway parts and railway components for OEM, custom manufacturing and replacement programs serving global rail operators and manufacturers."
+  }
+];
 
 const targetPages = [
   ["Railway Wheel Manufacturer", "railway-wheel-manufacturer", "railway wheel manufacturer"],
   ["Railway Wheel Supplier", "railway-wheel-supplier", "railway wheel supplier"],
+  ["Railway Wheel Exporter", "railway-wheel-exporter", "railway wheel exporter"],
+  ["Railway Wheel Supplier China", "railway-wheel-supplier-china", "railway wheel supplier China"],
+  ["Railway Wheel Manufacturer in China", "railway-wheel-manufacturer-in-china", "railway wheel manufacturer in China"],
+  ["Chinese Railway Wheel Factory", "chinese-railway-wheel-factory", "Chinese railway wheel factory"],
   ["Train Wheel Manufacturer", "train-wheel-manufacturer", "train wheel manufacturer"],
+  ["Train Wheel Supplier", "train-wheel-supplier", "train wheel supplier"],
+  ["Train Wheel Factory", "train-wheel-factory", "train wheel factory"],
+  ["Railroad Wheel Manufacturer", "railroad-wheel-manufacturer", "railroad wheel manufacturer"],
+  ["Railroad Wheel Supplier", "railroad-wheel-supplier", "railroad wheel supplier"],
   ["Railway Wheelset Supplier", "railway-wheelset-supplier", "railway wheelset supplier"],
+  ["Railway Wheelset Manufacturer", "railway-wheelset-manufacturer", "railway wheelset manufacturer"],
   ["Railway Bogie Parts", "railway-bogie-parts", "railway bogie parts"],
   ["Railway Axle Box Supplier", "railway-axle-box-supplier", "railway axle box supplier"],
-  ["Railway Components China", "railway-components-china", "railway components China"]
+  ["Railway Components China", "railway-components-china", "railway components China"],
+  ["Railway Spare Parts Manufacturer", "railway-spare-parts-manufacturer", "railway spare parts manufacturer"],
+  ["OEM Railway Wheel", "oem-railway-wheel", "OEM railway wheel"],
+  ["Custom Railway Wheel", "custom-railway-wheel", "custom railway wheel"],
+  ["Heavy Duty Railway Wheel", "heavy-duty-railway-wheel", "heavy duty railway wheel"]
 ].map(([title, slug, keyword]) => ({ title, slug, keyword }));
 
 const blogs = [
@@ -95,7 +208,75 @@ function orgSchema() {
       "email": contact.email,
       "availableLanguage": ["English", "Chinese"]
     }],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ma'anshan City",
+      "addressRegion": "Anhui Province",
+      "addressCountry": "CN"
+    },
     "sameAs": [`https://wa.me/${contact.whatsapp}`]
+  };
+}
+
+function manufacturerSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "additionalType": "https://schema.org/Manufacturer",
+    "name": company,
+    "url": siteUrl,
+    "logo": `${siteUrl}/assets/railwheel-logo-new.png`,
+    "email": contact.email,
+    "telephone": contact.phone,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ma'anshan City",
+      "addressRegion": "Anhui Province",
+      "addressCountry": "CN"
+    },
+    "makesOffer": products.map((product) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": product.title,
+        "url": `${siteUrl}/products/${product.slug}/`
+      }
+    }))
+  };
+}
+
+function localBusinessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": company,
+    "image": `${siteUrl}/assets/railwheel-logo-new.png`,
+    "url": siteUrl,
+    "email": contact.email,
+    "telephone": contact.phone,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ma'anshan City",
+      "addressLocality": "Ma'anshan City",
+      "addressRegion": "Anhui Province",
+      "addressCountry": "CN"
+    },
+    "areaServed": "Worldwide"
+  };
+}
+
+function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Railwheel Industrial Technology",
+    "url": siteUrl,
+    "publisher": { "@type": "Organization", "name": company },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${siteUrl}/products/?q={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
   };
 }
 
@@ -105,6 +286,7 @@ function productSchema(product) {
     "@type": "Product",
     "name": product.title,
     "description": product.description,
+    "image": `${siteUrl}/assets/home-products/${product.image}`,
     "brand": { "@type": "Brand", "name": "Railwheel" },
     "manufacturer": { "@type": "Organization", "name": company },
     "category": "Railway components",
@@ -138,7 +320,7 @@ function faqSchema() {
 
 function layout({ title, description, path: pagePath, body, active = "", schemas = [] }) {
   const canonical = `${siteUrl}${pagePath}`;
-  const allSchemas = [orgSchema(), ...schemas];
+  const allSchemas = [orgSchema(), manufacturerSchema(), localBusinessSchema(), websiteSchema(), ...schemas];
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -146,6 +328,8 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="keywords" content="${esc(primaryKeywords.join(", "))}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${canonical}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${esc(title)}">
@@ -154,7 +338,11 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   <meta property="og:site_name" content="Railwheel Industrial Technology">
   <meta property="og:image" content="${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg">
   <link rel="icon" href="/assets/railwheel-logo-new.png" type="image/png">
+  <link rel="preload" href="/assets/railway-wheel-manufacturing.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="preload" href="/styles.css" as="style">
   <link rel="stylesheet" href="/styles.css">
   ${allSchemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join("\n  ")}
@@ -201,22 +389,22 @@ function pageHero(title, desc, crumb) {
 }
 
 function productCards(items = products) {
-  return `<div class="grid grid-3">${items.map((p) => `<article class="card"><div class="icon">RW</div><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>`;
+  return `<div class="grid grid-3">${items.map((p) => `<article class="card product-list-card"><img src="/assets/home-products/${p.image}" alt="${p.title} supplier for ${p.aliases}" title="${p.title}" loading="lazy" width="423" height="464"><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>`;
 }
 
 const homeProducts = [
-  ["Railway Wheels", "railway-wheels", "railway-wheels.jpg"],
-  ["Wheelsets", "wheelsets", "wheelsets.jpg"],
-  ["Bogie / Bogies", "bogies-truck-assemblies", "bogies.jpg"],
-  ["Side Frames", "side-frames", "side-frames.jpg"],
-  ["Bolsters", "bolsters", "bolsters.jpg"],
-  ["Axles", "axles", "axles.jpg"],
-  ["Axle Boxes", "axle-boxes", "axle-boxes.jpg"],
-  ["Other Parts", "other-railway-components", "other-parts.jpg"]
+  ["Railway Wheels", "railway-wheels", "railway-wheel.webp"],
+  ["Railway Wheelsets", "wheelsets", "railway-wheelset.webp"],
+  ["Railway Bogies", "bogies-truck-assemblies", "railway-bogie.webp"],
+  ["Railway Side Frames", "side-frames", "railway-side-frame.webp"],
+  ["Railway Bolsters", "bolsters", "railway-bolster.webp"],
+  ["Railway Axles", "axles", "railway-axle.webp"],
+  ["Railway Axle Boxes", "axle-boxes", "railway-axle-box.webp"],
+  ["Railway Parts", "other-railway-components", "railway-components.webp"]
 ].map(([title, slug, image]) => ({ title, slug, image }));
 
 function homeProductCards() {
-  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} railway component product photo" loading="lazy"></span><strong>${p.title}</strong></a>`).join("")}</div>`;
+  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} for train wheel and railroad component procurement" title="${p.title}" loading="lazy" width="423" height="464"></span><strong>${p.title}</strong></a>`).join("")}</div>`;
 }
 
 function ctaBand() {
@@ -235,95 +423,100 @@ function inquiryForm() {
 </form>`;
 }
 
+function relatedProducts(currentSlug) {
+  const related = products.filter((product) => product.slug !== currentSlug).slice(0, 4);
+  return `<div class="related-products"><h3>Related Railway Components</h3><div class="seo-link-row">${related.map((product) => `<a href="/products/${product.slug}/">${product.title}</a>`).join("")}<a href="/quality-control/">Quality Control</a><a href="/manufacturing-capability/">Manufacturing Capabilities</a><a href="/contact/">Contact Supplier</a></div></div>`;
+}
+
 const pages = [];
 function addPage(filePath, html) { pages.push({ filePath, html }); }
 
 addPage("index.html", layout({
-  title: "Railway Wheel Manufacturer & Railway Components Supplier | Railwheel",
-  description: `${company} supplies railway wheels, wheelsets, bogies, axles, axle boxes, bearings and railway components from China.`,
+  title: "Railway Wheel Manufacturer China | Train & Railroad Wheel Supplier | Railwheel",
+  description: "Railwheel supplies railway wheels, train wheels, railroad wheels, railway wheelsets, bogies, axles, axle boxes and railway components worldwide with OEM and custom manufacturing support.",
   path: "/",
   active: "Home",
-  schemas: [faqSchema()],
-  body: `<section class="home-hero"><div class="home-hero-bg"><img src="/assets/home-hero-railway-wheel-manufacturing.jpg" alt="Railway wheelset manufacturing workshop with large train wheels" fetchpriority="high"></div><div class="container home-hero-content"><span class="eyebrow">Railway Wheels & Components Manufacturer</span><h1>Your Trusted Partner in Railway Wheels & Components</h1><p>We provide high-quality railway wheels, wheelsets, bogies, side frames, bolsters, axles, axle boxes and related components for global rail operators and manufacturers.</p><div class="home-points"><span><b>HQ</b>High Quality</span><span><b>AT</b>Advanced Technology</span><span><b>GS</b>Global Supply</span><span><b>PT</b>Professional Team</span></div><div class="hero-actions"><a class="btn btn-primary" href="/products/">View Our Products</a><a class="btn btn-light" href="/contact/">Contact Us</a></div></div></section>
-  <section class="home-products"><div class="container"><div class="section-head"><div><span class="eyebrow">Product Categories</span><h2>Railway parts for rolling stock manufacturing, maintenance and global procurement.</h2></div><p>Explore core railway components with practical quotation support, technical confirmation and export documentation.</p></div>${homeProductCards()}</div></section>
-  <section class="band home-why"><div class="container"><div class="section-head"><div><span class="eyebrow">Why Choose Railwheel</span><h2>Focused supply capability for professional railway component buyers.</h2></div><p>Railwheel helps overseas customers reduce sourcing risk with clear communication, quality control and project-oriented service.</p></div><div class="grid grid-4"><article class="card advantage-card"><div class="icon">QC</div><h3>Strict Quality Control</h3><p>Material review, dimensional checks, inspection records and traceable documentation according to project requirements.</p></article><article class="card advantage-card"><div class="icon">AE</div><h3>Advanced Equipment</h3><p>Manufacturing and machining resources for wheels, axles, wheelsets, bogie parts and precision railway components.</p></article><article class="card advantage-card"><div class="icon">CS</div><h3>Custom Solutions</h3><p>Support for drawings, standards, replacement parts, component matching and export packing requirements.</p></article><article class="card advantage-card"><div class="icon">GE</div><h3>Global Experience</h3><p>English inquiry handling for rail operators, rolling stock manufacturers and maintenance companies worldwide.</p></article></div></div></section>
+  schemas: [breadcrumbSchema([{ name: "Home", url: "/" }]), faqSchema()],
+  body: `<section class="home-hero"><div class="home-hero-bg"><img src="/assets/railway-wheel-manufacturing.webp" alt="Railway wheel manufacturer workshop producing forged train wheels and railroad wheels" title="Railway wheel manufacturing workshop" fetchpriority="high" width="1800" height="1013"></div><div class="container home-hero-content"><span class="eyebrow">Railway Wheel Manufacturer & Exporter China</span><h1>Your Trusted Partner in Railway Wheels & Components</h1><p>Railwheel supplies railway wheels, train wheels, railroad wheels, railway wheelsets, railway bogies, railway axles, axle boxes and railway components worldwide for OEM and customized manufacturing projects.</p><div class="home-points"><span><b>QC</b>International Standards</span><span><b>OEM</b>Custom Manufacturing</span><span><b>EX</b>Global Export Supply</span><span><b>SP</b>Railway Spare Parts</span></div><div class="hero-actions"><a class="btn btn-primary" href="/products/">View Our Products</a><a class="btn btn-light" href="/contact/">Contact Us</a></div></div></section>
+  <section class="home-products"><div class="container"><div class="section-head"><div><span class="eyebrow">Our Products</span><h2>Railway wheels, train wheelsets, railroad bogies and railway parts for global buyers.</h2></div><p>As a railway wheel supplier in China, Railwheel supports forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel inquiries for freight wagons, passenger coaches, metro, locomotives, mining railways and industrial railways.</p></div>${homeProductCards()}<div class="seo-link-row"><a href="/railway-wheel-manufacturer/">Railway Wheel Manufacturer</a><a href="/train-wheel-manufacturer/">Train Wheel Manufacturer</a><a href="/railroad-wheel-manufacturer/">Railroad Wheel Manufacturer</a><a href="/railway-wheel-supplier-china/">Railway Wheel Supplier China</a></div></div></section>
+  <section class="band home-why"><div class="container"><div class="section-head"><div><span class="eyebrow">Why Choose Railwheel</span><h2>Reliable railway component supply for international rolling stock projects.</h2></div><p>Railwheel helps overseas customers source railway wheelsets, railway bogies, railway axle boxes and custom railway wheel components with clear technical communication and export documentation.</p></div><div class="grid grid-4"><article class="card advantage-card"><div class="icon">QC</div><h3>Strict Quality Control</h3><p>Material review, dimensional checks, heat treatment records and inspection documents support UIC, AAR, EN and project-specific requirements.</p></article><article class="card advantage-card"><div class="icon">AE</div><h3>Advanced Equipment</h3><p>Manufacturing and machining resources support railway wheels, forged train wheels, railway axles, railway wheelsets and precision bogie parts.</p></article><article class="card advantage-card"><div class="icon">OEM</div><h3>OEM & Custom Solutions</h3><p>Send drawings, standards or samples for OEM railway wheel, custom railway wheel, heavy duty railway wheel and railway spare parts manufacturing.</p></article><article class="card advantage-card"><div class="icon">WW</div><h3>Worldwide Experience</h3><p>We supply railway components worldwide for freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways.</p></article></div><div class="seo-link-row"><a href="/about/">About Railwheel</a><a href="/quality-control/">Quality Control</a><a href="/manufacturing-capability/">Manufacturing Capabilities</a><a href="/contact/">Contact Supplier</a></div></div></section>
   <section class="home-contact"><div class="container home-contact-grid"><div><span class="eyebrow">Contact Us</span><h2>Send your railway component inquiry to Railwheel.</h2><div class="contact-panel"><p><strong>Amy Sun</strong> (Sales Manager)</p><p><strong>WhatsApp / WeChat:</strong> <a href="tel:+8617755518921">${contact.phone}</a></p><p><strong>Email:</strong> <a href="mailto:${contact.email}">${contact.email}</a></p><p><strong>Address:</strong> Ma'anshan City, Anhui Province, China</p></div><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a><a class="btn btn-outline" href="https://wa.me/${contact.whatsapp}">WhatsApp</a></div></div><div class="home-qr-panel"><div class="qr-card"><img src="/assets/whatsapp-qr.png" alt="WhatsApp QR Code for Amy Sun Railwheel" loading="lazy"><strong>WhatsApp</strong></div><div class="qr-card"><img src="/assets/wechat-qr.png" alt="WeChat QR Code for Amy Sun Railwheel" loading="lazy"><strong>WeChat</strong></div></div></div></section>
   <div class="home-bottom-bar"><div class="container"><span>Reliable Quality</span><span>Competitive Price</span><span>On-time Delivery</span><span>Professional Support</span></div></div>`
 }));
 
 addPage("about/index.html", layout({
-  title: `About Railwheel | ${company}`,
-  description: "Learn about Railwheel, a professional railway wheels, wheelsets, bogies and railway components supplier serving global B2B buyers.",
+  title: `About Railwheel | Railway Wheel Manufacturer & Exporter China`,
+  description: "Learn about Railwheel, a railway wheel manufacturer and railway components supplier in China serving train wheel, railroad wheel and railway spare parts buyers worldwide.",
   path: "/about/",
   active: "About Us",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About Us", url: "/about/" }])],
-  body: `${pageHero("About Ma'anshan Railwheel Industrial Technology Co., Ltd.", "A focused railway component supplier supporting professional procurement for wheels, wheelsets, bogies and related rail parts.", "About Us")}
-  <section><div class="container grid grid-2"><div><h2>Professional rail component supply</h2><p class="muted">Railwheel serves industrial buyers who need dependable railway wheels, wheelsets, bogie parts and running gear components with clear communication and practical documentation.</p><p class="muted">The company works with project drawings, technical standards, inspection expectations and export requirements so buyers can move from inquiry to quotation with fewer delays.</p></div><div class="card"><h3>Brand identity</h3><p>The Railwheel identity combines a railway wheel, rail track and steel-blue industrial palette to communicate motion, precision and heavy-duty engineering.</p><ul class="spec-list"><li>Blue: trust, engineering and international trade</li><li>White: clarity and documentation</li><li>Steel: manufacturing strength and durability</li></ul></div></div></section>${ctaBand()}`
+  body: `${pageHero("About Ma'anshan Railwheel Industrial Technology Co., Ltd.", "A focused railway wheel manufacturer, exporter and railway components supplier serving global B2B procurement.", "About Us")}
+  <section><div class="container grid grid-2"><div><h2>Professional rail component supply</h2><p class="muted">Railwheel serves industrial buyers who need dependable railway wheels, train wheels, railroad wheels, railway wheelsets, railway bogies and railway spare parts with clear communication and practical documentation.</p><p class="muted">The company works with project drawings, OEM specifications, UIC, AAR, EN and customer standards, inspection expectations and export requirements so buyers can move from inquiry to quotation with fewer delays.</p><div class="seo-link-row"><a href="/products/">Products</a><a href="/quality-control/">Quality Control</a><a href="/manufacturing-capability/">Capabilities</a><a href="/contact/">Contact Us</a></div></div><div class="card"><h3>Brand identity</h3><p>The Railwheel identity combines a railway wheel, rail track and steel-blue industrial palette to communicate motion, precision and heavy-duty engineering.</p><ul class="spec-list"><li>Railway wheel manufacturer in China</li><li>Train wheel and railroad wheel supplier</li><li>Railway components exporter for worldwide buyers</li></ul></div></div></section>${ctaBand()}`
 }));
 
 addPage("products/index.html", layout({
-  title: "Railway Wheels, Wheelsets, Bogies & Components | Railwheel Products",
-  description: "Browse railway wheels, wheelsets, bogies, side frames, bolsters, axles, axle boxes, bearings and bearing housings from Railwheel.",
+  title: "Railway Wheels, Railway Wheelsets, Railway Bogies & Railway Parts | Railwheel",
+  description: "Browse railway wheels, train wheels, railroad wheels, railway wheelsets, bogies, axles, axle boxes and railway components from Railwheel China.",
   path: "/products/",
   active: "Products",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }])],
-  body: `${pageHero("Railway Components Product Categories", "Railwheel supplies complete categories for rolling stock manufacturing, maintenance and rail component procurement.", "Products")}<section><div class="container">${productCards()}</div></section>${ctaBand()}`
+  body: `${pageHero("Railway Components Product Categories", "Railwheel supplies railway wheels, railway wheelsets, railway bogies, railway axles, axle boxes and railway parts for rolling stock manufacturing, maintenance and export procurement.", "Products")}<section><div class="container"><div class="article"><p>Our product range supports freight wagon wheels, rail car wheels, locomotive wheels, passenger train wheels, train wheelsets, railroad wheelsets, train bogies and railroad bogies for international B2B buyers. OEM and customized manufacturing inquiries are welcome.</p></div>${productCards()}<div class="seo-link-row"><a href="/railway-wheel-exporter/">Railway Wheel Exporter</a><a href="/oem-railway-wheel/">OEM Railway Wheel</a><a href="/custom-railway-wheel/">Custom Railway Wheel</a><a href="/railway-spare-parts-manufacturer/">Railway Spare Parts Manufacturer</a></div></div></section>${ctaBand()}`
 }));
 
 for (const product of products) {
   addPage(`products/${product.slug}/index.html`, layout({
-    title: `${product.title} | ${product.keyword} | Railwheel`,
-    description: `${product.description} Contact Railwheel for ${product.keyword} inquiries, drawings and export quotations.`,
+    title: `${product.title} | ${product.keyword} China | Railwheel`,
+    description: `${product.description} Railwheel supports ${product.aliases}, OEM manufacturing, custom supply and international export quotations.`,
     path: `/products/${product.slug}/`,
     active: "Products",
     schemas: [productSchema(product), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url: `/products/${product.slug}/` }]), faqSchema()],
     body: `${pageHero(product.title, product.description, product.title)}
-    <section><div class="container grid grid-2"><article class="article"><span class="eyebrow">${product.keyword}</span><h2>Supply focus</h2><p>${product.description} Railwheel supports buyers with technical confirmation, drawings review, material and inspection documentation, packaging discussion and international inquiry follow-up.</p><h2>Typical inquiry information</h2><ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro or industrial rail</li></ul><h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality control and export documentation.</p></article>${inquiryForm()}</div></section>${ctaBand()}`
+    <section><div class="container grid grid-2"><article class="article"><img src="/assets/home-products/${product.image}" alt="${product.title} from railway wheel supplier China for ${product.aliases}" title="${product.title}" loading="eager" width="423" height="464"><span class="eyebrow">${product.keyword}</span><h2>${product.title} for international rail projects</h2><p>${product.description} Railwheel supplies products worldwide for buyers searching for railway wheel, train wheel, railroad wheel, railway wheelset, railway bogie and railway components from China.</p><p>Our team supports OEM railway wheel, custom railway wheel, heavy duty railway wheel and railway spare parts manufacturer inquiries with drawing review, material confirmation, export packing and inspection documentation.</p><h2>Applications and standards</h2><p>Typical applications include freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways. For wheel projects, buyers can discuss forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel requirements.</p><h2>Typical inquiry information</h2><ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro, mining railway or industrial railway</li></ul><h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality control and export documentation for global B2B customers.</p>${relatedProducts(product.slug)}</article>${inquiryForm()}</div></section>${ctaBand()}`
   }));
 }
 
 for (const target of targetPages) {
   addPage(`${target.slug}/index.html`, layout({
-    title: `${target.title} | Railwheel Railway Components China`,
-    description: `Railwheel is a professional ${target.keyword} for railway wheels, wheelsets, bogie parts, axle boxes and related components. Contact Amy Sun for quotations.`,
+    title: `${target.title} | Train & Railroad Wheel Supplier China | Railwheel`,
+    description: `Railwheel supports ${target.keyword}, train wheel, railroad wheel, railway wheelset, bogie and railway components inquiries for worldwide B2B buyers.`,
     path: `/${target.slug}/`,
     active: "Products",
     schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: target.title, url: `/${target.slug}/` }]), faqSchema()],
     body: `${pageHero(target.title, `SEO-focused supply page for buyers searching for ${target.keyword}.`, target.title)}
-    <section><div class="container grid grid-2"><article class="article"><h2>${target.title} for B2B rail procurement</h2><p>Railwheel helps global buyers source railway components from China with clear technical communication, practical export support and attention to documentation. The product scope includes railway wheels, wheelsets, bogies, side frames, bolsters, axles, axle boxes, bearings and bearing housings.</p><p>For accurate quotation, send drawings, standards, material requirements, target quantity, destination and inspection expectations. Amy Sun will coordinate the inquiry and provide supplier communication in English.</p><ul><li>Technical confirmation based on drawings and standards</li><li>Quotation support for freight, passenger, locomotive and industrial rail applications</li><li>Quality documentation and packaging discussion for export orders</li></ul></article>${inquiryForm()}</div></section>${ctaBand()}`
+    <section><div class="container grid grid-2"><article class="article"><h2>${target.title} for B2B rail procurement</h2><p>Railwheel helps global buyers source railway wheels, train wheels, railroad wheels and railway components from China with clear technical communication, practical export support and attention to documentation.</p><p>The product scope includes forged railway wheel, steel railway wheel, railway wheelsets, train wheelsets, railroad wheelsets, railway bogies, railway side frames, railway bolsters, railway axles, railway axle boxes, bearings and railway spare parts.</p><p>For accurate quotation, send drawings, UIC, AAR, EN or project standards, material requirements, target quantity, destination and inspection expectations. Amy Sun will coordinate the inquiry and provide supplier communication in English.</p><ul><li>Technical confirmation based on drawings and standards</li><li>OEM railway wheel, custom railway wheel and heavy duty railway wheel support</li><li>Quotation support for freight wagons, passenger coaches, metro, locomotives, mining railways and industrial railways</li><li>Quality documentation and packaging discussion for export orders</li></ul>${relatedProducts("")}</article>${inquiryForm()}</div></section>${ctaBand()}`
   }));
 }
 
 addPage("quality-control/index.html", layout({
-  title: "Railway Component Quality Control | Railwheel",
-  description: "Railwheel quality control covers material review, machining tolerance, dimensional inspection, NDT coordination and documentation for railway components.",
+  title: "Railway Wheel Quality Control | UIC AAR EN Railway Components",
+  description: "Railwheel quality control supports railway wheels, train wheels, railroad wheels, wheelsets and railway components with material review, dimensional inspection and export documentation.",
   path: "/quality-control/",
   active: "Quality",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Quality Control", url: "/quality-control/" }]), faqSchema()],
-  body: `${pageHero("Quality Control", "Inspection-focused railway component supply for buyers who need confidence in materials, dimensions and documentation.", "Quality Control")}<section><div class="container grid grid-4">${["Material Traceability","Heat Treatment Review","Dimensional Inspection","Final Documentation"].map((x) => `<div class="card"><div class="icon">QC</div><h3>${x}</h3><p>Railwheel coordinates practical quality checks and records according to buyer requirements and component type.</p></div>`).join("")}</div></section>${ctaBand()}`
+  body: `${pageHero("Quality Control", "Inspection-focused railway wheel and railway component supply for buyers who need confidence in materials, dimensions and documentation.", "Quality Control")}<section><div class="container"><div class="article"><p>Railwheel supports quality documentation for forged railway wheels, steel railway wheels, railway wheelsets, railway axles, railway axle boxes and railway bogie parts. Buyers can discuss UIC railway wheel, AAR railway wheel, EN railway wheel and project-specific inspection requirements.</p><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheels</a><a href="/products/wheelsets/">Railway Wheelsets</a><a href="/manufacturing-capability/">Manufacturing Capabilities</a><a href="/contact/">Send Inquiry</a></div></div><div class="grid grid-4">${["Material Traceability","Heat Treatment Review","Dimensional Inspection","Final Documentation"].map((x) => `<div class="card"><div class="icon">QC</div><h3>${x}</h3><p>Railwheel coordinates practical quality checks and records according to buyer requirements and component type.</p></div>`).join("")}</div></div></section>${ctaBand()}`
 }));
 
 addPage("manufacturing-capability/index.html", layout({
-  title: "Railway Manufacturing Capability | Wheels, Axles, Bogie Parts",
-  description: "Railwheel coordinates railway component manufacturing capability including forging, casting, machining, assembly and inspection support.",
+  title: "Railway Wheel Manufacturing Capability | OEM Train Wheel Factory",
+  description: "Railwheel supports railway wheel, train wheel, railroad wheel, wheelset, axle, bogie and railway spare parts manufacturing with OEM and custom supply.",
   path: "/manufacturing-capability/",
   active: "Capabilities",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Manufacturing Capability", url: "/manufacturing-capability/" }])],
-  body: `${pageHero("Manufacturing Capability", "Capability support for forged, cast, machined and assembled railway components.", "Manufacturing Capability")}<section><div class="container grid grid-2"><div class="visual-panel" role="img" aria-label="Railway manufacturing capability illustration"></div><div><h2>From component drawings to export-ready supply</h2><p class="muted">Railwheel coordinates manufacturing and sourcing channels for railway wheels, axles, side frames, bolsters, axle boxes, bearing housings and assembled wheelsets.</p><ul class="spec-list"><li>Forging and heat treatment coordination</li><li>Casting and machining for bogie parts</li><li>Assembly support for wheelsets and truck assemblies</li><li>Packing, labeling and shipment communication</li></ul></div></div></section>${ctaBand()}`
+  body: `${pageHero("Manufacturing Capability", "Capability support for forged, cast, machined and assembled railway components.", "Manufacturing Capability")}<section><div class="container grid grid-2"><div class="visual-panel" role="img" aria-label="Railway wheel manufacturing capability illustration"></div><div><h2>From component drawings to export-ready supply</h2><p class="muted">Railwheel coordinates manufacturing and sourcing channels for railway wheels, train wheels, railroad wheels, railway axles, railway side frames, railway bolsters, railway axle boxes and assembled railway wheelsets.</p><ul class="spec-list"><li>Forged railway wheel and steel railway wheel supply support</li><li>OEM railway wheel and custom railway wheel manufacturing inquiries</li><li>Casting and machining for railway bogie parts</li><li>Packing, labeling and shipment communication for worldwide export</li></ul><div class="seo-link-row"><a href="/train-wheel-factory/">Train Wheel Factory</a><a href="/chinese-railway-wheel-factory/">Chinese Railway Wheel Factory</a><a href="/heavy-duty-railway-wheel/">Heavy Duty Railway Wheel</a></div></div></div></section>${ctaBand()}`
 }));
 
 addPage("applications/index.html", layout({
-  title: "Railway Component Applications | Freight, Passenger, Metro, Industrial Rail",
-  description: "Railwheel railway wheels, wheelsets, bogies and components support freight wagons, passenger coaches, locomotives, metro vehicles and industrial rail systems.",
+  title: "Railway Wheel Applications | Freight Wagon, Metro, Locomotive Wheels",
+  description: "Railwheel railway wheels, train wheels, railroad wheels, wheelsets, bogies and components support freight wagons, passenger coaches, metro, locomotives, mining and industrial railways.",
   path: "/applications/",
   active: "Applications",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Applications", url: "/applications/" }])],
-  body: `${pageHero("Applications", "Railway components for freight, passenger, locomotive, metro and industrial rail applications.", "Applications")}<section><div class="container grid grid-3">${["Freight Wagons","Passenger Coaches","Locomotives","Metro & Transit","Industrial Rail","Maintenance Projects"].map((x) => `<div class="card"><div class="icon">RA</div><h3>${x}</h3><p>Railwheel supplies wheels, wheelsets and related components according to project standards, drawings and operating requirements.</p></div>`).join("")}</div></section>${ctaBand()}`
+  body: `${pageHero("Applications", "Railway components for freight, passenger, locomotive, metro, mining railway and industrial railway applications.", "Applications")}<section><div class="container grid grid-3">${["Freight Wagons","Passenger Coaches","Metro","Locomotives","Mining Railways","Industrial Railways"].map((x) => `<div class="card"><div class="icon">RA</div><h3>${x}</h3><p>Railwheel supplies railway wheels, railway wheelsets, railway bogies and related components according to project standards, drawings and operating requirements.</p></div>`).join("")}</div></section>${ctaBand()}`
 }));
 
 addPage("news/index.html", layout({
-  title: "Railway Wheels & Components Blog | Railwheel News",
-  description: "Read Railwheel articles about railway wheels, wheelsets, bogies, axle boxes, bearings, quality control and component procurement from China.",
+  title: "Railway Wheel & Train Wheel Blog | Railwheel News",
+  description: "Read Railwheel articles about railway wheels, train wheels, railroad wheels, railway wheelsets, bogies, axle boxes, quality control and component procurement from China.",
   path: "/news/",
   active: "News",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }])],
@@ -342,12 +535,12 @@ for (const blog of blogs) {
 }
 
 addPage("contact/index.html", layout({
-  title: "Contact Railwheel | Request Railway Wheel & Component Quote",
-  description: "Contact Amy Sun at Railwheel by email, phone, WhatsApp or WeChat to request a quotation for railway wheels, wheelsets, bogies and components.",
+  title: "Contact Railway Wheel Supplier China | Railwheel Quote",
+  description: "Contact Amy Sun at Railwheel to request a quote for railway wheels, train wheels, railroad wheels, railway wheelsets, bogies, axle boxes and railway components.",
   path: "/contact/",
   active: "Contact Us",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Contact Us", url: "/contact/" }]), faqSchema()],
-  body: `${pageHero("Contact Railwheel", "Send an inquiry for railway wheels, wheelsets, bogies, axle boxes, bearings and related railway components.", "Contact Us")}<section><div class="container grid grid-2"><div><h2>Contact Supplier</h2><div class="contact-method"><div class="icon">A</div><div><strong>${contact.name}</strong><p class="muted">Sales contact for global railway component inquiries.</p></div></div><div class="contact-method"><div class="icon">T</div><div><strong>Tel / WhatsApp / WeChat</strong><p><a href="tel:+8617755518921">${contact.phone}</a></p></div></div><div class="contact-method"><div class="icon">E</div><div><strong>Email</strong><p><a href="mailto:${contact.email}">${contact.email}</a></p></div></div><div class="qr-grid"><div class="qr-card"><img src="/assets/whatsapp-qr.png" alt="WhatsApp QR code for Amy Sun railway component sales contact" loading="lazy"><strong>WhatsApp QR</strong></div><div class="qr-card"><img src="/assets/wechat-qr.png" alt="WeChat QR code for Amy Sun railway component sales contact" loading="lazy"><strong>WeChat QR</strong></div></div></div>${inquiryForm()}</div></section>`
+  body: `${pageHero("Contact Railwheel", "Send an inquiry for railway wheels, train wheels, railroad wheels, railway wheelsets, bogies, axle boxes and related railway components.", "Contact Us")}<section><div class="container grid grid-2"><div><h2>Contact Supplier</h2><div class="contact-method"><div class="icon">A</div><div><strong>${contact.name}</strong><p class="muted">Sales Manager for global railway wheel and railway component inquiries.</p></div></div><div class="contact-method"><div class="icon">T</div><div><strong>Tel / WhatsApp / WeChat</strong><p><a href="tel:+8617755518921">${contact.phone}</a></p></div></div><div class="contact-method"><div class="icon">E</div><div><strong>Email</strong><p><a href="mailto:${contact.email}">${contact.email}</a></p></div></div><div class="contact-method"><div class="icon">CN</div><div><strong>Address</strong><p>${contact.address}</p></div></div><div class="qr-grid"><div class="qr-card"><img src="/assets/whatsapp-qr.png" alt="WhatsApp QR code for railway wheel supplier Amy Sun" title="WhatsApp railway wheel supplier" loading="lazy"><strong>WhatsApp QR</strong></div><div class="qr-card"><img src="/assets/wechat-qr.png" alt="WeChat QR code for railway component supplier Amy Sun" title="WeChat railway component supplier" loading="lazy"><strong>WeChat QR</strong></div></div></div>${inquiryForm()}</div></section>`
 }));
 
 async function writeAssets() {
@@ -357,7 +550,7 @@ async function writeAssets() {
   for (const file of ["whatsapp-qr.png", "wechat-qr.png", "railwheel-logo-new.png"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
-  for (const file of ["home-hero-railway-wheel-manufacturing.jpg"]) {
+  for (const file of ["railway-wheel-manufacturing.webp", "home-hero-railway-wheel-manufacturing.jpg"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
   for (const product of homeProducts) {
@@ -379,7 +572,21 @@ async function main() {
     return `  <url><loc>${loc}</loc><changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
   }).join("\n");
   await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
-  await writeFile("dist/robots.txt", `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
+  const imageUrls = [
+    {
+      loc: `${siteUrl}/`,
+      images: [
+        ["railway-wheel-manufacturing.webp", "Railway wheel manufacturer workshop producing train wheels and railroad wheels"],
+        ...homeProducts.map((product) => [`home-products/${product.image}`, `${product.title} product image for railway component buyers`])
+      ]
+    },
+    ...products.map((product) => ({
+      loc: `${siteUrl}/products/${product.slug}/`,
+      images: [[`home-products/${product.image}`, `${product.title} from Railwheel railway component supplier`]]
+    }))
+  ].map((page) => `  <url>\n    <loc>${page.loc}</loc>\n${page.images.map(([src, caption]) => `    <image:image><image:loc>${siteUrl}/assets/${src}</image:loc><image:caption>${esc(caption)}</image:caption><image:title>${esc(caption)}</image:title></image:image>`).join("\n")}\n  </url>`).join("\n");
+  await writeFile("dist/image-sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${imageUrls}\n</urlset>\n`);
+  await writeFile("dist/robots.txt", `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\nSitemap: ${siteUrl}/image-sitemap.xml\n`);
   console.log(`Built ${pages.length} pages into dist/`);
 }
 

@@ -31,7 +31,9 @@ for (const file of htmlFiles) {
   }
   if (!html.includes("alt=\"")) throw new Error(`${file} is missing image alt text`);
 }
-for (const required of ["dist/sitemap.xml", "dist/robots.txt", "dist/assets/whatsapp-qr.png", "dist/assets/wechat-qr.png"]) {
+for (const required of ["dist/sitemap.xml", "dist/image-sitemap.xml", "dist/robots.txt", "dist/assets/whatsapp-qr.png", "dist/assets/wechat-qr.png", "dist/assets/railway-wheel-manufacturing.webp"]) {
   await stat(required);
 }
-console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, robots.txt and QR assets.`);
+const webpProductImages = files.filter((file) => file.startsWith("dist/assets/home-products/") && file.endsWith(".webp"));
+if (webpProductImages.length < 8) throw new Error(`Expected at least 8 WebP product images, found ${webpProductImages.length}`);
+console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, image sitemap, robots.txt, QR assets and WebP product images.`);
