@@ -15,10 +15,9 @@ const nav = [
   ["Home", "/"],
   ["About Us", "/about/"],
   ["Products", "/products/"],
-  ["Quality Control", "/quality-control/"],
-  ["Manufacturing Capability", "/manufacturing-capability/"],
-  ["Applications", "/applications/"],
-  ["News / Blog", "/news/"],
+  ["Quality", "/quality-control/"],
+  ["Capabilities", "/manufacturing-capability/"],
+  ["News", "/news/"],
   ["Contact Us", "/contact/"]
 ];
 
@@ -167,12 +166,12 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   ${allSchemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join("\n  ")}
 </head>
 <body>
-  <div class="topbar"><div class="container"><span>Railway wheels, wheelsets, bogies and railway components</span><span>${contact.name} | WhatsApp / WeChat: ${contact.phone} | ${contact.email}</span></div></div>
+  <div class="topbar"><div class="container"><span>Railway wheels, wheelsets, bogies and railway components</span><span>WhatsApp: ${contact.phone} &nbsp;|&nbsp; WeChat: ${contact.phone} &nbsp;|&nbsp; Email: ${contact.email}</span></div></div>
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="/" aria-label="Railwheel home">${logo()}<span><strong>Railwheel</strong><span>Industrial Technology</span></span></a>
+      <a class="brand" href="/" aria-label="Railwheel home">${logo()}<span><strong>Railwheel</strong><span>${company}</span></span></a>
       <nav class="menu" aria-label="Main navigation">${nav.map(([label, href]) => `<a class="${active === label ? "active" : ""}" href="${href}">${label}</a>`).join("")}</nav>
-      <div class="nav-actions"><a class="btn btn-outline" href="/contact/">Send Inquiry</a><a class="btn btn-primary" href="/contact/#quote">Request a Quote</a></div>
+      <div class="nav-actions"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a></div>
     </div>
   </header>
   <main>${body}</main>
@@ -211,6 +210,21 @@ function productCards(items = products) {
   return `<div class="grid grid-3">${items.map((p) => `<article class="card"><div class="icon">RW</div><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>`;
 }
 
+const homeProducts = [
+  ["Railway Wheels", "railway-wheels", "wheel"],
+  ["Wheelsets", "wheelsets", "wheelset"],
+  ["Bogie / Bogies", "bogies-truck-assemblies", "bogie"],
+  ["Side Frames", "side-frames", "side-frame"],
+  ["Bolsters", "bolsters", "bolster"],
+  ["Axles", "axles", "axle"],
+  ["Axle Boxes", "axle-boxes", "axle-box"],
+  ["Other Parts", "other-railway-components", "other-parts"]
+].map(([title, slug, crop]) => ({ title, slug, crop }));
+
+function homeProductCards() {
+  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image crop-${p.crop}"><img src="/assets/home-products-railway-components.jpg" alt="${p.title} railway component product photo" loading="lazy"></span><strong>${p.title}</strong></a>`).join("")}</div>`;
+}
+
 function ctaBand() {
   return `<section class="dark-band"><div class="container section-head"><div><span class="eyebrow">Global inquiry support</span><h2>Send drawings, standards and quantity for a focused railway component quotation.</h2></div><div class="cta-row"><a class="btn btn-light" href="/contact/#quote">Request a Quote</a><a class="btn btn-outline" style="background:transparent;color:white;border-color:rgba(255,255,255,.35)" href="mailto:${contact.email}">Contact Supplier</a></div></div></section>`;
 }
@@ -236,11 +250,11 @@ addPage("index.html", layout({
   path: "/",
   active: "Home",
   schemas: [faqSchema()],
-  body: `<section class="hero"><div class="container hero-content"><span class="eyebrow">Ma'anshan Railwheel Industrial Technology Co., Ltd.</span><h1>Railway wheels, wheelsets and bogie components for demanding rail projects.</h1><p>Railwheel supports global buyers with railway wheels, wheelsets, bogies, side frames, bolsters, axles, axle boxes, bearings, bearing housings and related railway components.</p><div class="hero-actions"><a class="btn btn-primary" href="/contact/#quote">Request a Quote</a><a class="btn btn-light" href="/products/">View Products</a></div></div></section>
-  <div class="trust-strip"><div class="container trust-grid"><div class="trust-item"><strong>10+</strong><span>Major product categories</span></div><div class="trust-item"><strong>B2B</strong><span>Industrial procurement focus</span></div><div class="trust-item"><strong>QC</strong><span>Material and dimensional inspection</span></div><div class="trust-item"><strong>Export</strong><span>English sales support</span></div></div></div>
-  <section><div class="container"><div class="section-head"><div><span class="eyebrow">Product scope</span><h2>Core railway components for rolling stock manufacturing and maintenance.</h2></div><p>Source compatible components with technical communication, documentation support and responsive inquiry handling.</p></div>${productCards()}</div></section>
-  <section class="band"><div class="container grid grid-2"><div><span class="eyebrow">Manufacturing capability</span><h2>Built for precision, traceability and stable supply.</h2><p class="muted">Railwheel focuses on railway component procurement where drawings, standards, heat treatment, machining tolerances and inspection records matter.</p><ul class="spec-list"><li>Forging, casting, machining and assembly coordination</li><li>Dimensional inspection and material documentation</li><li>Packaging and export communication for overseas buyers</li></ul></div><div class="visual-panel" role="img" aria-label="Industrial railway wheel manufacturing visual"></div></div></section>
-  ${ctaBand()}`
+  body: `<section class="home-hero"><div class="home-hero-bg"><img src="/assets/home-hero-railway-wheel-manufacturing.jpg" alt="Railway wheelset manufacturing workshop with large train wheels" fetchpriority="high"></div><div class="container home-hero-content"><span class="eyebrow">Railway Wheels & Components Manufacturer</span><h1>Your Trusted Partner in Railway Wheels & Components</h1><p>We provide high-quality railway wheels, wheelsets, bogies, side frames, bolsters, axles, axle boxes and related components for global rail operators and manufacturers.</p><div class="home-points"><span><b>HQ</b>High Quality</span><span><b>AT</b>Advanced Technology</span><span><b>GS</b>Global Supply</span><span><b>PT</b>Professional Team</span></div><div class="hero-actions"><a class="btn btn-primary" href="/products/">View Our Products</a><a class="btn btn-light" href="/contact/">Contact Us</a></div></div></section>
+  <section class="home-products"><div class="container"><div class="section-head"><div><span class="eyebrow">Product Categories</span><h2>Railway parts for rolling stock manufacturing, maintenance and global procurement.</h2></div><p>Explore core railway components with practical quotation support, technical confirmation and export documentation.</p></div>${homeProductCards()}</div></section>
+  <section class="band home-why"><div class="container"><div class="section-head"><div><span class="eyebrow">Why Choose Railwheel</span><h2>Focused supply capability for professional railway component buyers.</h2></div><p>Railwheel helps overseas customers reduce sourcing risk with clear communication, quality control and project-oriented service.</p></div><div class="grid grid-4"><article class="card advantage-card"><div class="icon">QC</div><h3>Strict Quality Control</h3><p>Material review, dimensional checks, inspection records and traceable documentation according to project requirements.</p></article><article class="card advantage-card"><div class="icon">AE</div><h3>Advanced Equipment</h3><p>Manufacturing and machining resources for wheels, axles, wheelsets, bogie parts and precision railway components.</p></article><article class="card advantage-card"><div class="icon">CS</div><h3>Custom Solutions</h3><p>Support for drawings, standards, replacement parts, component matching and export packing requirements.</p></article><article class="card advantage-card"><div class="icon">GE</div><h3>Global Experience</h3><p>English inquiry handling for rail operators, rolling stock manufacturers and maintenance companies worldwide.</p></article></div></div></section>
+  <section class="home-contact"><div class="container home-contact-grid"><div><span class="eyebrow">Contact Us</span><h2>Send your railway component inquiry to Railwheel.</h2><div class="contact-panel"><p><strong>Amy Sun</strong> (Sales Manager)</p><p><strong>WhatsApp / WeChat:</strong> <a href="tel:+8617755518921">${contact.phone}</a></p><p><strong>Email:</strong> <a href="mailto:${contact.email}">${contact.email}</a></p><p><strong>Address:</strong> Ma'anshan City, Anhui Province, China</p></div><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a><a class="btn btn-outline" href="https://wa.me/${contact.whatsapp}">WhatsApp</a></div></div><div class="home-qr-panel"><div class="qr-card"><img src="/assets/whatsapp-qr.png" alt="WhatsApp QR Code for Amy Sun Railwheel" loading="lazy"><strong>WhatsApp QR Code</strong></div><div class="qr-card"><img src="/assets/wechat-qr.png" alt="WeChat QR Code for Amy Sun Railwheel" loading="lazy"><strong>WeChat QR Code</strong></div></div></div></section>
+  <div class="home-bottom-bar"><div class="container"><span>Reliable Quality</span><span>Competitive Price</span><span>On-time Delivery</span><span>Professional Support</span></div></div>`
 }));
 
 addPage("about/index.html", layout({
@@ -290,7 +304,7 @@ addPage("quality-control/index.html", layout({
   title: "Railway Component Quality Control | Railwheel",
   description: "Railwheel quality control covers material review, machining tolerance, dimensional inspection, NDT coordination and documentation for railway components.",
   path: "/quality-control/",
-  active: "Quality Control",
+  active: "Quality",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Quality Control", url: "/quality-control/" }]), faqSchema()],
   body: `${pageHero("Quality Control", "Inspection-focused railway component supply for buyers who need confidence in materials, dimensions and documentation.", "Quality Control")}<section><div class="container grid grid-4">${["Material Traceability","Heat Treatment Review","Dimensional Inspection","Final Documentation"].map((x) => `<div class="card"><div class="icon">QC</div><h3>${x}</h3><p>Railwheel coordinates practical quality checks and records according to buyer requirements and component type.</p></div>`).join("")}</div></section>${ctaBand()}`
 }));
@@ -299,7 +313,7 @@ addPage("manufacturing-capability/index.html", layout({
   title: "Railway Manufacturing Capability | Wheels, Axles, Bogie Parts",
   description: "Railwheel coordinates railway component manufacturing capability including forging, casting, machining, assembly and inspection support.",
   path: "/manufacturing-capability/",
-  active: "Manufacturing Capability",
+  active: "Capabilities",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Manufacturing Capability", url: "/manufacturing-capability/" }])],
   body: `${pageHero("Manufacturing Capability", "Capability support for forged, cast, machined and assembled railway components.", "Manufacturing Capability")}<section><div class="container grid grid-2"><div class="visual-panel" role="img" aria-label="Railway manufacturing capability illustration"></div><div><h2>From component drawings to export-ready supply</h2><p class="muted">Railwheel coordinates manufacturing and sourcing channels for railway wheels, axles, side frames, bolsters, axle boxes, bearing housings and assembled wheelsets.</p><ul class="spec-list"><li>Forging and heat treatment coordination</li><li>Casting and machining for bogie parts</li><li>Assembly support for wheelsets and truck assemblies</li><li>Packing, labeling and shipment communication</li></ul></div></div></section>${ctaBand()}`
 }));
@@ -317,7 +331,7 @@ addPage("news/index.html", layout({
   title: "Railway Wheels & Components Blog | Railwheel News",
   description: "Read Railwheel articles about railway wheels, wheelsets, bogies, axle boxes, bearings, quality control and component procurement from China.",
   path: "/news/",
-  active: "News / Blog",
+  active: "News",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }])],
   body: `${pageHero("News / Blog", "SEO articles and procurement guides for railway wheels and components.", "News / Blog")}<section><div class="container grid grid-2">${blogs.map((b) => `<article class="card"><span class="eyebrow">${b.keyword}</span><h3>${b.title}</h3><p>${b.summary}</p><a class="card-link" href="/news/${b.slug}/">Read article</a></article>`).join("")}</div></section>`
 }));
@@ -327,7 +341,7 @@ for (const blog of blogs) {
     title: `${blog.title} | Railwheel Blog`,
     description: blog.summary,
     path: `/news/${blog.slug}/`,
-    active: "News / Blog",
+    active: "News",
     schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: `/news/${blog.slug}/` }])],
     body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p><strong>Keyword focus:</strong> ${blog.keyword}</p><p>Railway component procurement depends on more than a unit price. Buyers should confirm drawings, applicable standards, material grades, heat treatment, machining tolerance, inspection records, packing requirements and delivery expectations before final supplier selection.</p><h2>Technical confirmation comes first</h2><p>For wheels, wheelsets, axles, bogies, side frames, bolsters, axle boxes, bearings and bearing housings, the most useful inquiry starts with drawings or sample references. Standards and operating conditions help the supplier confirm whether the component should be quoted as an existing item, modified design or custom production.</p><h2>Quality records reduce sourcing risk</h2><p>Material certificates, dimensional reports, hardness records, ultrasonic or magnetic particle inspection and final packing photos can help buyers align internal approval steps. The exact record package should match the component risk level and the buyer's project requirements.</p><h2>Communication checklist</h2><ul><li>Share product name, drawing, standard and target quantity.</li><li>Confirm application, operating environment and replacement schedule.</li><li>Request inspection documentation before shipment when required.</li><li>Clarify packing, labeling, destination and preferred shipment timing.</li></ul><p>Contact Amy Sun at Railwheel for a focused quotation on railway wheels, wheelsets, bogie parts and related railway components.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Quote</a><a class="btn btn-outline" href="/products/">View Products</a></div></div></section>`
   }));
@@ -346,6 +360,9 @@ async function writeAssets() {
   await mkdir("dist/assets", { recursive: true });
   await copyFile("src/styles.css", "dist/styles.css");
   for (const file of ["whatsapp-qr.png", "wechat-qr.png"]) {
+    if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
+  }
+  for (const file of ["home-hero-railway-wheel-manufacturing.jpg", "home-products-railway-components.jpg"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
   const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#071a2f"/><circle cx="32" cy="32" r="20" fill="none" stroke="#18a0d8" stroke-width="7"/><circle cx="32" cy="32" r="6" fill="#fff"/><path d="M8 47h48M12 53h40M16 41l32-18" stroke="#d9e8f5" stroke-width="3" stroke-linecap="round"/></svg>`;
