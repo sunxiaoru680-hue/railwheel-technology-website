@@ -62,13 +62,7 @@ function esc(value) {
 }
 
 function logo() {
-  return `<svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="Railwheel logo">
-    <defs><linearGradient id="rwg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#18a0d8"/><stop offset="1" stop-color="#0b2744"/></linearGradient></defs>
-    <rect width="64" height="64" rx="10" fill="#071a2f"/>
-    <circle cx="32" cy="32" r="20" fill="none" stroke="url(#rwg)" stroke-width="7"/>
-    <circle cx="32" cy="32" r="6" fill="#ffffff"/>
-    <path d="M8 47h48M12 53h40M16 41l32-18" stroke="#d9e8f5" stroke-width="3" stroke-linecap="round"/>
-  </svg>`;
+  return `<img class="brand-logo" src="/assets/railwheel-logo-new.png" alt="Railwheel railway wheels and components logo">`;
 }
 
 function breadcrumbSchema(items) {
@@ -90,7 +84,7 @@ function orgSchema() {
     "@type": "Organization",
     "name": company,
     "url": siteUrl,
-    "logo": `${siteUrl}/assets/logo.svg`,
+    "logo": `${siteUrl}/assets/railwheel-logo-new.png`,
     "email": contact.email,
     "telephone": contact.phone,
     "contactPoint": [{
@@ -158,9 +152,9 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:site_name" content="Railwheel Industrial Technology">
-  <meta property="og:image" content="${siteUrl}/assets/og-railwheel.svg">
+  <meta property="og:image" content="${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/railwheel-logo-new.png" type="image/png">
   <link rel="preload" href="/styles.css" as="style">
   <link rel="stylesheet" href="/styles.css">
   ${allSchemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join("\n  ")}
@@ -211,18 +205,18 @@ function productCards(items = products) {
 }
 
 const homeProducts = [
-  ["Railway Wheels", "railway-wheels", "wheel"],
-  ["Wheelsets", "wheelsets", "wheelset"],
-  ["Bogie / Bogies", "bogies-truck-assemblies", "bogie"],
-  ["Side Frames", "side-frames", "side-frame"],
-  ["Bolsters", "bolsters", "bolster"],
-  ["Axles", "axles", "axle"],
-  ["Axle Boxes", "axle-boxes", "axle-box"],
-  ["Other Parts", "other-railway-components", "other-parts"]
-].map(([title, slug, crop]) => ({ title, slug, crop }));
+  ["Railway Wheels", "railway-wheels", "railway-wheels.jpg"],
+  ["Wheelsets", "wheelsets", "wheelsets.jpg"],
+  ["Bogie / Bogies", "bogies-truck-assemblies", "bogies.jpg"],
+  ["Side Frames", "side-frames", "side-frames.jpg"],
+  ["Bolsters", "bolsters", "bolsters.jpg"],
+  ["Axles", "axles", "axles.jpg"],
+  ["Axle Boxes", "axle-boxes", "axle-boxes.jpg"],
+  ["Other Parts", "other-railway-components", "other-parts.jpg"]
+].map(([title, slug, image]) => ({ title, slug, image }));
 
 function homeProductCards() {
-  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image crop-${p.crop}"><img src="/assets/home-products-railway-components.jpg" alt="${p.title} railway component product photo" loading="lazy"></span><strong>${p.title}</strong></a>`).join("")}</div>`;
+  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} railway component product photo" loading="lazy"></span><strong>${p.title}</strong></a>`).join("")}</div>`;
 }
 
 function ctaBand() {
@@ -253,7 +247,7 @@ addPage("index.html", layout({
   body: `<section class="home-hero"><div class="home-hero-bg"><img src="/assets/home-hero-railway-wheel-manufacturing.jpg" alt="Railway wheelset manufacturing workshop with large train wheels" fetchpriority="high"></div><div class="container home-hero-content"><span class="eyebrow">Railway Wheels & Components Manufacturer</span><h1>Your Trusted Partner in Railway Wheels & Components</h1><p>We provide high-quality railway wheels, wheelsets, bogies, side frames, bolsters, axles, axle boxes and related components for global rail operators and manufacturers.</p><div class="home-points"><span><b>HQ</b>High Quality</span><span><b>AT</b>Advanced Technology</span><span><b>GS</b>Global Supply</span><span><b>PT</b>Professional Team</span></div><div class="hero-actions"><a class="btn btn-primary" href="/products/">View Our Products</a><a class="btn btn-light" href="/contact/">Contact Us</a></div></div></section>
   <section class="home-products"><div class="container"><div class="section-head"><div><span class="eyebrow">Product Categories</span><h2>Railway parts for rolling stock manufacturing, maintenance and global procurement.</h2></div><p>Explore core railway components with practical quotation support, technical confirmation and export documentation.</p></div>${homeProductCards()}</div></section>
   <section class="band home-why"><div class="container"><div class="section-head"><div><span class="eyebrow">Why Choose Railwheel</span><h2>Focused supply capability for professional railway component buyers.</h2></div><p>Railwheel helps overseas customers reduce sourcing risk with clear communication, quality control and project-oriented service.</p></div><div class="grid grid-4"><article class="card advantage-card"><div class="icon">QC</div><h3>Strict Quality Control</h3><p>Material review, dimensional checks, inspection records and traceable documentation according to project requirements.</p></article><article class="card advantage-card"><div class="icon">AE</div><h3>Advanced Equipment</h3><p>Manufacturing and machining resources for wheels, axles, wheelsets, bogie parts and precision railway components.</p></article><article class="card advantage-card"><div class="icon">CS</div><h3>Custom Solutions</h3><p>Support for drawings, standards, replacement parts, component matching and export packing requirements.</p></article><article class="card advantage-card"><div class="icon">GE</div><h3>Global Experience</h3><p>English inquiry handling for rail operators, rolling stock manufacturers and maintenance companies worldwide.</p></article></div></div></section>
-  <section class="home-contact"><div class="container home-contact-grid"><div><span class="eyebrow">Contact Us</span><h2>Send your railway component inquiry to Railwheel.</h2><div class="contact-panel"><p><strong>Amy Sun</strong> (Sales Manager)</p><p><strong>WhatsApp / WeChat:</strong> <a href="tel:+8617755518921">${contact.phone}</a></p><p><strong>Email:</strong> <a href="mailto:${contact.email}">${contact.email}</a></p><p><strong>Address:</strong> Ma'anshan City, Anhui Province, China</p></div><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a><a class="btn btn-outline" href="https://wa.me/${contact.whatsapp}">WhatsApp</a></div></div><div class="home-qr-panel"><div class="qr-card"><img src="/assets/whatsapp-qr.png" alt="WhatsApp QR Code for Amy Sun Railwheel" loading="lazy"><strong>WhatsApp QR Code</strong></div><div class="qr-card"><img src="/assets/wechat-qr.png" alt="WeChat QR Code for Amy Sun Railwheel" loading="lazy"><strong>WeChat QR Code</strong></div></div></div></section>
+  <section class="home-contact"><div class="container home-contact-grid"><div><span class="eyebrow">Contact Us</span><h2>Send your railway component inquiry to Railwheel.</h2><div class="contact-panel"><p><strong>Amy Sun</strong> (Sales Manager)</p><p><strong>WhatsApp / WeChat:</strong> <a href="tel:+8617755518921">${contact.phone}</a></p><p><strong>Email:</strong> <a href="mailto:${contact.email}">${contact.email}</a></p><p><strong>Address:</strong> Ma'anshan City, Anhui Province, China</p></div><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a><a class="btn btn-outline" href="https://wa.me/${contact.whatsapp}">WhatsApp</a></div></div><div class="home-qr-panel"><div class="qr-card"><img src="/assets/whatsapp-qr.png" alt="WhatsApp QR Code for Amy Sun Railwheel" loading="lazy"><strong>WhatsApp</strong></div><div class="qr-card"><img src="/assets/wechat-qr.png" alt="WeChat QR Code for Amy Sun Railwheel" loading="lazy"><strong>WeChat</strong></div></div></div></section>
   <div class="home-bottom-bar"><div class="container"><span>Reliable Quality</span><span>Competitive Price</span><span>On-time Delivery</span><span>Professional Support</span></div></div>`
 }));
 
@@ -359,16 +353,17 @@ addPage("contact/index.html", layout({
 async function writeAssets() {
   await mkdir("dist/assets", { recursive: true });
   await copyFile("src/styles.css", "dist/styles.css");
-  for (const file of ["whatsapp-qr.png", "wechat-qr.png"]) {
+  await mkdir("dist/assets/home-products", { recursive: true });
+  for (const file of ["whatsapp-qr.png", "wechat-qr.png", "railwheel-logo-new.png"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
-  for (const file of ["home-hero-railway-wheel-manufacturing.jpg", "home-products-railway-components.jpg"]) {
+  for (const file of ["home-hero-railway-wheel-manufacturing.jpg"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
-  const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#071a2f"/><circle cx="32" cy="32" r="20" fill="none" stroke="#18a0d8" stroke-width="7"/><circle cx="32" cy="32" r="6" fill="#fff"/><path d="M8 47h48M12 53h40M16 41l32-18" stroke="#d9e8f5" stroke-width="3" stroke-linecap="round"/></svg>`;
-  await writeFile("dist/assets/favicon.svg", favicon);
-  await writeFile("dist/assets/logo.svg", favicon);
-  await writeFile("dist/assets/og-railwheel.svg", `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#071a2f"/><circle cx="880" cy="315" r="160" fill="none" stroke="#18a0d8" stroke-width="48"/><circle cx="880" cy="315" r="48" fill="#fff"/><path d="M120 480h960M160 540h880M220 430L980 210" stroke="#d9e8f5" stroke-width="22" stroke-linecap="round"/><text x="100" y="180" fill="#fff" font-family="Arial" font-size="72" font-weight="700">Railwheel</text><text x="104" y="250" fill="#d9e8f5" font-family="Arial" font-size="34">Railway wheels, wheelsets and components</text></svg>`);
+  for (const product of homeProducts) {
+    const file = path.join("home-products", product.image);
+    if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
+  }
 }
 
 async function main() {

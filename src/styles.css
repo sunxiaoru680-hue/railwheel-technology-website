@@ -31,8 +31,8 @@ img { max-width: 100%; height: auto; display: block; }
 .topbar .container { display: flex; justify-content: space-between; gap: 18px; padding: 8px 0; flex-wrap: wrap; }
 .header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); border-bottom: 1px solid #e7edf4; backdrop-filter: blur(12px); }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 14px 0; }
-.brand { display: flex; align-items: center; gap: 12px; min-width: 360px; }
-.brand-mark { width: 48px; height: 48px; }
+.brand { display: flex; align-items: center; gap: 12px; min-width: 430px; }
+.brand-logo { width: 178px; height: auto; flex: 0 0 auto; object-fit: contain; }
 .brand strong { display: block; color: var(--blue-950); font-size: 20px; line-height: 1; letter-spacing: .2px; }
 .brand span { display: block; color: var(--steel-600); font-size: 12px; text-transform: uppercase; letter-spacing: .7px; margin-top: 4px; }
 .menu { display: flex; align-items: center; gap: 16px; font-size: 15px; color: var(--steel-800); }
@@ -190,14 +190,6 @@ h1, h2, h3 { color: var(--blue-950); line-height: 1.14; margin: 0 0 16px; }
   height: 100%;
   object-fit: cover;
 }
-.crop-wheel img { object-position: 6% 8%; }
-.crop-wheelset img { object-position: 31% 8%; }
-.crop-bogie img { object-position: 57% 8%; }
-.crop-side-frame img { object-position: 84% 8%; }
-.crop-bolster img { object-position: 8% 88%; }
-.crop-axle img { object-position: 34% 88%; }
-.crop-axle-box img { object-position: 58% 88%; }
-.crop-other-parts img { object-position: 88% 88%; }
 .home-product-card strong {
   display: block;
   padding: 17px 18px;
@@ -367,6 +359,7 @@ section { padding: 82px 0; }
   .grid-2 { grid-template-columns: 1fr; }
   .section-head { display: block; }
   .brand { min-width: 0; }
+  .brand-logo { width: 150px; }
   .nav-actions { display: none; }
   .home-product-track, .home-points, .home-bottom-bar .container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .home-contact-grid { grid-template-columns: 1fr; }
@@ -378,6 +371,7 @@ section { padding: 82px 0; }
   .brand { min-width: 0; }
   .brand strong { font-size: 17px; }
   .brand span { font-size: 10px; letter-spacing: .2px; }
+  .brand-logo { width: 128px; }
   .nav-actions .btn-outline { display: none; }
   .home-hero { min-height: 700px; }
   .home-hero-content { width: min(100% - 28px, 1180px); padding: 58px 0 80px; }
