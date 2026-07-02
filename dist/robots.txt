@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.railwheel.com/sitemap.xml
-Sitemap: https://www.railwheel.com/image-sitemap.xml
+Sitemap: https://zysadvisory.com/sitemap.xml
