@@ -32,5 +32,5 @@ createServer((req, res) => {
   res.writeHead(200, { "Content-Type": types[path.extname(filePath)] || "application/octet-stream" });
   createReadStream(filePath).pipe(res);
 }).listen(port, host, () => {
-  console.log(`ZYS Advisory site preview: http://localhost:${port}/`);
+  console.log(`Railwheel site preview: http://localhost:${port}/`);
 });

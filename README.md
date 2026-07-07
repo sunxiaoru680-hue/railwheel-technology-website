@@ -1,19 +1,30 @@
-# ZYS Advisory SEO Website
+# Railwheel Industrial Technology Website
 
-Static SEO website for `zysadvisory.com`, focused on international business advisory services.
+Professional English B2B SEO website for Ma'anshan Railwheel Industrial Technology Co., Ltd.
 
 ## Build
 
 ```bash
-pnpm build
-pnpm check
+node scripts/build.js
+node scripts/check.js
 ```
 
-The production output is generated in `dist/`.
+The generated static website is in `dist/`.
 
-## Scope
+## Local Preview
 
-- 30+ service pages for company registration, tax, accounting, payroll, audit, visa, licensing and international expansion.
-- 100 SEO article draft pages with category and Article schema.
-- Organization, LocalBusiness, FAQ, Breadcrumb, Service, WebSite and Article structured data.
-- Sitemap, robots.txt, canonical URLs, Open Graph and Twitter metadata.
+```bash
+node scripts/serve.js
+```
+
+Open `http://localhost:3001/`.
+
+## Included SEO Assets
+
+- SEO title and meta description on every page
+- Canonical URLs and Open Graph tags
+- Schema.org Organization, Product, FAQ and Breadcrumb structured data
+- `sitemap.xml`
+- `robots.txt`
+- Product category pages, keyword landing pages and 10 blog articles
+- WhatsApp and WeChat QR contact widgets
