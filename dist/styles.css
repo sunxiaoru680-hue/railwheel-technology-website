@@ -366,6 +366,57 @@ section { padding: 82px 0; }
 .article h2 { margin-top: 36px; font-size: 30px; }
 .article p, .article li { color: var(--steel-600); }
 .article ul { padding-left: 22px; }
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e4ebf2;
+  border-radius: 8px;
+  margin: 22px 0;
+  background: var(--white);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+th, td {
+  padding: 13px 15px;
+  border-bottom: 1px solid #e4ebf2;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  width: 32%;
+  background: var(--steel-100);
+  color: var(--blue-950);
+}
+tr:last-child th, tr:last-child td { border-bottom: 0; }
+.process-diagram {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0;
+}
+.process-diagram span {
+  display: grid;
+  gap: 8px;
+  min-height: 92px;
+  padding: 14px 10px;
+  border: 1px solid #dbe5ef;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff, #f5f8fb);
+  color: var(--steel-800);
+  font-weight: 800;
+  font-size: 13px;
+}
+.process-diagram b {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--blue-700);
+  color: var(--white);
+}
 
 .form {
   display: grid; gap: 14px; background: var(--white); padding: 28px; border-radius: 8px; border: 1px solid #e4ebf2; box-shadow: var(--shadow);
@@ -413,6 +464,7 @@ section { padding: 82px 0; }
   .nav-actions { display: none; }
   .home-product-track, .home-points, .home-bottom-bar .container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .home-contact-grid { grid-template-columns: 1fr; }
+  .process-diagram { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
   .container { width: min(100% - 28px, 1180px); }
@@ -435,6 +487,7 @@ section { padding: 82px 0; }
   .hero p { font-size: 17px; }
   section { padding: 58px 0; }
   .trust-grid, .grid-4, .grid-3, .footer-grid, .qr-grid { grid-template-columns: 1fr; }
+  .process-diagram { grid-template-columns: 1fr; }
   .trust-item { border-right: 0; border-bottom: 1px solid #e6edf4; }
   .floating-contact { right: 12px; bottom: 12px; }
   .float-card { right: 0; bottom: 64px; }
