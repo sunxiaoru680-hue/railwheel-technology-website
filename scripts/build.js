@@ -409,7 +409,7 @@ function faqSection(topic = "railway wheels and components") {
 }
 
 function internalLinkHub() {
-  return `<section class="link-hub"><div class="container"><span class="eyebrow">Railway product links</span><h2>Explore related railway wheel and component solutions.</h2><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/train-wheel-manufacturer/">Train Wheel Manufacturer</a><a href="/railroad-wheel-manufacturer/">Railroad Wheel Manufacturer</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/railroad-axle-supplier/">Railroad Axle</a><a href="/products/bogies-truck-assemblies/">Railway Bogie</a><a href="/freight-bogie-supplier/">Freight Bogie</a><a href="/passenger-bogie-supplier/">Passenger Bogie</a><a href="/products/side-frames/">Side Frame</a><a href="/products/bolsters/">Bolster</a><a href="/products/axle-boxes/">Axle Box</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a><a href="/products/other-railway-components/">Railway Spare Parts</a></div></div></section>`;
+  return `<section class="link-hub"><div class="container"><span class="eyebrow">Railway product links</span><h2>Explore related railway wheel and component solutions.</h2><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/railway-wheel-applications/">Railway Wheel Applications</a><a href="/train-wheel-manufacturer/">Train Wheel Manufacturer</a><a href="/railroad-wheel-manufacturer/">Railroad Wheel Manufacturer</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/railroad-axle-supplier/">Railroad Axle</a><a href="/products/bogies-truck-assemblies/">Railway Bogie</a><a href="/freight-bogie-supplier/">Freight Bogie</a><a href="/passenger-bogie-supplier/">Passenger Bogie</a><a href="/products/side-frames/">Side Frame</a><a href="/products/bolsters/">Bolster</a><a href="/products/axle-boxes/">Axle Box</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a><a href="/products/other-railway-components/">Railway Spare Parts</a></div></div></section>`;
 }
 
 function layout({ title, description, path: pagePath, body, active = "", schemas = [], preloadHero = false }) {
@@ -696,7 +696,35 @@ const expandedProducts = productFamilies.flatMap((family) => productApplications
   inspection: ["ultrasonic testing", "magnetic particle testing", "hardness testing", "dimension inspection"][index % 4]
 }))).slice(0, 100);
 
+const wheelApplicationPages = [
+  ["Mining Railway Wheels", "mining railway operations with abrasive track conditions, heavy impact loads and demanding maintenance schedules", "mining railways", "heavy duty forged steel wheel"],
+  ["Steel Plant Railway Wheels", "steel mill transfer cars, ladle cars, slag transport and high-temperature industrial railway service", "steel plants", "heat-resistant industrial rail wheel"],
+  ["Metro Railway Wheels", "urban transit fleets requiring smooth running, dimensional consistency and scheduled wheel replacement", "metro systems", "precision machined metro wheel"],
+  ["Passenger Railway Wheels", "passenger coaches where ride comfort, wheel profile control and inspection documentation matter", "passenger railways", "passenger train wheel"],
+  ["Heavy Haul Railway Wheels", "high axle-load freight corridors requiring durable wheel material, heat treatment and inspection records", "heavy haul railways", "heavy duty railway wheel"],
+  ["Freight Railway Wheels", "freight wagons, cargo rail cars and replacement programs requiring dependable wheel supply", "freight railways", "freight wagon wheel"],
+  ["Locomotive Railway Wheels", "locomotive applications where traction, axle load and machining accuracy are critical", "locomotives", "locomotive wheel"],
+  ["Crane Wheels", "rail-mounted cranes, gantry cranes and industrial lifting equipment using steel running wheels", "crane systems", "crane rail wheel"],
+  ["Port Railway Wheels", "port rail equipment, transfer cars and cargo handling systems exposed to corrosion and heavy duty cycles", "port railways", "port railway wheel"],
+  ["Industrial Railway Wheels", "factory rail cars, material handling vehicles and private industrial railway networks", "industrial railways", "industrial railway wheel"]
+].map(([title, applicationDetail, application, material]) => ({
+  title,
+  slug: slugify(title),
+  keyword: title.toLowerCase(),
+  image: "railway-wheel.webp",
+  family: "Railway Wheel",
+  application,
+  applicationDetail,
+  material,
+  process: "wheel blank preparation, forging or casting confirmation, heat treatment, bore machining, tread profiling, final inspection and export packing",
+  standards: "customer drawings, operating load requirements, AAR, EN, UIC or project-specific acceptance standards",
+  related: ["Railway Wheel", "Train Wheel", "Railroad Wheel"],
+  load: "application-specific axle load",
+  inspection: "ultrasonic testing, hardness testing, dimensional inspection and surface inspection"
+}));
+
 function generatedProductSchema(product) {
+  const productUrl = `${siteUrl}${product.pagePath || `/railway-products/${product.slug}/`}`;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -706,9 +734,9 @@ function generatedProductSchema(product) {
     "brand": { "@type": "Brand", "name": "Railwheel" },
     "manufacturer": { "@type": "Organization", "name": company },
     "category": "Railway components",
-    "url": `${siteUrl}/railway-products/${product.slug}/`,
+    "url": productUrl,
     "material": product.material,
-    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "url": `${siteUrl}/railway-products/${product.slug}/` },
+    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "url": productUrl },
     "additionalProperty": [
       { "@type": "PropertyValue", "name": "Application", "value": product.application },
       { "@type": "PropertyValue", "name": "Inspection", "value": product.inspection },
@@ -776,6 +804,36 @@ for (const product of expandedProducts) {
     path: `/railway-products/${product.slug}/`,
     active: "Products",
     schemas: [generatedProductSchema(product), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Railway Products", url: "/railway-products/" }, { name: product.title, url: `/railway-products/${product.slug}/` }]), faqSchema()],
+    body: generatedProductPage(product)
+  }));
+}
+
+addPage("railway-wheel-applications/index.html", layout({
+  title: "Railway Wheel Applications | Mining, Metro, Freight, Locomotive and Industrial Wheels",
+  description: "Dedicated railway wheel application pages for mining railway wheels, steel plant railway wheels, metro wheels, passenger wheels, heavy haul wheels, freight wheels, locomotive wheels, crane wheels, port wheels and industrial railway wheels.",
+  path: "/railway-wheel-applications/",
+  active: "Products",
+  schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Railway Wheel Applications", url: "/railway-wheel-applications/" }]), {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Railway wheel application pages",
+    "url": `${siteUrl}/railway-wheel-applications/`,
+    "itemListElement": wheelApplicationPages.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": { "@type": "Product", "name": product.title, "url": `${siteUrl}/railway-wheel-applications/${product.slug}/`, "image": `${siteUrl}/assets/home-products/${product.image}` }
+    }))
+  }, faqSchema()],
+  body: `${pageHero("Railway Wheel Applications", "Application-focused railway wheel pages for mining, steel plant, metro, passenger, heavy haul, freight, locomotive, crane, port and industrial rail projects.", "Railway Wheel Applications")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Application wheel supply</span><h2>Dedicated railway wheel pages for demanding operating environments.</h2></div><p>Each application page includes specifications, applications, advantages, manufacturing process, inspection, packaging, shipping, FAQ and inquiry support.</p></div><div class="grid grid-3">${wheelApplicationPages.map((product) => `<article class="card"><img src="/assets/home-products/${product.image}" alt="${product.title} product image from Railwheel" loading="lazy" decoding="async" width="423" height="464"><h3>${product.title}</h3><p>${product.applicationDetail}</p><a class="card-link" href="/railway-wheel-applications/${product.slug}/">View ${product.title}</a></article>`).join("")}</div></div></section>${ctaBand()}`
+}));
+
+for (const product of wheelApplicationPages) {
+  addPage(`railway-wheel-applications/${product.slug}/index.html`, layout({
+    title: `${product.title} | Application Railway Wheel Supplier`,
+    description: `${product.title} technical page with specifications, manufacturing, inspection, packaging, shipping, FAQ and inquiry support from Railwheel.`,
+    path: `/railway-wheel-applications/${product.slug}/`,
+    active: "Products",
+    schemas: [generatedProductSchema({ ...product, pagePath: `/railway-wheel-applications/${product.slug}/` }), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Railway Wheel Applications", url: "/railway-wheel-applications/" }, { name: product.title, url: `/railway-wheel-applications/${product.slug}/` }]), faqSchema()],
     body: generatedProductPage(product)
   }));
 }
