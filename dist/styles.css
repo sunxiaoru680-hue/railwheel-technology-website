@@ -25,6 +25,10 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
+section:not(.home-hero):not(.page-hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 640px;
+}
 
 .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
 .topbar { background: #03101f; color: #d9e8f5; font-size: 14px; }
@@ -322,6 +326,18 @@ section { padding: 82px 0; }
   margin-top: 34px;
   padding-top: 24px;
   border-top: 1px solid #e4ebf2;
+}
+.faq-section {
+  background: var(--steel-100);
+}
+.link-hub {
+  background: var(--white);
+  border-top: 1px solid #e8eef5;
+  border-bottom: 1px solid #e8eef5;
+}
+.link-hub h2 {
+  font-size: clamp(28px, 3.5vw, 40px);
+  max-width: 760px;
 }
 .icon {
   width: 46px; height: 46px; border-radius: 8px; display: grid; place-items: center;
