@@ -1,0 +1,1243 @@
+{"kind":"deck","id":"pr/p4rfwk","name":"Deck"}
+{"kind":"layout","layoutId":"dfed86b0-e4f6-4004-b4fa-ea0e6a5003a4","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1bdfe4b7-971f-4975-b972-15de8706d431","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/9myesa","slide":1,"title":"INTERNATIONAL RAILWAY COMPONENTS CATALOG","textShapes":8}
+{"kind":"shape","id":"sh/tcj6tova","slide":1,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":1,"bbox":[0,0,560,720]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":1,"text":"INTERNATIONAL RAILWAY COMPONENTS CATALOG","textPreview":"INTERNATIONAL RAILWAY COMPONENTS CATALOG","textChars":40,"textLines":1,"bbox":[72,178,410,24]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":1,"text":"Railway Wheels & Components","textPreview":"Railway Wheels & Components","textChars":27,"textLines":1,"bbox":[70,232,445,128]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":1,"text":"Forged railway wheels, train wheels, railroad wheels, railway wheelsets, axles, bogies and rolling stock components for global industrial buyers.","textPreview":"Forged railway wheels, train wheels, railroad wheels, railway wheelsets, axles, bogies and rolling stock components for global industrial...","textChars":145,"textLines":1,"bbox":[74,390,420,116]}
+{"kind":"shape","id":"sh/bulwval8","slide":1,"bbox":[78,552,42,42]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":1,"text":"OEM","textPreview":"OEM","textChars":3,"textLines":1,"bbox":[78,562,42,18]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":1,"text":"OEM Manufacturing","textPreview":"OEM Manufacturing","textChars":17,"textLines":1,"bbox":[134,560,210,24]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":1,"bbox":[78,610,42,42]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":1,"text":"EX","textPreview":"EX","textChars":2,"textLines":1,"bbox":[78,620,42,18]}
+{"kind":"textbox","id":"sh/bulwval8","slide":1,"text":"Global Supply","textPreview":"Global Supply","textChars":13,"textLines":1,"bbox":[134,618,210,24]}
+{"kind":"textbox","id":"sh/032lszqt","slide":1,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[980,632,220,22]}
+{"kind":"image","id":"im/zqtcj6to","slide":1,"name":"","alt":"Premium forged railway wheel manufacturing hero image","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/6xkf6dcb","slide":1,"name":"","alt":"Railwheel logo","bbox":[70,58,230,66]}
+{"kind":"notes","id":"nt/9myesa","slide":1,"text":""}
+{"kind":"slide","id":"sl/vn4v10","slide":2,"title":"COMPANY PROFILE","textShapes":19}
+{"kind":"shape","id":"sh/fu18jqh0","slide":2,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":2,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":2,"text":"COMPANY PROFILE","textPreview":"COMPANY PROFILE","textChars":15,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":2,"text":"Focused Railway Component Supplier","textPreview":"Focused Railway Component Supplier","textChars":34,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/83itgfml","slide":2,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/xobm58z2","slide":2,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":2,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":2,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":2,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/wval87ed","slide":2,"text":"Railwheel supplies railway wheels, train wheels, railroad wheels, wheelsets, axles, bogies and railway spare parts for international buyers.","textPreview":"Railwheel supplies railway wheels, train wheels, railroad wheels, wheelsets, axles, bogies and railway spare parts for international buyers.","textChars":140,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":2,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":2,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":2,"text":"RW","textPreview":"RW","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":2,"text":"Railway Wheel Focus","textPreview":"Railway Wheel Focus","textChars":19,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/7u54zido","slide":2,"text":"Forged wheels and heavy-duty train wheel supply.","textPreview":"Forged wheels and heavy-duty train wheel supply.","textChars":48,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/ed8bat47","slide":2,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":2,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":2,"text":"OEM","textPreview":"OEM","textChars":3,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":2,"text":"Custom Projects","textPreview":"Custom Projects","textChars":15,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":2,"text":"Support for drawings, samples and technical requirements.","textPreview":"Support for drawings, samples and technical requirements.","textChars":57,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/m58z25kb","slide":2,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/bq1oryts","slide":2,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":2,"text":"EX","textPreview":"EX","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":2,"text":"Export Coordination","textPreview":"Export Coordination","textChars":19,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":2,"text":"Packing, documents and shipment planning.","textPreview":"Packing, documents and shipment planning.","textChars":41,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/bm58z25k","slide":2,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":2,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":2,"text":"QA","textPreview":"QA","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":2,"text":"Quality Mindset","textPreview":"Quality Mindset","textChars":15,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":2,"text":"Inspection records and traceability discussion.","textPreview":"Inspection records and traceability discussion.","textChars":47,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/s36hcrmh","slide":2,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/psfil0rq","slide":2,"name":"","alt":"Focused Railway Component Supplier","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/vn4v10","slide":2,"text":""}
+{"kind":"slide","id":"sl/xg3cq4","slide":3,"title":"COMPANY STRENGTHS","textShapes":19}
+{"kind":"shape","id":"sh/cj6tovah","slide":3,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/nyd0z610","slide":3,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":3,"text":"COMPANY STRENGTHS","textPreview":"COMPANY STRENGTHS","textChars":17,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/cvixczed","slide":3,"text":"Why Choose Railwheel","textPreview":"Why Choose Railwheel","textChars":20,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":3,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":3,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":3,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":3,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":3,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":3,"text":"A premium sourcing partner for railway wheel, wheelset, axle, bogie and rolling stock component procurement.","textPreview":"A premium sourcing partner for railway wheel, wheelset, axle, bogie and rolling stock component procurement.","textChars":108,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/65wjudg7","slide":3,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":3,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/obm58z25","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":3,"text":"Technical Communication","textPreview":"Technical Communication","textChars":23,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":3,"text":"Clear drawing review before quotation.","textPreview":"Clear drawing review before quotation.","textChars":38,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":3,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":3,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":3,"text":"Industrial Network","textPreview":"Industrial Network","textChars":18,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":3,"text":"Manufacturing routes for forged, cast and machined parts.","textPreview":"Manufacturing routes for forged, cast and machined parts.","textChars":57,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/byhgn29g","slide":3,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/idonyd0z","slide":3,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":3,"text":"Quality Records","textPreview":"Quality Records","textChars":15,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/bulwval8","slide":3,"text":"Material certificates and inspection reports on request.","textPreview":"Material certificates and inspection reports on request.","textChars":56,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":3,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":3,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":3,"text":"Global Service","textPreview":"Global Service","textChars":14,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":3,"text":"Direct English support from inquiry to shipment.","textPreview":"Direct English support from inquiry to shipment.","textChars":48,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/fepkzupw","slide":3,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/szqtcj6t","slide":3,"name":"","alt":"Why Choose Railwheel","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/xg3cq4","slide":3,"text":""}
+{"kind":"slide","id":"sl/2ppdnn","slide":4,"title":"WORLDWIDE MARKET","textShapes":10}
+{"kind":"shape","id":"sh/n29gr2p8","slide":4,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":4,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":4,"text":"WORLDWIDE MARKET","textPreview":"WORLDWIDE MARKET","textChars":16,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":4,"text":"Global Railway Supply","textPreview":"Global Railway Supply","textChars":21,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":4,"text":"Railwheel supports overseas railway operators, OEMs, maintenance contractors and industrial railway buyers across freight, passenger, metro, mining and port applications.","textPreview":"Railwheel supports overseas railway operators, OEMs, maintenance contractors and industrial railway buyers across freight, passenger, met...","textChars":170,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/5sneloj2","slide":4,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/cbulwval","slide":4,"text":"Freight Wagons","textPreview":"Freight Wagons","textChars":14,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":4,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":4,"text":"Passenger Coaches","textPreview":"Passenger Coaches","textChars":17,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":4,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/lwval87e","slide":4,"text":"Metro","textPreview":"Metro","textChars":5,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":4,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":4,"text":"Locomotives","textPreview":"Locomotives","textChars":11,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":4,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":4,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":4,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/1032lszq","slide":4,"name":"","alt":"Global Railway Supply","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/c7u54zid","slide":4,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/2ppdnn","slide":4,"text":""}
+{"kind":"slide","id":"sl/id9pbt","slide":5,"title":"FACTORY OVERVIEW","textShapes":19}
+{"kind":"shape","id":"sh/oj2t83it","slide":5,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/vy90je9c","slide":5,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":5,"text":"FACTORY OVERVIEW","textPreview":"FACTORY OVERVIEW","textChars":16,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":5,"text":"Industrial Manufacturing Capability","textPreview":"Industrial Manufacturing Capability","textChars":35,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":5,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/61032lsz","slide":5,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":5,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":5,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/4zidonyd","slide":5,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":5,"text":"A coordinated manufacturing base for railway forgings, railway castings, machined parts, wheelsets and bogie components.","textPreview":"A coordinated manufacturing base for railway forgings, railway castings, machined parts, wheelsets and bogie components.","textChars":120,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":5,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":5,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":5,"text":"FG","textPreview":"FG","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":5,"text":"Forging","textPreview":"Forging","textChars":7,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":5,"text":"Steel forming route for railway wheels and axles.","textPreview":"Steel forming route for railway wheels and axles.","textChars":49,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":5,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":5,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":5,"text":"MC","textPreview":"MC","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":5,"text":"Machining","textPreview":"Machining","textChars":9,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":5,"text":"CNC finishing for functional interfaces.","textPreview":"CNC finishing for functional interfaces.","textChars":40,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":5,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/ed8v6psf","slide":5,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":5,"text":"HT","textPreview":"HT","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":5,"text":"Heat Treatment","textPreview":"Heat Treatment","textChars":14,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":5,"text":"Process planning for wheel and axle performance.","textPreview":"Process planning for wheel and axle performance.","textChars":48,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":5,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":5,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":5,"text":"AS","textPreview":"AS","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":5,"text":"Assembly","textPreview":"Assembly","textChars":8,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":5,"text":"Wheelset and component package coordination.","textPreview":"Wheelset and component package coordination.","textChars":44,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/vu9knih4","slide":5,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/s72x4nap","slide":5,"name":"","alt":"Industrial Manufacturing Capability","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/id9pbt","slide":5,"text":""}
+{"kind":"slide","id":"sl/8u8jt4","slide":6,"title":"PRODUCTION CAPACITY","textShapes":19}
+{"kind":"shape","id":"sh/5kb6xkf6","slide":6,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":6,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/cbulwval","slide":6,"text":"PRODUCTION CAPACITY","textPreview":"PRODUCTION CAPACITY","textChars":19,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":6,"text":"Capacity for Export Programs","textPreview":"Capacity for Export Programs","textChars":28,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/u54zidon","slide":6,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/nqxs72x4","slide":6,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":6,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":6,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/54zidony","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/nyd0z610","slide":6,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":6,"text":"Production planning is organized around drawings, standards, batch size, inspection expectations and global shipping schedule.","textPreview":"Production planning is organized around drawings, standards, batch size, inspection expectations and global shipping schedule.","textChars":126,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":6,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/cvixczed","slide":6,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":6,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":6,"text":"Batch Supply","textPreview":"Batch Supply","textChars":12,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":6,"text":"Wheels, axles, wheelsets and bogie parts.","textPreview":"Wheels, axles, wheelsets and bogie parts.","textChars":41,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/c7u54zid","slide":6,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":6,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":6,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":6,"text":"Multi-product Orders","textPreview":"Multi-product Orders","textChars":20,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":6,"text":"Grouped supply for rolling stock projects.","textPreview":"Grouped supply for rolling stock projects.","textChars":42,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/obm58z25","slide":6,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":6,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":6,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":6,"text":"Packing Readiness","textPreview":"Packing Readiness","textChars":17,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":6,"text":"Heavy-duty export packing for long-distance transport.","textPreview":"Heavy-duty export packing for long-distance transport.","textChars":54,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":6,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":6,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":6,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":6,"text":"Repeat Orders","textPreview":"Repeat Orders","textChars":13,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":6,"text":"Reference records for long-term supply.","textPreview":"Reference records for long-term supply.","textChars":39,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/ed8bat47","slide":6,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/z25kb6xk","slide":6,"name":"","alt":"Capacity for Export Programs","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/8u8jt4","slide":6,"text":""}
+{"kind":"slide","id":"sl/9z8juk","slide":7,"title":"MANUFACTURING PROCESS","textShapes":10}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":7,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/neloj2t8","slide":7,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":7,"text":"MANUFACTURING PROCESS","textPreview":"MANUFACTURING PROCESS","textChars":21,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/u54zidon","slide":7,"text":"Forging & Forming","textPreview":"Forging & Forming","textChars":17,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":7,"text":"Controlled production connects material preparation, forging, rolling, heat treatment, machining, inspection, packing and shipment.","textPreview":"Controlled production connects material preparation, forging, rolling, heat treatment, machining, inspection, packing and shipment.","textChars":131,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":7,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":7,"text":"Material","textPreview":"Material","textChars":8,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/54zidony","slide":7,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":7,"text":"Forging","textPreview":"Forging","textChars":7,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/nyd0z610","slide":7,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":7,"text":"Heat Treatment","textPreview":"Heat Treatment","textChars":14,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":7,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/cvixczed","slide":7,"text":"Inspection","textPreview":"Inspection","textChars":10,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/nap4r65w","slide":7,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":7,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":7,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/cj6tovah","slide":7,"name":"","alt":"Forging & Forming","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/5gbq1ory","slide":7,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/9z8juk","slide":7,"text":""}
+{"kind":"slide","id":"sl/14ra4j","slide":8,"title":"WORKSHOP","textShapes":10}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":8,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":8,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":8,"text":"WORKSHOP","textPreview":"WORKSHOP","textChars":8,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/judg7ads","slide":8,"text":"Rolling Process","textPreview":"Rolling Process","textChars":15,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":8,"text":"Wheel rolling and forming operations create the geometry foundation for forged railway wheels, train wheels and railroad wheels.","textPreview":"Wheel rolling and forming operations create the geometry foundation for forged railway wheels, train wheels and railroad wheels.","textChars":128,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/54zidony","slide":8,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":8,"text":"Wheel Blank","textPreview":"Wheel Blank","textChars":11,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":8,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":8,"text":"Rolling Mill","textPreview":"Rolling Mill","textChars":12,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":8,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":8,"text":"Profile Control","textPreview":"Profile Control","textChars":15,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":8,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":8,"text":"Traceability","textPreview":"Traceability","textChars":12,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":8,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/lwval87e","slide":8,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":8,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/tovahoza","slide":8,"name":"","alt":"Rolling Process","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/0fepkzup","slide":8,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/14ra4j","slide":8,"text":""}
+{"kind":"slide","id":"sl/zcp9bs","slide":9,"title":"WORKSHOP","textShapes":10}
+{"kind":"shape","id":"sh/4zidonyd","slide":9,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/xkf6dcbu","slide":9,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":9,"text":"WORKSHOP","textPreview":"WORKSHOP","textChars":8,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":9,"text":"Heat Treatment","textPreview":"Heat Treatment","textChars":14,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":9,"text":"Heat treatment planning supports hardness, structure and service performance for steel railway wheels and heavy-duty components.","textPreview":"Heat treatment planning supports hardness, structure and service performance for steel railway wheels and heavy-duty components.","textChars":128,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/m94fu18j","slide":9,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":9,"text":"Furnace","textPreview":"Furnace","textChars":7,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/r65wjudg","slide":9,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":9,"text":"Quenching","textPreview":"Quenching","textChars":9,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/9cvixcze","slide":9,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":9,"text":"Hardness","textPreview":"Hardness","textChars":8,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/nih4byhg","slide":9,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":9,"text":"Records","textPreview":"Records","textChars":7,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":9,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":9,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":9,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/al87ed8b","slide":9,"name":"","alt":"Heat Treatment","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/zupwb2hw","slide":9,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/zcp9bs","slide":9,"text":""}
+{"kind":"slide","id":"sl/0lvnou","slide":10,"title":"WORKSHOP","textShapes":10}
+{"kind":"shape","id":"sh/p8nqxs72","slide":10,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":10,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":10,"text":"WORKSHOP","textPreview":"WORKSHOP","textChars":8,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":10,"text":"CNC Machining","textPreview":"CNC Machining","textChars":13,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/0z61032l","slide":10,"text":"Precision machining supports axle seats, bores, interfaces and finished dimensions for wheels, axles and machined railway components.","textPreview":"Precision machining supports axle seats, bores, interfaces and finished dimensions for wheels, axles and machined railway components.","textChars":133,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":10,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":10,"text":"CNC","textPreview":"CNC","textChars":3,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":10,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":10,"text":"Tolerance","textPreview":"Tolerance","textChars":9,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":10,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":10,"text":"Surface","textPreview":"Surface","textChars":7,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/0z61032l","slide":10,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":10,"text":"Interface","textPreview":"Interface","textChars":9,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":10,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":10,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":10,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/zqtcj6to","slide":10,"name":"","alt":"CNC Machining","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/6xkf6dcb","slide":10,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/0lvnou","slide":10,"text":""}
+{"kind":"slide","id":"sl/kt2bh9","slide":11,"title":"QUALITY","textShapes":10}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":11,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/gvy90je9","slide":11,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":11,"text":"QUALITY","textPreview":"QUALITY","textChars":7,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":11,"text":"Inspection & Testing","textPreview":"Inspection & Testing","textChars":20,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":11,"text":"Inspection activities may include dimensional control, hardness checks, ultrasonic testing, chemical analysis and visual inspection.","textPreview":"Inspection activities may include dimensional control, hardness checks, ultrasonic testing, chemical analysis and visual inspection.","textChars":132,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":11,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":11,"text":"UT","textPreview":"UT","textChars":2,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":11,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":11,"text":"Hardness","textPreview":"Hardness","textChars":8,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/m94fu18j","slide":11,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":11,"text":"Dimensions","textPreview":"Dimensions","textChars":10,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/83itgfml","slide":11,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":11,"text":"Reports","textPreview":"Reports","textChars":7,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/qxs72x4n","slide":11,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":11,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":11,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/r65wjudg","slide":11,"name":"","alt":"Inspection & Testing","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/yxobm58z","slide":11,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/kt2bh9","slide":11,"text":""}
+{"kind":"slide","id":"sl/gb9elj","slide":12,"title":"LOGISTICS","textShapes":10}
+{"kind":"shape","id":"sh/29gr2p8n","slide":12,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/vu9knih4","slide":12,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":12,"text":"LOGISTICS","textPreview":"LOGISTICS","textChars":9,"textLines":1,"bbox":[70,150,360,20]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":12,"text":"Container Loading","textPreview":"Container Loading","textChars":17,"textLines":1,"bbox":[68,202,470,134]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":12,"text":"Export packing and container loading are planned to protect heavy railway wheels, wheelsets, axles and spare parts during international transport.","textPreview":"Export packing and container loading are planned to protect heavy railway wheels, wheelsets, axles and spare parts during international t...","textChars":146,"textLines":1,"bbox":[72,370,438,100]}
+{"kind":"shape","id":"sh/kre1w7mp","slide":12,"bbox":[72,524,188,38]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":12,"text":"Steel Frame","textPreview":"Steel Frame","textChars":11,"textLines":1,"bbox":[88,535,156,14]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":12,"bbox":[292,524,188,38]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":12,"text":"Anti-rust","textPreview":"Anti-rust","textChars":9,"textLines":1,"bbox":[308,535,156,14]}
+{"kind":"shape","id":"sh/3m94fu18","slide":12,"bbox":[72,582,188,38]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":12,"text":"Labels","textPreview":"Labels","textChars":6,"textLines":1,"bbox":[88,593,156,14]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":12,"bbox":[292,582,188,38]}
+{"kind":"textbox","id":"sh/sji5snel","slide":12,"text":"Shipment","textPreview":"Shipment","textChars":8,"textLines":1,"bbox":[308,593,156,14]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":12,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":12,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":12,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/svu9knih","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/0z61032l","slide":12,"name":"","alt":"Container Loading","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/p8nqxs72","slide":12,"name":"","alt":"Railwheel logo","bbox":[64,44,190,54]}
+{"kind":"notes","id":"nt/gb9elj","slide":12,"text":""}
+{"kind":"slide","id":"sl/is008z","slide":13,"title":"FORGED RAILWAY WHEEL","textShapes":18}
+{"kind":"shape","id":"sh/nyd0z610","slide":13,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/udg7adsj","slide":13,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/cvixczed","slide":13,"text":"FORGED RAILWAY WHEEL","textPreview":"FORGED RAILWAY WHEEL","textChars":20,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":13,"text":"Railway Wheels","textPreview":"Railway Wheels","textChars":14,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":13,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":13,"text":"Railway Wheels supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Wheels supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependa...","textChars":161,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":13,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":13,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":13,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":13,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":13,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/65wjudg7","slide":13,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":13,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/obm58z25","slide":13,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":13,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":13,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":13,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":13,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":13,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":13,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":13,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":13,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":13,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/t47y1kre","slide":13,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":13,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/bulwval8","slide":13,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/lwval87e","slide":13,"name":"","alt":"Railway Wheels full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/w3m94fu1","slide":13,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/is008z","slide":13,"text":""}
+{"kind":"slide","id":"sl/gzlc39","slide":14,"title":"WHEELSET ASSEMBLY","textShapes":18}
+{"kind":"shape","id":"sh/hgn29gr2","slide":14,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/svu9knih","slide":14,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":14,"text":"WHEELSET ASSEMBLY","textPreview":"WHEELSET ASSEMBLY","textChars":17,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":14,"text":"Railway Wheelsets","textPreview":"Railway Wheelsets","textChars":17,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":14,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":14,"text":"Railway Wheelsets supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Wheelsets supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depe...","textChars":164,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":14,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":14,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/d0z61032","slide":14,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":14,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":14,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/knih4byh","slide":14,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":14,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":14,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/v6psfil0","slide":14,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":14,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/dcbulwva","slide":14,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":14,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":14,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":14,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":14,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":14,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":14,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/z61032ls","slide":14,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":14,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":14,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/za1gvy90","slide":14,"name":"","alt":"Railway Wheelsets full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/a1gvy90j","slide":14,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/gzlc39","slide":14,"text":""}
+{"kind":"slide","id":"sl/ea1lij","slide":15,"title":"FORGED RAILWAY AXLE","textShapes":18}
+{"kind":"shape","id":"sh/dsji5sne","slide":15,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":15,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":15,"text":"FORGED RAILWAY AXLE","textPreview":"FORGED RAILWAY AXLE","textChars":19,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":15,"text":"Railway Axles","textPreview":"Railway Axles","textChars":13,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":15,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":15,"text":"Railway Axles supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Axles supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependab...","textChars":160,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":15,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":15,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":15,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":15,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":15,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":15,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":15,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":15,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/nih4byhg","slide":15,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":15,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":15,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":15,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/4byhgn29","slide":15,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":15,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":15,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":15,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":15,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":15,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":15,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":15,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/j2t83itg","slide":15,"name":"","alt":"Railway Axles full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/q5o7qpg3","slide":15,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/ea1lij","slide":15,"text":""}
+{"kind":"slide","id":"sl/p1wezx","slide":16,"title":"RAILWAY BOGIE","textShapes":18}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":16,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/ji5snelo","slide":16,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":16,"text":"RAILWAY BOGIE","textPreview":"RAILWAY BOGIE","textChars":13,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/ulwval87","slide":16,"text":"Railway Bogies","textPreview":"Railway Bogies","textChars":14,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":16,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":16,"text":"Railway Bogies supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Bogies supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependa...","textChars":161,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":16,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/psfil0rq","slide":16,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":16,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":16,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":16,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":16,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/wval87ed","slide":16,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":16,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/epkzupwb","slide":16,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":16,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":16,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":16,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":16,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":16,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":16,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/svu9knih","slide":16,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":16,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":16,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":16,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/sji5snel","slide":16,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/kzupwb2h","slide":16,"name":"","alt":"Railway Bogies full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/9w3m94fu","slide":16,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/p1wezx","slide":16,"text":""}
+{"kind":"slide","id":"sl/th0rlu","slide":17,"title":"BOGIE CASTING","textShapes":18}
+{"kind":"shape","id":"sh/ih4byhgn","slide":17,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/72x4nap4","slide":17,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":17,"text":"BOGIE CASTING","textPreview":"BOGIE CASTING","textChars":13,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":17,"text":"Side Frames","textPreview":"Side Frames","textChars":11,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":17,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":17,"text":"Side Frames supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Side Frames supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable...","textChars":158,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":17,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/94fu18jq","slide":17,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":17,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":17,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":17,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":17,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":17,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":17,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":17,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/9knih4by","slide":17,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":17,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":17,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":17,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":17,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":17,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/0z61032l","slide":17,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":17,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":17,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":17,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":17,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/onyd0z61","slide":17,"name":"","alt":"Side Frames full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/dg7adsji","slide":17,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/th0rlu","slide":17,"text":""}
+{"kind":"slide","id":"sl/o3pwsw","slide":18,"title":"BOGIE CASTING","textShapes":18}
+{"kind":"shape","id":"sh/udg7adsj","slide":18,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/nyd0z610","slide":18,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":18,"text":"BOGIE CASTING","textPreview":"BOGIE CASTING","textChars":13,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":18,"text":"Bolsters","textPreview":"Bolsters","textChars":8,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":18,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":18,"text":"Bolsters supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Bolsters supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable ra...","textChars":155,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":18,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":18,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":18,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/7u54zido","slide":18,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":18,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/lc7u54zi","slide":18,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":18,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":18,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/eloj2t83","slide":18,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":18,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/wval87ed","slide":18,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":18,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/loj2t83i","slide":18,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":18,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":18,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":18,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/lwval87e","slide":18,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":18,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":18,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":18,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/svu9knih","slide":18,"name":"","alt":"Bolsters full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/hoza1gvy","slide":18,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/o3pwsw","slide":18,"text":""}
+{"kind":"slide","id":"sl/9lj6mr","slide":19,"title":"MACHINED COMPONENT","textShapes":18}
+{"kind":"shape","id":"sh/nap4r65w","slide":19,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":19,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":19,"text":"MACHINED COMPONENT","textPreview":"MACHINED COMPONENT","textChars":18,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":19,"text":"Bearing Housing","textPreview":"Bearing Housing","textChars":15,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":19,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/1032lszq","slide":19,"text":"Bearing Housing supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Bearing Housing supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depend...","textChars":162,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":19,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":19,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":19,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":19,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":19,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/2t83itgf","slide":19,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":19,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":19,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/9knih4by","slide":19,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":19,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":19,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":19,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/udg7adsj","slide":19,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/54zidony","slide":19,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":19,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":19,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":19,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":19,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/cvixczed","slide":19,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":19,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/x4nap4r6","slide":19,"name":"","alt":"Bearing Housing full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/8v6psfil","slide":19,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/9lj6mr","slide":19,"text":""}
+{"kind":"slide","id":"sl/h89h2i","slide":20,"title":"BRAKE COMPONENT","textShapes":18}
+{"kind":"shape","id":"sh/d8v6psfi","slide":20,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/onyd0z61","slide":20,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":20,"text":"BRAKE COMPONENT","textPreview":"BRAKE COMPONENT","textChars":15,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":20,"text":"Brake Disc","textPreview":"Brake Disc","textChars":10,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":20,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":20,"text":"Brake Disc supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Brake Disc supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable ...","textChars":157,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/61032lsz","slide":20,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/wval87ed","slide":20,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":20,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/epkzupwb","slide":20,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":20,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":20,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":20,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":20,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":20,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":20,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":20,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":20,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/0bi9s36h","slide":20,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":20,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":20,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":20,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":20,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":20,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":20,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":20,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/vmtwra5g","slide":20,"name":"","alt":"Brake Disc full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/6dcbulwv","slide":20,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/h89h2i","slide":20,"text":""}
+{"kind":"slide","id":"sl/bb44xv","slide":21,"title":"ROLLING STOCK COMPONENT","textShapes":18}
+{"kind":"shape","id":"sh/3itgfmlk","slide":21,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":21,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":21,"text":"ROLLING STOCK COMPONENT","textPreview":"ROLLING STOCK COMPONENT","textChars":23,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":21,"text":"Coupler","textPreview":"Coupler","textChars":7,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":21,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":21,"text":"Coupler supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Coupler supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable rai...","textChars":154,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":21,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":21,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":21,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":21,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":21,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":21,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":21,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":21,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/xczed8v6","slide":21,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":21,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/je9cvixc","slide":21,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":21,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":21,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":21,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":21,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":21,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":21,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/9knih4by","slide":21,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":21,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":21,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":21,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/18jqh0fe","slide":21,"name":"","alt":"Coupler full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/8bat47y1","slide":21,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/bb44xv","slide":21,"text":""}
+{"kind":"slide","id":"sl/hd6cp5","slide":22,"title":"RAILWAY SPARE PARTS","textShapes":18}
+{"kind":"shape","id":"sh/tovahoza","slide":22,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/032lszqt","slide":22,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":22,"text":"RAILWAY SPARE PARTS","textPreview":"RAILWAY SPARE PARTS","textChars":19,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":22,"text":"Railway Fasteners","textPreview":"Railway Fasteners","textChars":17,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":22,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":22,"text":"Railway Fasteners supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Fasteners supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depe...","textChars":164,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":22,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/c7u54zid","slide":22,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":22,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":22,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":22,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":22,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/1032lszq","slide":22,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":22,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/judg7ads","slide":22,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":22,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/54zidony","slide":22,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":22,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/g7adsji5","slide":22,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":22,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":22,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":22,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":22,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":22,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":22,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":22,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":22,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/7ed8bat4","slide":22,"name":"","alt":"Railway Fasteners full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/ih4byhgn","slide":22,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/hd6cp5","slide":22,"text":""}
+{"kind":"slide","id":"sl/1r4xhw","slide":23,"title":"FORGED COMPONENTS","textShapes":18}
+{"kind":"shape","id":"sh/7adsji5s","slide":23,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/epkzupwb","slide":23,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":23,"text":"FORGED COMPONENTS","textPreview":"FORGED COMPONENTS","textChars":17,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":23,"text":"Railway Forgings","textPreview":"Railway Forgings","textChars":16,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":23,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":23,"text":"Railway Forgings supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Forgings supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depen...","textChars":163,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":23,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/ixczed8v","slide":23,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":23,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/032lszqt","slide":23,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/tovahoza","slide":23,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":23,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/bulwval8","slide":23,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":23,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":23,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":23,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/byhgn29g","slide":23,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":23,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":23,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/lwval87e","slide":23,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":23,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":23,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":23,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/loj2t83i","slide":23,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":23,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":23,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":23,"text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/tcj6tova","slide":23,"name":"","alt":"Railway Forgings full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/0je9cvix","slide":23,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/1r4xhw","slide":23,"text":""}
+{"kind":"slide","id":"sl/hktqiz","slide":24,"title":"CAST COMPONENTS","textShapes":18}
+{"kind":"shape","id":"sh/2lszqtcj","slide":24,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/v6psfil0","slide":24,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/d0z61032","slide":24,"text":"CAST COMPONENTS","textPreview":"CAST COMPONENTS","textChars":15,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":24,"text":"Railway Castings","textPreview":"Railway Castings","textChars":16,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":24,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":24,"text":"Railway Castings supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Railway Castings supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depen...","textChars":163,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":24,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":24,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":24,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/bulwval8","slide":24,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":24,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/tovahoza","slide":24,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/032lszqt","slide":24,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":24,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/ixczed8v","slide":24,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":24,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":24,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":24,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/90je9cvi","slide":24,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":24,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":24,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":24,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":24,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":24,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":24,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":24,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":24,"text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/4vmtwra5","slide":24,"name":"","alt":"Railway Castings full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/tsvu9kni","slide":24,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/hktqiz","slide":24,"text":""}
+{"kind":"slide","id":"sl/9hacb2","slide":25,"title":"FREIGHT RAILWAY APPLICATION","textShapes":18}
+{"kind":"shape","id":"sh/m94fu18j","slide":25,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":25,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":25,"text":"FREIGHT RAILWAY APPLICATION","textPreview":"FREIGHT RAILWAY APPLICATION","textChars":27,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":25,"text":"Freight Wagon Parts","textPreview":"Freight Wagon Parts","textChars":19,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":25,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":25,"text":"Freight Wagon Parts supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Freight Wagon Parts supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring de...","textChars":166,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":25,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":25,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":25,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/ji5snelo","slide":25,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":25,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":25,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":25,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":25,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/ulwval87","slide":25,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":25,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":25,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":25,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":25,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":25,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":25,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":25,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":25,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/61032lsz","slide":25,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":25,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":25,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":25,"text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/kjm1cfa9","slide":25,"name":"","alt":"Freight Wagon Parts full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/9gr2p8nq","slide":25,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/9hacb2","slide":25,"text":""}
+{"kind":"slide","id":"sl/t1jsps","slide":26,"title":"PASSENGER RAILWAY APPLICATION","textShapes":18}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":26,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/bat47y1k","slide":26,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":26,"text":"PASSENGER RAILWAY APPLICATION","textPreview":"PASSENGER RAILWAY APPLICATION","textChars":29,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":26,"text":"Passenger Coach Parts","textPreview":"Passenger Coach Parts","textChars":21,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":26,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":26,"text":"Passenger Coach Parts supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Passenger Coach Parts supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring ...","textChars":168,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":26,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":26,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":26,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/j6tovaho","slide":26,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/ulwval87","slide":26,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":26,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":26,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":26,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":26,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":26,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/8bat47y1","slide":26,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":26,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/dsji5sne","slide":26,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/61032lsz","slide":26,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":26,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":26,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":26,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":26,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":26,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":26,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":26,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/s36hcrmh","slide":26,"name":"","alt":"Passenger Coach Parts full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/hgn29gr2","slide":26,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/t1jsps","slide":26,"text":""}
+{"kind":"slide","id":"sl/uz7njt","slide":27,"title":"URBAN RAIL APPLICATION","textShapes":18}
+{"kind":"shape","id":"sh/1kre1w7m","slide":27,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":27,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/ulwval87","slide":27,"text":"URBAN RAIL APPLICATION","textPreview":"URBAN RAIL APPLICATION","textChars":22,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":27,"text":"Metro Components","textPreview":"Metro Components","textChars":16,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":27,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":27,"text":"Metro Components supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Metro Components supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depen...","textChars":163,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":27,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":27,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":27,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":27,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":27,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/svu9knih","slide":27,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":27,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":27,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/za1gvy90","slide":27,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/sji5snel","slide":27,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":27,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":27,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":27,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":27,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":27,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":27,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/wval87ed","slide":27,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/7adsji5s","slide":27,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":27,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":27,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":27,"text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/nap4r65w","slide":27,"name":"","alt":"Metro Components full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/udg7adsj","slide":27,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/uz7njt","slide":27,"text":""}
+{"kind":"slide","id":"sl/tkz4hq","slide":28,"title":"HEAVY RAIL APPLICATION","textShapes":18}
+{"kind":"shape","id":"sh/54zidony","slide":28,"bbox":[0,0,1280,320]}
+{"kind":"shape","id":"sh/cj6tovah","slide":28,"bbox":[0,0,1280,96]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":28,"text":"HEAVY RAIL APPLICATION","textPreview":"HEAVY RAIL APPLICATION","textChars":22,"textLines":1,"bbox":[280,30,360,18]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":28,"text":"Locomotive Parts","textPreview":"Locomotive Parts","textChars":16,"textLines":1,"bbox":[280,50,760,34]}
+{"kind":"textbox","id":"sh/cvixczed","slide":28,"text":"Product Overview","textPreview":"Product Overview","textChars":16,"textLines":1,"bbox":[68,354,250,26]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":28,"text":"Locomotive Parts supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring dependable railway spare parts.","textPreview":"Locomotive Parts supplied for rolling stock manufacturers, railway operators, maintenance workshops and industrial buyers requiring depen...","textChars":163,"textLines":1,"bbox":[68,390,482,72]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":28,"text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[620,354,210,26]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":28,"bbox":[620,397,8,8]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":28,"text":"Drawing-based confirmation","textPreview":"Drawing-based confirmation","textChars":26,"textLines":1,"bbox":[638,391,452,24]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":28,"bbox":[620,427,8,8]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":28,"text":"OEM and customized manufacturing support","textPreview":"OEM and customized manufacturing support","textChars":40,"textLines":1,"bbox":[638,421,452,24]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":28,"bbox":[620,457,8,8]}
+{"kind":"textbox","id":"sh/lwval87e","slide":28,"text":"Export packing and documentation","textPreview":"Export packing and documentation","textChars":32,"textLines":1,"bbox":[638,451,452,24]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":28,"text":"Technical Features","textPreview":"Technical Features","textChars":18,"textLines":1,"bbox":[68,506,250,26]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":28,"bbox":[68,547,8,8]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":28,"text":"Material and dimensional control","textPreview":"Material and dimensional control","textChars":32,"textLines":1,"bbox":[86,541,462,24]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":28,"bbox":[68,575,8,8]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":28,"text":"Machined interfaces according to project drawings","textPreview":"Machined interfaces according to project drawings","textChars":49,"textLines":1,"bbox":[86,569,462,24]}
+{"kind":"shape","id":"sh/wfyxobm5","slide":28,"bbox":[68,603,8,8]}
+{"kind":"textbox","id":"sh/7u54zido","slide":28,"text":"Surface protection for long-distance shipment","textPreview":"Surface protection for long-distance shipment","textChars":45,"textLines":1,"bbox":[86,597,462,24]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":28,"text":"Applications & Standards","textPreview":"Applications & Standards","textChars":24,"textLines":1,"bbox":[620,506,300,26]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":28,"text":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textPreview":"Freight wagons / Passenger coaches / Metro vehicles / Locomotives / Mining and industrial railways","textChars":98,"textLines":1,"bbox":[620,542,500,28]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":28,"text":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textPreview":"UIC, AAR, EN and customer-specific requirements can be discussed according to drawings and contracts.","textChars":101,"textLines":1,"bbox":[620,582,500,36]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":28,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":28,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":28,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/wval87ed","slide":28,"text":"28","textPreview":"28","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"image","id":"im/ji5snelo","slide":28,"name":"","alt":"Locomotive Parts full-width product image","bbox":[0,0,1280,320]}
+{"kind":"image","id":"im/ulwval87","slide":28,"name":"","alt":"Railwheel logo","bbox":[48,24,172,48]}
+{"kind":"notes","id":"nt/tkz4hq","slide":28,"text":""}
+{"kind":"slide","id":"sl/udgm93","slide":29,"title":"OEM MANUFACTURING","textShapes":19}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":29,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":29,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":29,"text":"OEM MANUFACTURING","textPreview":"OEM MANUFACTURING","textChars":17,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":29,"text":"Custom Railway Component Programs","textPreview":"Custom Railway Component Programs","textChars":33,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":29,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/j2t83itg","slide":29,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":29,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":29,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":29,"text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/je9cvixc","slide":29,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":29,"text":"Railwheel supports OEM manufacturing for railway wheel, train wheel, wheelset, axle, bogie and spare part projects based on drawings and technical requirements.","textPreview":"Railwheel supports OEM manufacturing for railway wheel, train wheel, wheelset, axle, bogie and spare part projects based on drawings and ...","textChars":160,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/xs72x4na","slide":29,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/87ed8bat","slide":29,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":29,"text":"DWG","textPreview":"DWG","textChars":3,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":29,"text":"Drawing Review","textPreview":"Drawing Review","textChars":14,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":29,"text":"Confirm material, geometry, tolerance and inspection scope.","textPreview":"Confirm material, geometry, tolerance and inspection scope.","textChars":59,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":29,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":29,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":29,"text":"STD","textPreview":"STD","textChars":3,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":29,"text":"Standards","textPreview":"Standards","textChars":9,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":29,"text":"Discuss UIC, AAR, EN and customer specifications.","textPreview":"Discuss UIC, AAR, EN and customer specifications.","textChars":49,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/47y1kre1","slide":29,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":29,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":29,"text":"QA","textPreview":"QA","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":29,"text":"Inspection Plan","textPreview":"Inspection Plan","textChars":15,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":29,"text":"Prepare practical records for buyer review.","textPreview":"Prepare practical records for buyer review.","textChars":43,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/twra5gbq","slide":29,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/j2t83itg","slide":29,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":29,"text":"EX","textPreview":"EX","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":29,"text":"Export Package","textPreview":"Export Package","textChars":14,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":29,"text":"Packing, marking, photos and shipment documents.","textPreview":"Packing, marking, photos and shipment documents.","textChars":48,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/6hcrmhk3","slide":29,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/jqh0fepk","slide":29,"name":"","alt":"Custom Railway Component Programs","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/udgm93","slide":29,"text":""}
+{"kind":"slide","id":"sl/7q1voy","slide":30,"title":"TECHNICAL STANDARDS","textShapes":19}
+{"kind":"shape","id":"sh/j6tovaho","slide":30,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/crmhk3q5","slide":30,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":30,"text":"TECHNICAL STANDARDS","textPreview":"TECHNICAL STANDARDS","textChars":19,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":30,"text":"UIC, AAR, EN & Customer Specifications","textPreview":"UIC, AAR, EN & Customer Specifications","textChars":38,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":30,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":30,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":30,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":30,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":30,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/xs72x4na","slide":30,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":30,"text":"International railway buyers often combine public standards with project drawings and contract acceptance requirements.","textPreview":"International railway buyers often combine public standards with project drawings and contract acceptance requirements.","textChars":119,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/je9cvixc","slide":30,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":30,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":30,"text":"UIC","textPreview":"UIC","textChars":3,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":30,"text":"UIC References","textPreview":"UIC References","textChars":14,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":30,"text":"International railway terminology and practices.","textPreview":"International railway terminology and practices.","textChars":48,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":30,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":30,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":30,"text":"AAR","textPreview":"AAR","textChars":3,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/czed8v6p","slide":30,"text":"AAR Requirements","textPreview":"AAR Requirements","textChars":16,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":30,"text":"North American railroad wheel and component context.","textPreview":"North American railroad wheel and component context.","textChars":52,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/u54zidon","slide":30,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/nqxs72x4","slide":30,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/cbulwval","slide":30,"text":"EN","textPreview":"EN","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":30,"text":"European Standards","textPreview":"European Standards","textChars":18,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":30,"text":"Wheel, axle and wheelset project references.","textPreview":"Wheel, axle and wheelset project references.","textChars":44,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/nuxc3ylc","slide":30,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/d0z61032","slide":30,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":30,"text":"OEM","textPreview":"OEM","textChars":3,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":30,"text":"Customer Drawings","textPreview":"Customer Drawings","textChars":17,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":30,"text":"Final acceptance follows buyer documentation.","textPreview":"Final acceptance follows buyer documentation.","textChars":45,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/k3q5o7qp","slide":30,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/lkjm1cfa","slide":30,"name":"","alt":"UIC, AAR, EN & Customer Specifications","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/7q1voy","slide":30,"text":""}
+{"kind":"slide","id":"sl/dcmf3w","slide":31,"title":"MATERIAL","textShapes":19}
+{"kind":"shape","id":"sh/6dcbulwv","slide":31,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":31,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":31,"text":"MATERIAL","textPreview":"MATERIAL","textChars":8,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/61032lsz","slide":31,"text":"Steel, Forging & Casting Control","textPreview":"Steel, Forging & Casting Control","textChars":32,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":31,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":31,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":31,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":31,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":31,"text":"31","textPreview":"31","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":31,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":31,"text":"Material selection is matched to axle load, speed, route profile, operating environment and inspection requirements.","textPreview":"Material selection is matched to axle load, speed, route profile, operating environment and inspection requirements.","textChars":116,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/crmhk3q5","slide":31,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":31,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/ulwval87","slide":31,"text":"ST","textPreview":"ST","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":31,"text":"Steel Selection","textPreview":"Steel Selection","textChars":15,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":31,"text":"Material grade aligned with application.","textPreview":"Material grade aligned with application.","textChars":40,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":31,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/1032lszq","slide":31,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":31,"text":"FG","textPreview":"FG","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/judg7ads","slide":31,"text":"Forged Parts","textPreview":"Forged Parts","textChars":12,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":31,"text":"Railway wheels, train wheels and axles.","textPreview":"Railway wheels, train wheels and axles.","textChars":39,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/1orytsvu","slide":31,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/c7u54zid","slide":31,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":31,"text":"CS","textPreview":"CS","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":31,"text":"Cast Parts","textPreview":"Cast Parts","textChars":10,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":31,"text":"Side frames, bolsters and bogie components.","textPreview":"Side frames, bolsters and bogie components.","textChars":43,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/cvixczed","slide":31,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":31,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":31,"text":"SP","textPreview":"SP","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":31,"text":"Surface Protection","textPreview":"Surface Protection","textChars":18,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":31,"text":"Anti-rust and coating options.","textPreview":"Anti-rust and coating options.","textChars":30,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/1w7mp0bi","slide":31,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/qh0fepkz","slide":31,"name":"","alt":"Steel, Forging & Casting Control","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/dcmf3w","slide":31,"text":""}
+{"kind":"slide","id":"sl/1is00a","slide":32,"title":"INSPECTION EQUIPMENT","textShapes":19}
+{"kind":"shape","id":"sh/0z61032l","slide":32,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":32,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":32,"text":"INSPECTION EQUIPMENT","textPreview":"INSPECTION EQUIPMENT","textChars":20,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":32,"text":"Testing & Documentation","textPreview":"Testing & Documentation","textChars":23,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":32,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":32,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":32,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":32,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":32,"text":"32","textPreview":"32","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/ovahoza1","slide":32,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":32,"text":"Industrial buyers can request inspection documentation for material, dimensions, surface condition and packing release.","textPreview":"Industrial buyers can request inspection documentation for material, dimensions, surface condition and packing release.","textChars":119,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":32,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":32,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":32,"text":"UT","textPreview":"UT","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":32,"text":"Ultrasonic Testing","textPreview":"Ultrasonic Testing","textChars":18,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":32,"text":"Internal integrity checks where required.","textPreview":"Internal integrity checks where required.","textChars":41,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/vy90je9c","slide":32,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":32,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":32,"text":"HD","textPreview":"HD","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":32,"text":"Hardness Testing","textPreview":"Hardness Testing","textChars":16,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":32,"text":"Heat treatment and rim condition review.","textPreview":"Heat treatment and rim condition review.","textChars":40,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":32,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/yd0z6103","slide":32,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":32,"text":"DM","textPreview":"DM","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":32,"text":"Dimension Inspection","textPreview":"Dimension Inspection","textChars":20,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":32,"text":"Critical interface and tolerance confirmation.","textPreview":"Critical interface and tolerance confirmation.","textChars":46,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":32,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/8v6psfil","slide":32,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":32,"text":"RP","textPreview":"RP","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":32,"text":"Reports","textPreview":"Reports","textChars":7,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":32,"text":"Document package according to buyer needs.","textPreview":"Document package according to buyer needs.","textChars":42,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/72x4nap4","slide":32,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/kjm1cfa9","slide":32,"name":"","alt":"Testing & Documentation","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/1is00a","slide":32,"text":""}
+{"kind":"slide","id":"sl/z8v5fp","slide":33,"title":"PACKAGING","textShapes":19}
+{"kind":"shape","id":"sh/5kb6xkf6","slide":33,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":33,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/cbulwval","slide":33,"text":"PACKAGING","textPreview":"PACKAGING","textChars":9,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":33,"text":"Heavy-duty Export Packing","textPreview":"Heavy-duty Export Packing","textChars":25,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/u54zidon","slide":33,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/nqxs72x4","slide":33,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":33,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":33,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/54zidony","slide":33,"text":"33","textPreview":"33","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/nyd0z610","slide":33,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":33,"text":"Railway wheels, wheelsets, axles and bogie parts require stable packing, anti-rust protection, labels and lifting considerations.","textPreview":"Railway wheels, wheelsets, axles and bogie parts require stable packing, anti-rust protection, labels and lifting considerations.","textChars":129,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":33,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/cvixczed","slide":33,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":33,"text":"FR","textPreview":"FR","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":33,"text":"Steel Frames","textPreview":"Steel Frames","textChars":12,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":33,"text":"For heavy wheels, axles and assemblies.","textPreview":"For heavy wheels, axles and assemblies.","textChars":39,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/c7u54zid","slide":33,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":33,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":33,"text":"CS","textPreview":"CS","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":33,"text":"Cases","textPreview":"Cases","textChars":5,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":33,"text":"Wooden cases for machined spare parts.","textPreview":"Wooden cases for machined spare parts.","textChars":38,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/obm58z25","slide":33,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":33,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":33,"text":"AR","textPreview":"AR","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":33,"text":"Anti-rust","textPreview":"Anti-rust","textChars":9,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":33,"text":"Protection for ocean freight and storage.","textPreview":"Protection for ocean freight and storage.","textChars":41,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":33,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":33,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":33,"text":"PH","textPreview":"PH","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":33,"text":"Packing Photos","textPreview":"Packing Photos","textChars":14,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":33,"text":"Visual records before shipment.","textPreview":"Visual records before shipment.","textChars":31,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/u54zidon","slide":33,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/nqxs72x4","slide":33,"name":"","alt":"Heavy-duty Export Packing","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/z8v5fp","slide":33,"text":""}
+{"kind":"slide","id":"sl/wo4sbv","slide":34,"title":"SHIPPING","textShapes":19}
+{"kind":"shape","id":"sh/nap4r65w","slide":34,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/cvixczed","slide":34,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":34,"text":"SHIPPING","textPreview":"SHIPPING","textChars":8,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":34,"text":"International Delivery Support","textPreview":"International Delivery Support","textChars":30,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":34,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/54zidony","slide":34,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":34,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/judg7ads","slide":34,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":34,"text":"34","textPreview":"34","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/54zidony","slide":34,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":34,"text":"Railwheel coordinates shipment discussion for sea freight, port delivery, package size, weight and document preparation.","textPreview":"Railwheel coordinates shipment discussion for sea freight, port delivery, package size, weight and document preparation.","textChars":120,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/nap4r65w","slide":34,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":34,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":34,"text":"SEA","textPreview":"SEA","textChars":3,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/cvixczed","slide":34,"text":"Sea Freight","textPreview":"Sea Freight","textChars":11,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":34,"text":"Container shipment for global buyers.","textPreview":"Container shipment for global buyers.","textChars":37,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":34,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":34,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":34,"text":"TRK","textPreview":"TRK","textChars":3,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":34,"text":"Truck Transfer","textPreview":"Truck Transfer","textChars":14,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":34,"text":"Domestic logistics and port delivery.","textPreview":"Domestic logistics and port delivery.","textChars":37,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/2t83itgf","slide":34,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/re1w7mp0","slide":34,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":34,"text":"DOC","textPreview":"DOC","textChars":3,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/9knih4by","slide":34,"text":"Documents","textPreview":"Documents","textChars":9,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":34,"text":"Invoice, packing list and shipment data.","textPreview":"Invoice, packing list and shipment data.","textChars":40,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":34,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/xs72x4na","slide":34,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":34,"text":"SCH","textPreview":"SCH","textChars":3,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":34,"text":"Schedule","textPreview":"Schedule","textChars":8,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":34,"text":"Delivery planning aligned with inspection.","textPreview":"Delivery planning aligned with inspection.","textChars":42,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/wval87ed","slide":34,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/d8v6psfi","slide":34,"name":"","alt":"International Delivery Support","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/wo4sbv","slide":34,"text":""}
+{"kind":"slide","id":"sl/jd0jrw","slide":35,"title":"PROJECT CASE","textShapes":19}
+{"kind":"shape","id":"sh/nih4byhg","slide":35,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":35,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":35,"text":"PROJECT CASE","textPreview":"PROJECT CASE","textChars":12,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":35,"text":"Mining Railway Wheel Supply","textPreview":"Mining Railway Wheel Supply","textChars":27,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":35,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/9cvixcze","slide":35,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":35,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":35,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":35,"text":"35","textPreview":"35","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/tovahoza","slide":35,"bbox":[654,126,500,500]}
+{"kind":"textbox","id":"sh/032lszqt","slide":35,"text":"Heavy-duty wheel and wheelset support for harsh industrial railway conditions.","textPreview":"Heavy-duty wheel and wheelset support for harsh industrial railway conditions.","textChars":78,"textLines":1,"bbox":[686,160,430,70]}
+{"kind":"textbox","id":"sh/bulwval8","slide":35,"text":"Country","textPreview":"Country","textChars":7,"textLines":1,"bbox":[686,266,120,18]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":35,"text":"Overseas mining market","textPreview":"Overseas mining market","textChars":22,"textLines":1,"bbox":[812,262,290,24]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":35,"text":"Products","textPreview":"Products","textChars":8,"textLines":1,"bbox":[686,313,120,18]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":35,"text":"Heavy haul railway wheels, axles and wheelsets","textPreview":"Heavy haul railway wheels, axles and wheelsets","textChars":46,"textLines":1,"bbox":[812,309,290,24]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":35,"text":"Industry","textPreview":"Industry","textChars":8,"textLines":1,"bbox":[686,360,120,18]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":35,"text":"Mining railway","textPreview":"Mining railway","textChars":14,"textLines":1,"bbox":[812,356,290,24]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":35,"text":"Application","textPreview":"Application","textChars":11,"textLines":1,"bbox":[686,407,120,18]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":35,"text":"Ore wagons and maintenance replacement","textPreview":"Ore wagons and maintenance replacement","textChars":38,"textLines":1,"bbox":[812,403,290,24]}
+{"kind":"textbox","id":"sh/obm58z25","slide":35,"text":"Delivery","textPreview":"Delivery","textChars":8,"textLines":1,"bbox":[686,454,120,18]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":35,"text":"Export packed by batch","textPreview":"Export packed by batch","textChars":22,"textLines":1,"bbox":[812,450,290,24]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":35,"text":"Result","textPreview":"Result","textChars":6,"textLines":1,"bbox":[686,501,120,18]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":35,"text":"Stronger procurement visibility and repeat inquiry basis","textPreview":"Stronger procurement visibility and repeat inquiry basis","textChars":56,"textLines":1,"bbox":[812,497,290,24]}
+{"kind":"image","id":"im/wra5gbq1","slide":35,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/tcj6tova","slide":35,"name":"","alt":"Mining Railway Wheel Supply project case image","bbox":[54,126,560,500]}
+{"kind":"notes","id":"nt/jd0jrw","slide":35,"text":""}
+{"kind":"slide","id":"sl/b1lmh2","slide":36,"title":"PROJECT CASE","textShapes":19}
+{"kind":"shape","id":"sh/yd0z6103","slide":36,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/90je9cvi","slide":36,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":36,"text":"PROJECT CASE","textPreview":"PROJECT CASE","textChars":12,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":36,"text":"Port Railway & Crane Wheel Project","textPreview":"Port Railway & Crane Wheel Project","textChars":34,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":36,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/g7adsji5","slide":36,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":36,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":36,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/obm58z25","slide":36,"text":"36","textPreview":"36","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/65wjudg7","slide":36,"bbox":[654,126,500,500]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":36,"text":"Railway wheel and crane wheel sourcing for port logistics and industrial transport.","textPreview":"Railway wheel and crane wheel sourcing for port logistics and industrial transport.","textChars":83,"textLines":1,"bbox":[686,160,430,70]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":36,"text":"Country","textPreview":"Country","textChars":7,"textLines":1,"bbox":[686,266,120,18]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":36,"text":"International port market","textPreview":"International port market","textChars":25,"textLines":1,"bbox":[812,262,290,24]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":36,"text":"Products","textPreview":"Products","textChars":8,"textLines":1,"bbox":[686,313,120,18]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":36,"text":"Port railway wheels, crane wheels and spare parts","textPreview":"Port railway wheels, crane wheels and spare parts","textChars":49,"textLines":1,"bbox":[812,309,290,24]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":36,"text":"Industry","textPreview":"Industry","textChars":8,"textLines":1,"bbox":[686,360,120,18]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":36,"text":"Port and logistics","textPreview":"Port and logistics","textChars":18,"textLines":1,"bbox":[812,356,290,24]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":36,"text":"Application","textPreview":"Application","textChars":11,"textLines":1,"bbox":[686,407,120,18]}
+{"kind":"textbox","id":"sh/cvixczed","slide":36,"text":"Container terminal rail movement","textPreview":"Container terminal rail movement","textChars":32,"textLines":1,"bbox":[812,403,290,24]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":36,"text":"Delivery","textPreview":"Delivery","textChars":8,"textLines":1,"bbox":[686,454,120,18]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":36,"text":"Container loading with packing photos","textPreview":"Container loading with packing photos","textChars":37,"textLines":1,"bbox":[812,450,290,24]}
+{"kind":"textbox","id":"sh/54zidony","slide":36,"text":"Result","textPreview":"Result","textChars":6,"textLines":1,"bbox":[686,501,120,18]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":36,"text":"Consolidated shipment of heavy rail components","textPreview":"Consolidated shipment of heavy rail components","textChars":46,"textLines":1,"bbox":[812,497,290,24]}
+{"kind":"image","id":"im/pwb2hwfy","slide":36,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/65wjudg7","slide":36,"name":"","alt":"Port Railway & Crane Wheel Project project case image","bbox":[54,126,560,500]}
+{"kind":"notes","id":"nt/b1lmh2","slide":36,"text":""}
+{"kind":"slide","id":"sl/oqwqv7","slide":37,"title":"PROJECT CASE","textShapes":19}
+{"kind":"shape","id":"sh/zed8v6ps","slide":37,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":37,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":37,"text":"PROJECT CASE","textPreview":"PROJECT CASE","textChars":12,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":37,"text":"Railway Wheelset Project Review","textPreview":"Railway Wheelset Project Review","textChars":31,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/obm58z25","slide":37,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":37,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":37,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":37,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/7y1kre1w","slide":37,"text":"37","textPreview":"37","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/p4r65wju","slide":37,"bbox":[654,126,500,500]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":37,"text":"Technical coordination before quotation improves drawing accuracy and delivery planning.","textPreview":"Technical coordination before quotation improves drawing accuracy and delivery planning.","textChars":88,"textLines":1,"bbox":[686,160,430,70]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":37,"text":"Country","textPreview":"Country","textChars":7,"textLines":1,"bbox":[686,266,120,18]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":37,"text":"Global OEM buyer","textPreview":"Global OEM buyer","textChars":16,"textLines":1,"bbox":[812,262,290,24]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":37,"text":"Products","textPreview":"Products","textChars":8,"textLines":1,"bbox":[686,313,120,18]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":37,"text":"Railway wheelsets, train wheels and axles","textPreview":"Railway wheelsets, train wheels and axles","textChars":41,"textLines":1,"bbox":[812,309,290,24]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":37,"text":"Industry","textPreview":"Industry","textChars":8,"textLines":1,"bbox":[686,360,120,18]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":37,"text":"Rolling stock manufacturing","textPreview":"Rolling stock manufacturing","textChars":27,"textLines":1,"bbox":[812,356,290,24]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":37,"text":"Application","textPreview":"Application","textChars":11,"textLines":1,"bbox":[686,407,120,18]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":37,"text":"OEM and maintenance supply","textPreview":"OEM and maintenance supply","textChars":26,"textLines":1,"bbox":[812,403,290,24]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":37,"text":"Delivery","textPreview":"Delivery","textChars":8,"textLines":1,"bbox":[686,454,120,18]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":37,"text":"Drawing-based production schedule","textPreview":"Drawing-based production schedule","textChars":33,"textLines":1,"bbox":[812,450,290,24]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":37,"text":"Result","textPreview":"Result","textChars":6,"textLines":1,"bbox":[686,501,120,18]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":37,"text":"Clear technical scope before purchase order","textPreview":"Clear technical scope before purchase order","textChars":43,"textLines":1,"bbox":[812,497,290,24]}
+{"kind":"image","id":"im/gfmlkjm1","slide":37,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/hwfyxobm","slide":37,"name":"","alt":"Railway Wheelset Project Review project case image","bbox":[54,126,560,500]}
+{"kind":"notes","id":"nt/oqwqv7","slide":37,"text":""}
+{"kind":"slide","id":"sl/8qh91u","slide":38,"title":"CUSTOMER VISITS","textShapes":19}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":38,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":38,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/9knih4by","slide":38,"text":"CUSTOMER VISITS","textPreview":"CUSTOMER VISITS","textChars":15,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":38,"text":"Factory Visit & Technical Meetings","textPreview":"Factory Visit & Technical Meetings","textChars":34,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":38,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/2t83itgf","slide":38,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":38,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":38,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":38,"text":"38","textPreview":"38","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":38,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":38,"text":"Customer visits help international buyers review production flow, quality expectations, packing plans and long-term railway component supply programs.","textPreview":"Customer visits help international buyers review production flow, quality expectations, packing plans and long-term railway component sup...","textChars":150,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":38,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":38,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":38,"text":"ME","textPreview":"ME","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":38,"text":"Engineering Discussion","textPreview":"Engineering Discussion","textChars":22,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":38,"text":"Review drawings, standards and applications.","textPreview":"Review drawings, standards and applications.","textChars":44,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/nih4byhg","slide":38,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/3m94fu18","slide":38,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":38,"text":"WK","textPreview":"WK","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":38,"text":"Workshop Visit","textPreview":"Workshop Visit","textChars":14,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":38,"text":"Confirm manufacturing and inspection flow.","textPreview":"Confirm manufacturing and inspection flow.","textChars":42,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":38,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/adsji5sn","slide":38,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":38,"text":"QA","textPreview":"QA","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/sji5snel","slide":38,"text":"Quality Review","textPreview":"Quality Review","textChars":14,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":38,"text":"Discuss test records and document scope.","textPreview":"Discuss test records and document scope.","textChars":40,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":38,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/gvy90je9","slide":38,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":38,"text":"SP","textPreview":"SP","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":38,"text":"Supply Planning","textPreview":"Supply Planning","textChars":15,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":38,"text":"Coordinate repeat order and delivery schedule.","textPreview":"Coordinate repeat order and delivery schedule.","textChars":46,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/f6dcbulw","slide":38,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/kre1w7mp","slide":38,"name":"","alt":"Factory Visit & Technical Meetings","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/8qh91u","slide":38,"text":""}
+{"kind":"slide","id":"sl/okmner","slide":39,"title":"CUSTOMER VISITS","textShapes":19}
+{"kind":"shape","id":"sh/g3ex0nux","slide":39,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/nih4byhg","slide":39,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":39,"text":"CUSTOMER VISITS","textPreview":"CUSTOMER VISITS","textChars":15,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":39,"text":"Application Review with Buyers","textPreview":"Application Review with Buyers","textChars":30,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":39,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":39,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":39,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":39,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":39,"text":"39","textPreview":"39","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/obm58z25","slide":39,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":39,"text":"Railwheel supports product selection for freight wagon, passenger coach, metro, locomotive, mining and industrial railway applications.","textPreview":"Railwheel supports product selection for freight wagon, passenger coach, metro, locomotive, mining and industrial railway applications.","textChars":135,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":39,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":39,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":39,"text":"FR","textPreview":"FR","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":39,"text":"Freight Applications","textPreview":"Freight Applications","textChars":20,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":39,"text":"Wheels, wheelsets and bogie components.","textPreview":"Wheels, wheelsets and bogie components.","textChars":39,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/z61032ls","slide":39,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":39,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":39,"text":"MT","textPreview":"MT","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/tovahoza","slide":39,"text":"Metro Applications","textPreview":"Metro Applications","textChars":18,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/032lszqt","slide":39,"text":"Passenger railway wheel and axle projects.","textPreview":"Passenger railway wheel and axle projects.","textChars":42,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/bulwval8","slide":39,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":39,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":39,"text":"IN","textPreview":"IN","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":39,"text":"Industrial Rail","textPreview":"Industrial Rail","textChars":15,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":39,"text":"Mining, port and steel plant rail systems.","textPreview":"Mining, port and steel plant rail systems.","textChars":42,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/idonyd0z","slide":39,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":39,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/lwval87e","slide":39,"text":"OEM","textPreview":"OEM","textChars":3,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":39,"text":"Custom Supply","textPreview":"Custom Supply","textChars":13,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":39,"text":"Drawing-based railway spare parts.","textPreview":"Drawing-based railway spare parts.","textChars":34,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/b6xkf6dc","slide":39,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/4fu18jqh","slide":39,"name":"","alt":"Application Review with Buyers","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/okmner","slide":39,"text":""}
+{"kind":"slide","id":"sl/jeksz6","slide":40,"title":"CERTIFICATES","textShapes":19}
+{"kind":"shape","id":"sh/36hcrmhk","slide":40,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":40,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":40,"text":"CERTIFICATES","textPreview":"CERTIFICATES","textChars":12,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/7u54zido","slide":40,"text":"Quality Certificates & Compliance","textPreview":"Quality Certificates & Compliance","textChars":33,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":40,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":40,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":40,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":40,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":40,"text":"40","textPreview":"40","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":40,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":40,"text":"Certificate pages support buyer approval, internal project review and export release for railway wheels and rolling stock components.","textPreview":"Certificate pages support buyer approval, internal project review and export release for railway wheels and rolling stock components.","textChars":133,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":40,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/65wjudg7","slide":40,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":40,"text":"MAT","textPreview":"MAT","textChars":3,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/obm58z25","slide":40,"text":"Material Certificates","textPreview":"Material Certificates","textChars":21,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":40,"text":"Heat number, grade and traceability details.","textPreview":"Heat number, grade and traceability details.","textChars":44,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":40,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/eloj2t83","slide":40,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":40,"text":"INS","textPreview":"INS","textChars":3,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":40,"text":"Inspection Reports","textPreview":"Inspection Reports","textChars":18,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":40,"text":"Dimensional, visual and test records.","textPreview":"Dimensional, visual and test records.","textChars":37,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/ed8bat47","slide":40,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/7u54zido","slide":40,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":40,"text":"STD","textPreview":"STD","textChars":3,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":40,"text":"Standard References","textPreview":"Standard References","textChars":19,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":40,"text":"UIC, AAR, EN and customer specifications.","textPreview":"UIC, AAR, EN and customer specifications.","textChars":41,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":40,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":40,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":40,"text":"EXP","textPreview":"EXP","textChars":3,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":40,"text":"Export Documents","textPreview":"Export Documents","textChars":16,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":40,"text":"Packing, labels and shipment records.","textPreview":"Packing, labels and shipment records.","textChars":37,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/4zidonyd","slide":40,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/h4byhgn2","slide":40,"name":"","alt":"Quality Certificates & Compliance","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/jeksz6","slide":40,"text":""}
+{"kind":"slide","id":"sl/x16cqn","slide":41,"title":"FAQ & SERVICE","textShapes":19}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":41,"bbox":[0,0,1280,92]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":41,"bbox":[0,91,1280,1]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":41,"text":"FAQ & SERVICE","textPreview":"FAQ & SERVICE","textChars":13,"textLines":1,"bbox":[280,28,390,16]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":41,"text":"Buyer FAQ and After-sales Support","textPreview":"Buyer FAQ and After-sales Support","textChars":33,"textLines":1,"bbox":[280,48,720,30]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":41,"text":"PREMIUM INDUSTRIAL CATALOG","textPreview":"PREMIUM INDUSTRIAL CATALOG","textChars":26,"textLines":1,"bbox":[970,40,235,20]}
+{"kind":"shape","id":"sh/loj2t83i","slide":41,"bbox":[0,684,1280,36]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":41,"text":"www.railwheel.com","textPreview":"www.railwheel.com","textChars":17,"textLines":1,"bbox":[54,695,240,16]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":41,"text":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textPreview":"Railway Wheels | Wheelsets | Axles | Bogies | Railway Spare Parts","textChars":65,"textLines":1,"bbox":[382,695,520,16]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":41,"text":"41","textPreview":"41","textChars":2,"textLines":1,"bbox":[1172,695,52,16]}
+{"kind":"shape","id":"sh/loj2t83i","slide":41,"bbox":[682,132,470,82]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":41,"text":"Railwheel keeps communication practical: send drawings, standards, quantity and destination to receive focused technical feedback and quotation.","textPreview":"Railwheel keeps communication practical: send drawings, standards, quantity and destination to receive focused technical feedback and quo...","textChars":144,"textLines":1,"bbox":[704,154,430,40]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":41,"bbox":[682,250,470,62]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":41,"bbox":[704,264,34,34]}
+{"kind":"textbox","id":"sh/lwval87e","slide":41,"text":"Q1","textPreview":"Q1","textChars":2,"textLines":1,"bbox":[704,274,34,12]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":41,"text":"Can you customize?","textPreview":"Can you customize?","textChars":18,"textLines":1,"bbox":[754,262,250,22]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":41,"text":"Yes, based on drawings, samples or standards.","textPreview":"Yes, based on drawings, samples or standards.","textChars":45,"textLines":1,"bbox":[754,286,340,18]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":41,"bbox":[682,334,470,62]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":41,"bbox":[704,348,34,34]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":41,"text":"Q2","textPreview":"Q2","textChars":2,"textLines":1,"bbox":[704,358,34,12]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":41,"text":"What products?","textPreview":"What products?","textChars":14,"textLines":1,"bbox":[754,346,250,22]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":41,"text":"Railway wheels, wheelsets, axles, bogies and spare parts.","textPreview":"Railway wheels, wheelsets, axles, bogies and spare parts.","textChars":57,"textLines":1,"bbox":[754,370,340,18]}
+{"kind":"shape","id":"sh/idonyd0z","slide":41,"bbox":[682,418,470,62]}
+{"kind":"shape","id":"sh/byhgn29g","slide":41,"bbox":[704,432,34,34]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":41,"text":"Q3","textPreview":"Q3","textChars":2,"textLines":1,"bbox":[704,442,34,12]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":41,"text":"What documents?","textPreview":"What documents?","textChars":15,"textLines":1,"bbox":[754,430,250,22]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":41,"text":"Material certificates and inspection records as required.","textPreview":"Material certificates and inspection records as required.","textChars":57,"textLines":1,"bbox":[754,454,340,18]}
+{"kind":"shape","id":"sh/bulwval8","slide":41,"bbox":[682,502,470,62]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":41,"bbox":[704,516,34,34]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":41,"text":"Q4","textPreview":"Q4","textChars":2,"textLines":1,"bbox":[704,526,34,12]}
+{"kind":"textbox","id":"sh/z61032ls","slide":41,"text":"How to quote?","textPreview":"How to quote?","textChars":13,"textLines":1,"bbox":[754,514,250,22]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":41,"text":"Send drawing, quantity, application and destination.","textPreview":"Send drawing, quantity, application and destination.","textChars":52,"textLines":1,"bbox":[754,538,340,18]}
+{"kind":"image","id":"im/4zidonyd","slide":41,"name":"","alt":"Railwheel logo","bbox":[48,24,176,50]}
+{"kind":"image","id":"im/h4byhgn2","slide":41,"name":"","alt":"Buyer FAQ and After-sales Support","bbox":[54,132,580,486]}
+{"kind":"notes","id":"nt/x16cqn","slide":41,"text":""}
+{"kind":"slide","id":"sl/fe91jz","slide":42,"title":"Build Your Next Railway Component Supply Program","textShapes":4}
+{"kind":"shape","id":"sh/cj6tovah","slide":42,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":42,"text":"Build Your Next Railway Component Supply Program","textPreview":"Build Your Next Railway Component Supply Program","textChars":48,"textLines":1,"bbox":[80,218,680,116]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":42,"text":"Send drawings, standards, quantities and destination to receive a focused quotation for railway wheels, train wheels, railroad wheels, wheelsets, axles, bogies and rolling stock components.","textPreview":"Send drawings, standards, quantities and destination to receive a focused quotation for railway wheels, train wheels, railroad wheels, wh...","textChars":189,"textLines":1,"bbox":[84,366,650,92]}
+{"kind":"shape","id":"sh/cvixczed","slide":42,"bbox":[82,520,470,96]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":42,"text":"Ma'anshan Railwheel Industrial Technology Co., Ltd.","textPreview":"Ma'anshan Railwheel Industrial Technology Co., Ltd.","textChars":51,"textLines":1,"bbox":[108,540,420,20]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":42,"text":"Website: www.railwheel.com\nEmail: amy@railwheel.com\nWhatsApp / WeChat: +86 17755518921","textPreview":"Website: www.railwheel.com | Email: amy@railwheel.com | WhatsApp / WeChat: +86 17755518921","textChars":86,"textLines":3,"bbox":[108,566,390,52]}
+{"kind":"image","id":"im/at47y1kr","slide":42,"name":"","alt":"Railway wheel factory background","bbox":[0,0,1280,720]}
+{"kind":"image","id":"im/szqtcj6t","slide":42,"name":"","alt":"Railwheel logo","bbox":[76,70,230,66]}
+{"kind":"notes","id":"nt/fe91jz","slide":42,"text":""}

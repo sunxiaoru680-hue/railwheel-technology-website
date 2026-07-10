@@ -1,4 +1,4 @@
-import { mkdir, rm, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, rm, writeFile, copyFile, cp } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -447,7 +447,7 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
     <div class="container nav">
       <a class="brand" href="/" aria-label="Railwheel home">${logo()}<span><strong>Railwheel</strong><span>${company}</span></span></a>
       <nav class="menu" aria-label="Main navigation">${nav.map(([label, href]) => `<a class="${active === label ? "active" : ""}" href="${href}">${label}</a>`).join("")}</nav>
-      <div class="nav-actions"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a></div>
+      <div class="nav-actions"><a class="btn btn-outline" href="/catalog/">Download Catalog</a><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a></div>
     </div>
   </header>
   <main>${body}</main>
@@ -464,7 +464,7 @@ function footer() {
       <div><div class="brand">${logo()}<span><strong>Railwheel</strong><span>Industrial Technology</span></span></div><p>Premium B2B supplier for railway wheels, wheelsets, bogies, axles, axle boxes, bearings and related railway components.</p></div>
       <div><strong>Products</strong>${products.slice(0,5).map((p) => `<a href="/products/${p.slug}/">${p.title}</a>`).join("")}</div>
       <div><strong>Company</strong>${nav.slice(1,7).map(([label, href]) => `<a href="${href}">${label}</a>`).join("")}</div>
-      <div><strong>Contact</strong><a href="tel:+8617755518921">${contact.phone}</a><a href="mailto:${contact.email}">${contact.email}</a><a href="https://wa.me/${contact.whatsapp}">WhatsApp Amy Sun</a></div>
+      <div><strong>Contact</strong><a href="/catalog/">Download Catalog</a><a href="tel:+8617755518921">${contact.phone}</a><a href="mailto:${contact.email}">${contact.email}</a><a href="https://wa.me/${contact.whatsapp}">WhatsApp Amy Sun</a></div>
     </div>
     <div class="copyright">Copyright ${new Date().getFullYear()} ${company}. All rights reserved.</div>
   </div>
@@ -502,7 +502,7 @@ function homeProductCards() {
 }
 
 function ctaBand() {
-  return `<section class="dark-band"><div class="container section-head"><div><span class="eyebrow">Global inquiry support</span><h2>Send drawings, standards and quantity for a focused railway component quotation.</h2></div><div class="cta-row"><a class="btn btn-light" href="/contact/#quote">Request a Quote</a><a class="btn btn-outline" style="background:transparent;color:white;border-color:rgba(255,255,255,.35)" href="mailto:${contact.email}">Contact Supplier</a></div></div></section>`;
+  return `<section class="dark-band"><div class="container section-head"><div><span class="eyebrow">Global inquiry support</span><h2>Send drawings, standards and quantity for a focused railway component quotation.</h2></div><div class="cta-row"><a class="btn btn-light" href="/catalog/">Download Catalog</a><a class="btn btn-light" href="/contact/#quote">Request a Quote</a><a class="btn btn-outline" style="background:transparent;color:white;border-color:rgba(255,255,255,.35)" href="mailto:${contact.email}">Contact Supplier</a></div></div></section>`;
 }
 
 function inquiryForm() {
@@ -900,6 +900,16 @@ addPage("downloads/index.html", layout({
   body: `${pageHero("Download Center", "Product catalogs, technical brochures, factory profile and datasheet request links for railway component buyers.", "Downloads")}<section><div class="container grid grid-3">${downloads.map((item) => `<article class="card"><h3>${item}</h3><p>Request the ${item.toLowerCase()} for railway wheel, train wheel, railroad wheel, wheelset, axle, bogie and spare parts projects.</p><a class="card-link" href="/contact/#quote">Request file</a></article>`).join("")}</div></section>${ctaBand()}`
 }));
 
+const catalogPages = Array.from({ length: 42 }, (_, index) => index + 1);
+addPage("catalog/index.html", layout({
+  title: "Railwheel Company Catalog PDF | Railway Wheels, Wheelsets, Axles and Bogies",
+  description: "View and download the Railwheel premium company catalog covering railway wheels, train wheels, railroad wheels, wheelsets, axles, bogies, factory capability, quality control and project cases.",
+  path: "/catalog/",
+  active: "Products",
+  schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Catalog", url: "/catalog/" }]), faqSchema()],
+  body: `${pageHero("Railwheel Company Catalog", "Premium international brochure for railway wheels, train wheels, railroad wheels, wheelsets, axles, bogies and rolling stock components.", "Catalog")}<section><div class="container catalog-download"><div><span class="eyebrow">Premium PDF and editable source</span><h2>Railway Wheels & Components Catalog</h2><p>Flip through the 42-page company catalog online, download the print-ready PDF, or access the editable PowerPoint source for sales presentation use.</p><div class="cta-row"><a class="btn btn-primary" href="/catalog/catalog.pdf" download>Download Catalog PDF</a><a class="btn btn-outline" href="/catalog/catalog.pptx" download>Download Editable PPTX</a><a class="btn btn-outline" href="/contact/#quote">Request a Quote</a></div></div><img src="/catalog/catalog-preview.png" alt="Railwheel premium railway wheels and components catalog preview" title="Railwheel Company Catalog Preview" loading="eager" decoding="async" width="840" height="712"></div></section><section class="catalog-viewer"><div class="container"><div class="section-head"><div><span class="eyebrow">Online flip catalog</span><h2>Browse the Railwheel brochure pages</h2></div><p>Each page is optimized for fast loading while the PDF and PPTX remain available for printing, email and customer presentations.</p></div><div class="catalog-pages">${catalogPages.map((page) => `<figure class="catalog-page"><img src="/catalog/pages/page-${String(page).padStart(2, "0")}.webp" alt="Railwheel company catalog page ${page} for railway wheels and components" title="Railwheel Catalog Page ${page}" loading="${page < 4 ? "eager" : "lazy"}" decoding="async" width="1280" height="720"><figcaption>Page ${page}</figcaption></figure>`).join("")}</div></div></section>${ctaBand()}`
+}));
+
 const countries = ["United States", "Germany", "Brazil", "South Africa", "India", "Australia", "Turkey", "Mexico", "Indonesia", "Saudi Arabia", "UAE", "Thailand", "Vietnam", "Chile", "Peru", "Poland", "Egypt", "Kazakhstan", "Malaysia", "Canada"];
 const caseProducts = ["railway wheel", "train wheelset", "railroad wheel", "railway axle", "freight bogie", "side frame", "bolster", "axle box", "railway casting", "railway spare parts"];
 const caseStudies = countries.map((country, index) => ({
@@ -1005,6 +1015,9 @@ async function writeAssets() {
   for (const product of homeProducts) {
     const file = path.join("home-products", product.image);
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
+  }
+  if (existsSync("public/catalog")) {
+    await cp("public/catalog", "dist/catalog", { recursive: true });
   }
 }
 
