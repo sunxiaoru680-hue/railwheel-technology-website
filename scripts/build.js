@@ -195,6 +195,10 @@ const targetPages = [
 ].map(([title, slug, keyword]) => ({ title, slug, keyword }));
 
 const blogs = [
+  ["International Railway Wheel Supplier: How Overseas Buyers Can Find Reliable Manufacturers Faster", "international-railway-wheel-supplier-guide", "international railway wheel supplier", "A practical SEO guide for overseas buyers searching railway wheel suppliers, train wheel manufacturers and railroad wheel exporters for faster technical inquiry preparation."],
+  ["2026 Railway Wheel Procurement Guide: Standards, Inspection and Supplier Selection", "2026-railway-wheel-procurement-guide", "railway wheel procurement guide", "Updated 2026 guide for buying railway wheels, train wheels and railroad wheels with standards, inspection records and supplier evaluation tips."],
+  ["Railway Wheel Heat Treatment: Why Hardness, Structure and Inspection Matter", "railway-wheel-heat-treatment-guide", "railway wheel heat treatment", "A concise buyer guide explaining heat treatment, hardness control, inspection records and sourcing checks for railway wheels and train wheels."],
+  ["Railroad Wheels vs Railway Wheels: Terminology, Standards and Buyer Checks", "railroad-wheels-vs-railway-wheels", "railroad wheels vs railway wheels", "A buyer guide comparing railroad wheels, railway wheels and train wheels for international sourcing, standards review and quotation preparation."],
   ["How to Choose a Railway Wheel Manufacturer for Global Projects", "choose-railway-wheel-manufacturer", "railway wheel manufacturer", "Buyer criteria for evaluating wheel production, standards, inspection records and export support."],
   ["Railway Wheelsets: Key Components, Inspection Points and Procurement Tips", "railway-wheelsets-procurement-guide", "railway wheelset supplier", "A practical overview of wheelset assemblies, axles, bearings, axle boxes and quality documentation."],
   ["What Makes a Reliable Train Wheel for Freight and Passenger Rolling Stock", "reliable-train-wheel-freight-passenger", "train wheel manufacturer", "Material, heat treatment, machining tolerance and testing factors that influence rail wheel life."],
@@ -605,13 +609,54 @@ for (const target of targetPages) {
   }));
 }
 
+function qualityControlMainPage() {
+  return `${pageHero("Quality Control", "Inspection-focused railway wheel and railway component supply for buyers who need confidence in materials, dimensions and documentation.", "Quality Control")}
+  <section class="industrial-page">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow">Railwheel quality system</span><h2>Inspection control for railway wheels, wheelsets, axles and bogie components.</h2></div><p>Railwheel organizes quality communication around drawings, standards, material traceability, process inspection and export release documents.</p></div>
+      <div class="metric-strip">
+        <div class="metric"><strong>01</strong><span>Drawing and standard review</span></div>
+        <div class="metric"><strong>02</strong><span>Material certificate check</span></div>
+        <div class="metric"><strong>03</strong><span>Dimensional and NDT inspection</span></div>
+        <div class="metric"><strong>04</strong><span>Final packing and document release</span></div>
+      </div>
+      <div class="grid grid-2 split-panel">
+        <article class="article"><h2>Quality documents buyers can request</h2><p>Railwheel supports quality documentation for forged railway wheel, steel railway wheel, train wheel, railroad wheel, railway wheelset, railway axle, railroad axle, railway axle box, railway bogie parts, railway forging and railway casting products.</p><p>Inspection scope is confirmed before production so the quotation, delivery time and acceptance documents stay aligned with the buyer's project requirements.</p><h3>Typical inspection records</h3><ul class="spec-list"><li>Material certificate and heat number traceability</li><li>Chemical analysis and mechanical property reports</li><li>Heat treatment, hardness and dimensional inspection records</li><li>Ultrasonic testing, magnetic particle testing or visual inspection when required</li><li>Packing photos, labels and final shipment documentation</li></ul></article>
+        <div class="process-list">
+          ${["Inquiry review", "Drawing confirmation", "Material control", "Process inspection", "Final release", "Export packing"].map((step, index) => `<div><b>${index + 1}</b><span>${step}</span></div>`).join("")}
+        </div>
+      </div>
+      <div class="grid grid-4">${["Material Traceability","Heat Treatment Review","Dimensional Inspection","Final Documentation"].map((x) => `<div class="card"><div class="icon">QC</div><h3>${x}</h3><p>Railwheel coordinates practical quality checks and records according to buyer requirements and component type.</p></div>`).join("")}</div>
+      <div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/manufacturing-capability/">Manufacturing Capabilities</a><a href="/contact/">Send Inquiry</a></div>
+    </div>
+  </section>${faqSection("railway wheel quality control")}${ctaBand()}`;
+}
+
+function manufacturingCapabilityMainPage() {
+  return `${pageHero("Manufacturing Capability", "Capability support for forged, cast, machined and assembled railway components.", "Manufacturing Capability")}
+  <section class="industrial-page">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow">Factory capability</span><h2>From railway component drawings to export-ready supply.</h2></div><p>Railwheel coordinates manufacturing and sourcing channels for railway wheel, train wheel, railroad wheel, railway axle, side frame, bolster, axle box and assembled railway wheelset projects.</p></div>
+      <div class="grid grid-2 split-panel">
+        <div class="visual-panel" role="img" aria-label="Railway wheel manufacturing capability illustration"></div>
+        <article class="article"><h2>Manufacturing categories</h2><p>Capability information should help buyers judge whether a supplier can support the required product route, not just display marketing claims. Railwheel focuses on practical quotation inputs: drawings, standards, material grades, quantity, inspection records, packing and destination.</p><ul class="spec-list"><li>Forged railway wheel and steel railway wheel supply support</li><li>OEM railway wheel and custom railway wheel manufacturing inquiries</li><li>Railway forging, railway casting and machining for bogie parts</li><li>Wheelset, axle, axle box and bearing housing project coordination</li><li>Packing, labeling and shipment communication for worldwide export</li></ul></article>
+      </div>
+      <div class="process-list process-list-horizontal">
+        ${["Technical inquiry", "Drawing review", "Material planning", "Forging or casting", "Machining", "Inspection", "Packing", "Shipping"].map((step, index) => `<div><b>${index + 1}</b><span>${step}</span></div>`).join("")}
+      </div>
+      <div class="grid grid-4">${["Forging", "Casting", "CNC Machining", "Assembly"].map((x) => `<article class="card"><div class="icon">MC</div><h3>${x}</h3><p>Capability support for railway wheels, axles, bogie parts and related railway spare parts based on drawings and project standards.</p></article>`).join("")}</div>
+      <div class="seo-link-row"><a href="/train-wheel-factory/">Train Wheel Factory</a><a href="/chinese-railway-wheel-factory/">Chinese Railway Wheel Factory</a><a href="/heavy-duty-railway-wheel/">Heavy Duty Railway Wheel</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a></div>
+    </div>
+  </section>${faqSection("railway wheel manufacturing capability")}${ctaBand()}`;
+}
+
 addPage("quality-control/index.html", layout({
   title: "Railway Wheel Quality Control | UIC AAR EN Train Wheel & Axle Inspection",
   description: "Railwheel quality control supports railway wheel, train wheel, railroad wheel, wheelset, axle, bogie, axle box and spare parts with inspection documentation.",
   path: "/quality-control/",
   active: "Quality",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Quality Control", url: "/quality-control/" }]), faqSchema()],
-  body: `${pageHero("Quality Control", "Inspection-focused railway wheel and railway component supply for buyers who need confidence in materials, dimensions and documentation.", "Quality Control")}<section><div class="container"><div class="article"><h2>Railway wheel inspection and documentation support</h2><p>Railwheel supports quality documentation for forged railway wheel, steel railway wheel, train wheel, railroad wheel, railway wheelset, railway axle, railroad axle, railway axle box, railway bogie parts, railway forging and railway casting products. Buyers can discuss UIC railway wheel, AAR railway wheel, EN railway wheel and project-specific inspection requirements.</p><h3>Common inspection records</h3><p>Depending on the component and project, records may include material certificates, heat treatment review, dimensional inspection, hardness checks, ultrasonic testing, magnetic particle inspection, packing photos and final shipment documentation.</p><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/manufacturing-capability/">Manufacturing Capabilities</a><a href="/contact/">Send Inquiry</a></div></div><div class="grid grid-4">${["Material Traceability","Heat Treatment Review","Dimensional Inspection","Final Documentation"].map((x) => `<div class="card"><div class="icon">QC</div><h3>${x}</h3><p>Railwheel coordinates practical quality checks and records according to buyer requirements and component type.</p></div>`).join("")}</div></div></section>${faqSection("railway wheel quality control")}${ctaBand()}`
+  body: qualityControlMainPage()
 }));
 
 addPage("manufacturing-capability/index.html", layout({
@@ -620,7 +665,7 @@ addPage("manufacturing-capability/index.html", layout({
   path: "/manufacturing-capability/",
   active: "Capabilities",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Manufacturing Capability", url: "/manufacturing-capability/" }]), faqSchema()],
-  body: `${pageHero("Manufacturing Capability", "Capability support for forged, cast, machined and assembled railway components.", "Manufacturing Capability")}<section><div class="container grid grid-2"><div class="visual-panel" role="img" aria-label="Railway wheel manufacturing capability illustration"></div><div><h2>From component drawings to export-ready supply</h2><p class="muted">Railwheel coordinates manufacturing and sourcing channels for railway wheel, train wheel, railroad wheel, railway axle, railroad axle, railway side frame, railway bolster, railway axle box and assembled railway wheelset projects.</p><h3>Manufacturing categories</h3><ul class="spec-list"><li>Forged railway wheel and steel railway wheel supply support</li><li>OEM railway wheel and custom railway wheel manufacturing inquiries</li><li>Railway forging, railway casting and machining for railway bogie parts</li><li>Packing, labeling and shipment communication for worldwide export</li></ul><div class="seo-link-row"><a href="/train-wheel-factory/">Train Wheel Factory</a><a href="/chinese-railway-wheel-factory/">Chinese Railway Wheel Factory</a><a href="/heavy-duty-railway-wheel/">Heavy Duty Railway Wheel</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a></div></div></div></section>${faqSection("railway wheel manufacturing capability")}${ctaBand()}`
+  body: manufacturingCapabilityMainPage()
 }));
 
 addPage("applications/index.html", layout({
