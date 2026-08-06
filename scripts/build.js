@@ -442,17 +442,17 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   <meta name="twitter:image" content="${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg">
   <link rel="icon" href="/assets/railwheel-logo-new.png" type="image/png">
   ${preloadHero ? `<link rel="preload" href="/assets/railway-wheel-manufacturing.webp" as="image" type="image/webp" fetchpriority="high">` : ""}
-  <link rel="preload" href="/styles.css" as="style">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" href="/styles.css?v=20260806-header" as="style">
+  <link rel="stylesheet" href="/styles.css?v=20260806-header">
   ${allSchemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join("\n  ")}
 </head>
 <body>
   <div class="topbar"><div class="container"><span>Railway wheels, wheelsets, bogies and railway components</span><span>WhatsApp: ${contact.phone} &nbsp;|&nbsp; WeChat: ${contact.phone} &nbsp;|&nbsp; Email: ${contact.email}</span></div></div>
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="/" aria-label="Railwheel home">${logo()}<span><strong>Railwheel</strong><span>${company}</span></span></a>
+      <a class="brand" href="/" aria-label="Railwheel home">${logo()}<span class="brand-company">${company}</span></a>
       <nav class="menu" aria-label="Main navigation">${nav.map(([label, href]) => `<a class="${active === label ? "active" : ""}" href="${href}">${label}</a>`).join("")}</nav>
-      <div class="nav-actions"><a class="btn btn-outline" href="/catalog/">Download Catalog</a><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a></div>
+      <div class="nav-actions"><a class="nav-link-action" href="/catalog/">Catalog</a><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a></div>
     </div>
   </header>
   <main>${body}</main>
