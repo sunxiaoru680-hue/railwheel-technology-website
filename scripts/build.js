@@ -195,6 +195,7 @@ const targetPages = [
 ].map(([title, slug, keyword]) => ({ title, slug, keyword }));
 
 const blogs = [
+  ["Railway Wheel Exporter China: What Global Buyers Should Confirm Before Ordering", "railway-wheel-exporter-china-buyer-checklist", "railway wheel exporter China", "A practical buyer checklist for sourcing railway wheels, train wheels, railroad wheels and wheelsets from a China railway wheel exporter."],
   ["International Railway Wheel Supplier: How Overseas Buyers Can Find Reliable Manufacturers Faster", "international-railway-wheel-supplier-guide", "international railway wheel supplier", "A practical SEO guide for overseas buyers searching railway wheel suppliers, train wheel manufacturers and railroad wheel exporters for faster technical inquiry preparation."],
   ["2026 Railway Wheel Procurement Guide: Standards, Inspection and Supplier Selection", "2026-railway-wheel-procurement-guide", "railway wheel procurement guide", "Updated 2026 guide for buying railway wheels, train wheels and railroad wheels with standards, inspection records and supplier evaluation tips."],
   ["Railway Wheel Heat Treatment: Why Hardness, Structure and Inspection Matter", "railway-wheel-heat-treatment-guide", "railway wheel heat treatment", "A concise buyer guide explaining heat treatment, hardness control, inspection records and sourcing checks for railway wheels and train wheels."],
