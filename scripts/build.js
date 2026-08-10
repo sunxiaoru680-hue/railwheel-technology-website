@@ -195,6 +195,7 @@ const targetPages = [
 ].map(([title, slug, keyword]) => ({ title, slug, keyword }));
 
 const blogs = [
+  ["Railway Wheelset Supplier: Key Checks for Wheels, Axles, Bearings and Assembly", "railway-wheelset-supplier-assembly-checklist", "railway wheelset supplier", "A buyer checklist for evaluating railway wheelset suppliers, including wheels, axles, bearings, axle boxes, assembly accuracy and inspection documents."],
   ["Railway Wheel Exporter China: What Global Buyers Should Confirm Before Ordering", "railway-wheel-exporter-china-buyer-checklist", "railway wheel exporter China", "A practical buyer checklist for sourcing railway wheels, train wheels, railroad wheels and wheelsets from a China railway wheel exporter."],
   ["International Railway Wheel Supplier: How Overseas Buyers Can Find Reliable Manufacturers Faster", "international-railway-wheel-supplier-guide", "international railway wheel supplier", "A practical SEO guide for overseas buyers searching railway wheel suppliers, train wheel manufacturers and railroad wheel exporters for faster technical inquiry preparation."],
   ["2026 Railway Wheel Procurement Guide: Standards, Inspection and Supplier Selection", "2026-railway-wheel-procurement-guide", "railway wheel procurement guide", "Updated 2026 guide for buying railway wheels, train wheels and railroad wheels with standards, inspection records and supplier evaluation tips."],
