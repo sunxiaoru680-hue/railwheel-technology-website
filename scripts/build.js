@@ -2,7 +2,7 @@ import { mkdir, rm, writeFile, copyFile, cp } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
-const siteUrl = "https://www.railwheel.com";
+const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
 const contact = {
   name: "Amy Sun",
