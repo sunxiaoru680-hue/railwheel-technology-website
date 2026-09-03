@@ -165,66 +165,71 @@ const products = [
     title: "Railway Brake Shoe",
     slug: "brake-shoes",
     keyword: "railway brake shoe supplier",
-    image: "railway-components.webp",
+    image: "railway-brake-shoe.webp",
     aliases: "train brake shoe, locomotive brake shoe, freight wagon brake shoe, rail brake block",
     metaTitle: "Railway Brake Shoe Supplier | Train & Freight Wagon Brake Shoes",
     description: "Railway brake shoe sourcing for locomotives, freight wagons, passenger vehicles and maintenance programs based on approved drawings and braking-system requirements.",
     metaDescription: "Source railway brake shoes and train brake blocks for locomotive, freight wagon and passenger rolling-stock maintenance based on drawings and specifications.",
     material: "Project-specified cast iron, composite or other approved friction material",
     applications: "Locomotive, freight wagon and passenger rolling-stock braking systems",
-    buyerInputs: "controlled drawing and part number, vehicle and brake rigging, friction material specification, dimensions, quantity, inspection requirements and destination"
+    buyerInputs: "controlled drawing and part number, vehicle and brake rigging, friction material specification, dimensions, quantity, inspection requirements and destination",
+    imageCredit: { author: "100yen", source: "https://commons.wikimedia.org/wiki/File:Train_brake_shoe.JPG", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/" }
   },
   {
     title: "Railway Brake Hose",
     slug: "brake-hoses",
     keyword: "railway brake hose supplier",
-    image: "railway-components.webp",
+    image: "railway-brake-hose.webp",
     aliases: "train air brake hose, railway air hose, locomotive brake hose, freight car brake hose assembly",
     metaTitle: "Railway Brake Hose Supplier | Train Air Brake Hose Assembly",
     description: "Railway air brake hose and hose assembly sourcing for rolling-stock pneumatic brake connections, supplied against approved interface, pressure and test requirements.",
     metaDescription: "Buy railway brake hose and train air brake hose assemblies for locomotives, freight cars and passenger vehicles to approved drawings and test requirements.",
     material: "Project-specified reinforced elastomer hose with approved end fittings",
     applications: "Pneumatic brake connections on locomotives, freight cars and passenger vehicles",
-    buyerInputs: "controlled drawing or hose standard, nominal bore, length, end fittings and threads, working conditions, test and marking requirements, quantity and destination"
+    buyerInputs: "controlled drawing or hose standard, nominal bore, length, end fittings and threads, working conditions, test and marking requirements, quantity and destination",
+    imageCredit: { author: "Toshinori Baba", source: "https://commons.wikimedia.org/wiki/File:Auto_brake.JPG", license: "Public domain", licenseUrl: "https://commons.wikimedia.org/wiki/Commons:Public_domain" }
   },
   {
     title: "Railway Coupler",
     slug: "couplers",
     keyword: "railway coupler supplier",
-    image: "railway-components.webp",
+    image: "railway-coupler.webp",
     aliases: "train coupler, railroad coupler, freight car coupler, locomotive coupler, draft gear components",
     metaTitle: "Railway Coupler Supplier | Train & Freight Car Coupler Parts",
     description: "Railway coupler and related component sourcing for freight, locomotive and passenger rolling stock based on the approved coupler system, drawings and acceptance plan.",
     metaDescription: "Source railway couplers, train couplers and freight car coupler parts for rolling-stock manufacturing and maintenance against approved drawings and standards.",
     material: "Project-specified cast or forged steel and approved coupler-system materials",
     applications: "Freight cars, locomotives and passenger rolling-stock coupling systems",
-    buyerInputs: "coupler system and model, controlled drawing and part number, vehicle application, load and interface requirements, inspection plan, quantity and destination"
+    buyerInputs: "coupler system and model, controlled drawing and part number, vehicle application, load and interface requirements, inspection plan, quantity and destination",
+    imageCredit: { author: "Daniel Schwen", source: "https://commons.wikimedia.org/wiki/File:Train_coupling.jpg", license: "CC BY-SA", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" }
   },
   {
     title: "Railway Carbon Brush",
     slug: "carbon-brushes",
     keyword: "railway carbon brush supplier",
-    image: "railway-components.webp",
+    image: "railway-carbon-brush.webp",
     aliases: "train carbon brush, traction motor carbon brush, locomotive carbon brush, railway motor brush",
     metaTitle: "Railway Carbon Brush Supplier | Traction Motor Carbon Brushes",
     description: "Railway carbon brush sourcing for traction motors and auxiliary electrical equipment, matched to the approved brush grade, holder interface and operating requirements.",
     metaDescription: "Source railway carbon brushes and traction motor brushes for locomotives and train electrical equipment using approved grades, dimensions and drawings.",
     material: "Project-specified carbon, electrographite or metal-graphite grade",
     applications: "Traction motors and approved auxiliary electrical equipment",
-    buyerInputs: "equipment and motor model, approved brush grade, drawing and dimensions, lead and terminal details, quantity, inspection requirements and destination"
+    buyerInputs: "equipment and motor model, approved brush grade, drawing and dimensions, lead and terminal details, quantity, inspection requirements and destination",
+    imageCredit: { author: "Christian Kral", source: "https://commons.wikimedia.org/wiki/File:Commutator_and_brushes_DC_motor.jpg", license: "CC BY 4.0", licenseUrl: "https://creativecommons.org/licenses/by/4.0/" }
   },
   {
     title: "Railway Gangway",
     slug: "gangways",
     keyword: "railway gangway supplier",
-    image: "railway-components.webp",
+    image: "railway-gangway.webp",
     aliases: "train gangway, railway inter-car gangway, passenger coach gangway, metro gangway bellows",
     metaTitle: "Railway Gangway Supplier | Train Inter-car Gangway Systems",
     description: "Railway gangway and inter-car connection sourcing for passenger coaches and metro vehicles based on the approved vehicle envelope, interface and safety requirements.",
     metaDescription: "Source railway gangways, train inter-car gangway systems and gangway bellows for passenger coaches and metro vehicles to approved project drawings.",
     material: "Project-specified bellows, frame, bridge plate, seals and connection components",
     applications: "Passenger coach, metro and other approved inter-car connections",
-    buyerInputs: "vehicle type, controlled general arrangement and interface drawings, car-end movement envelope, fire and environmental requirements, quantity and destination"
+    buyerInputs: "vehicle type, controlled general arrangement and interface drawings, car-end movement envelope, fire and environmental requirements, quantity and destination",
+    imageCredit: { author: "San Mateo County Transit District", source: "https://commons.wikimedia.org/wiki/File:Caltrain_EMU_interior_gangway.jpg", license: "Public domain", licenseUrl: "https://commons.wikimedia.org/wiki/Commons:Public_domain" }
   }
 ];
 
@@ -701,6 +706,11 @@ function productCards(items = products) {
   return `<div class="grid grid-3">${items.map((p) => `<article class="card product-list-card"><img src="/assets/home-products/${p.image}" alt="${p.title} supplier for ${p.aliases}" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>`;
 }
 
+function imageCredit(product) {
+  if (!product.imageCredit) return "";
+  return `<div class="container"><p class="muted"><small>Illustrative image: <a href="${product.imageCredit.source}">${esc(product.imageCredit.author)}</a>, <a href="${product.imageCredit.licenseUrl}">${esc(product.imageCredit.license)}</a>; cropped and resized for web display.</small></p></div>`;
+}
+
 const homeProducts = [
   ["Railway Wheel", "railway-wheels", "railway-wheel.webp"],
   ["Railway Wheelset", "wheelsets", "railway-wheelset.webp"],
@@ -710,11 +720,11 @@ const homeProducts = [
   ["Railway Axle", "axles", "railway-axle.webp"],
   ["Railway Axle Box", "axle-boxes", "railway-axle-box.webp"],
   ["Railway Spare Parts", "other-railway-components", "railway-components.webp"],
-  ["Railway Brake Shoe", "brake-shoes", "railway-components.webp"],
-  ["Railway Brake Hose", "brake-hoses", "railway-components.webp"],
-  ["Railway Coupler", "couplers", "railway-components.webp"],
-  ["Railway Carbon Brush", "carbon-brushes", "railway-components.webp"],
-  ["Railway Gangway", "gangways", "railway-components.webp"]
+  ["Railway Brake Shoe", "brake-shoes", "railway-brake-shoe.webp"],
+  ["Railway Brake Hose", "brake-hoses", "railway-brake-hose.webp"],
+  ["Railway Coupler", "couplers", "railway-coupler.webp"],
+  ["Railway Carbon Brush", "carbon-brushes", "railway-carbon-brush.webp"],
+  ["Railway Gangway", "gangways", "railway-gangway.webp"]
 ].map(([title, slug, image]) => ({ title, slug, image }));
 
 function homeProductCards() {
@@ -809,7 +819,7 @@ for (const product of products) {
     path: `/products/${product.slug}/`,
     active: "Products",
     schemas: [productSchema(product), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url: `/products/${product.slug}/` }]), faqSchema()],
-    body: `${pageHero(product.title, product.description, product.title)}
+    body: `${pageHero(product.title, product.description, product.title)}${imageCredit(product)}
     <section><div class="container grid grid-2"><article class="article"><img src="/assets/home-products/${product.image}" alt="${product.title} sourcing support for ${product.aliases}" title="${product.title}" loading="eager" decoding="async" width="423" height="464"><span class="eyebrow">${product.keyword}</span><h2>${product.title} for international rail projects</h2><p>${product.description} Railwheel supports international rolling-stock manufacturers, operators and maintenance buyers with technical inquiry review and export communication.</p><p>${isExtendedProduct ? `Supply must be confirmed against the approved vehicle configuration, controlled drawings and project requirements. Product availability, compliance, testing and delivery scope are stated only in the project quotation and contract.` : `Our team supports OEM railway wheel, custom railway wheel, heavy duty railway wheel, railway forging, railway casting and railway spare parts manufacturer inquiries with drawing review, material confirmation, export packing and inspection documentation.`}</p><h2>Applications and technical confirmation</h2><p>${isExtendedProduct ? `Typical applications include ${product.applications}. Buyers should identify the exact system, interface, operating conditions and acceptance requirements rather than selecting a replacement from appearance alone.` : `Typical applications include freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways. For wheel projects, buyers can discuss forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel requirements.`}</p><h3>Common buyer keywords</h3><p>This page supports procurement searches for ${product.aliases}, ${product.keyword}, railway components China and railway spare parts supplier inquiries.</p><h2>Typical inquiry information</h2>${isExtendedProduct ? `<p>Please send ${product.buyerInputs}. Railwheel will identify open technical and commercial assumptions before quotation.</p><ul><li>Controlled drawing, part number, revision and applicable standard</li><li>Vehicle, system interface and operating requirements</li><li>Quantity, inspection documents, packing and destination</li><li>Required delivery window and quotation terms</li></ul>` : `<ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro, mining railway or industrial railway</li></ul>`}<h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality documentation and export requirements. No page statement replaces project-specific technical approval.</p>${relatedProducts(product.slug)}</article>${inquiryForm()}</div></section>${faqSection(product.title)}${ctaBand()}`
   }));
 }
