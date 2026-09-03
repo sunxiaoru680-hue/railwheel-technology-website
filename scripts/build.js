@@ -160,6 +160,71 @@ const products = [
     metaTitle: "Railway Spare Parts Manufacturer | Railway Forging & Casting China",
     description: "Railway spare parts, railway forging, railway casting and railway components for OEM, custom manufacturing and replacement programs.",
     metaDescription: "Railwheel supplies railway spare parts, railway forging, railway casting and custom railway components for global operators and manufacturers."
+  },
+  {
+    title: "Railway Brake Shoe",
+    slug: "brake-shoes",
+    keyword: "railway brake shoe supplier",
+    image: "railway-components.webp",
+    aliases: "train brake shoe, locomotive brake shoe, freight wagon brake shoe, rail brake block",
+    metaTitle: "Railway Brake Shoe Supplier | Train & Freight Wagon Brake Shoes",
+    description: "Railway brake shoe sourcing for locomotives, freight wagons, passenger vehicles and maintenance programs based on approved drawings and braking-system requirements.",
+    metaDescription: "Source railway brake shoes and train brake blocks for locomotive, freight wagon and passenger rolling-stock maintenance based on drawings and specifications.",
+    material: "Project-specified cast iron, composite or other approved friction material",
+    applications: "Locomotive, freight wagon and passenger rolling-stock braking systems",
+    buyerInputs: "controlled drawing and part number, vehicle and brake rigging, friction material specification, dimensions, quantity, inspection requirements and destination"
+  },
+  {
+    title: "Railway Brake Hose",
+    slug: "brake-hoses",
+    keyword: "railway brake hose supplier",
+    image: "railway-components.webp",
+    aliases: "train air brake hose, railway air hose, locomotive brake hose, freight car brake hose assembly",
+    metaTitle: "Railway Brake Hose Supplier | Train Air Brake Hose Assembly",
+    description: "Railway air brake hose and hose assembly sourcing for rolling-stock pneumatic brake connections, supplied against approved interface, pressure and test requirements.",
+    metaDescription: "Buy railway brake hose and train air brake hose assemblies for locomotives, freight cars and passenger vehicles to approved drawings and test requirements.",
+    material: "Project-specified reinforced elastomer hose with approved end fittings",
+    applications: "Pneumatic brake connections on locomotives, freight cars and passenger vehicles",
+    buyerInputs: "controlled drawing or hose standard, nominal bore, length, end fittings and threads, working conditions, test and marking requirements, quantity and destination"
+  },
+  {
+    title: "Railway Coupler",
+    slug: "couplers",
+    keyword: "railway coupler supplier",
+    image: "railway-components.webp",
+    aliases: "train coupler, railroad coupler, freight car coupler, locomotive coupler, draft gear components",
+    metaTitle: "Railway Coupler Supplier | Train & Freight Car Coupler Parts",
+    description: "Railway coupler and related component sourcing for freight, locomotive and passenger rolling stock based on the approved coupler system, drawings and acceptance plan.",
+    metaDescription: "Source railway couplers, train couplers and freight car coupler parts for rolling-stock manufacturing and maintenance against approved drawings and standards.",
+    material: "Project-specified cast or forged steel and approved coupler-system materials",
+    applications: "Freight cars, locomotives and passenger rolling-stock coupling systems",
+    buyerInputs: "coupler system and model, controlled drawing and part number, vehicle application, load and interface requirements, inspection plan, quantity and destination"
+  },
+  {
+    title: "Railway Carbon Brush",
+    slug: "carbon-brushes",
+    keyword: "railway carbon brush supplier",
+    image: "railway-components.webp",
+    aliases: "train carbon brush, traction motor carbon brush, locomotive carbon brush, railway motor brush",
+    metaTitle: "Railway Carbon Brush Supplier | Traction Motor Carbon Brushes",
+    description: "Railway carbon brush sourcing for traction motors and auxiliary electrical equipment, matched to the approved brush grade, holder interface and operating requirements.",
+    metaDescription: "Source railway carbon brushes and traction motor brushes for locomotives and train electrical equipment using approved grades, dimensions and drawings.",
+    material: "Project-specified carbon, electrographite or metal-graphite grade",
+    applications: "Traction motors and approved auxiliary electrical equipment",
+    buyerInputs: "equipment and motor model, approved brush grade, drawing and dimensions, lead and terminal details, quantity, inspection requirements and destination"
+  },
+  {
+    title: "Railway Gangway",
+    slug: "gangways",
+    keyword: "railway gangway supplier",
+    image: "railway-components.webp",
+    aliases: "train gangway, railway inter-car gangway, passenger coach gangway, metro gangway bellows",
+    metaTitle: "Railway Gangway Supplier | Train Inter-car Gangway Systems",
+    description: "Railway gangway and inter-car connection sourcing for passenger coaches and metro vehicles based on the approved vehicle envelope, interface and safety requirements.",
+    metaDescription: "Source railway gangways, train inter-car gangway systems and gangway bellows for passenger coaches and metro vehicles to approved project drawings.",
+    material: "Project-specified bellows, frame, bridge plate, seals and connection components",
+    applications: "Passenger coach, metro and other approved inter-car connections",
+    buyerInputs: "vehicle type, controlled general arrangement and interface drawings, car-end movement envelope, fire and environmental requirements, quantity and destination"
   }
 ];
 
@@ -289,7 +354,7 @@ function manufacturerSchema() {
       "addressRegion": "Anhui Province",
       "addressCountry": "CN"
     },
-    "makesOffer": products.map((product) => ({
+    "makesOffer": products.slice(0, 10).map((product) => ({
       "@type": "Offer",
       "itemOffered": {
         "@type": "Product",
@@ -347,7 +412,7 @@ function productSchema(product) {
     "manufacturer": { "@type": "Organization", "name": company },
     "category": "Railway components",
     "url": `${siteUrl}/products/${product.slug}/`,
-    "material": "Forged steel, cast steel or project-specified railway materials",
+    "material": product.material || "Forged steel, cast steel or project-specified railway materials",
     "areaServed": "Worldwide",
     "offers": {
       "@type": "Offer",
@@ -359,7 +424,7 @@ function productSchema(product) {
     },
     "additionalProperty": [
       { "@type": "PropertyValue", "name": "Primary keyword", "value": product.keyword },
-      { "@type": "PropertyValue", "name": "Applications", "value": "Freight wagons, passenger coaches, metro, locomotives, mining railways and industrial railways" },
+      { "@type": "PropertyValue", "name": "Applications", "value": product.applications || "Freight wagons, passenger coaches, metro, locomotives, mining railways and industrial railways" },
       { "@type": "PropertyValue", "name": "Supply model", "value": "OEM, custom manufacturing and export supply" }
     ]
   };
@@ -559,7 +624,7 @@ function faqSection(topic = "railway wheels and components") {
 }
 
 function internalLinkHub() {
-  return `<section class="link-hub"><div class="container"><span class="eyebrow">Railway product links</span><h2>Explore related railway wheel and component solutions.</h2><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/railway-wheel-applications/">Railway Wheel Applications</a><a href="/train-wheel-manufacturer/">Train Wheel Manufacturer</a><a href="/railroad-wheel-manufacturer/">Railroad Wheel Manufacturer</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/railroad-axle-supplier/">Railroad Axle</a><a href="/products/bogies-truck-assemblies/">Railway Bogie</a><a href="/freight-bogie-supplier/">Freight Bogie</a><a href="/passenger-bogie-supplier/">Passenger Bogie</a><a href="/products/side-frames/">Side Frame</a><a href="/products/bolsters/">Bolster</a><a href="/products/axle-boxes/">Axle Box</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a><a href="/products/other-railway-components/">Railway Spare Parts</a></div></div></section>`;
+  return `<section class="link-hub"><div class="container"><span class="eyebrow">Railway product links</span><h2>Explore related railway wheel and component solutions.</h2><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/railway-wheel-applications/">Railway Wheel Applications</a><a href="/train-wheel-manufacturer/">Train Wheel Manufacturer</a><a href="/railroad-wheel-manufacturer/">Railroad Wheel Manufacturer</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/railroad-axle-supplier/">Railroad Axle</a><a href="/products/bogies-truck-assemblies/">Railway Bogie</a><a href="/freight-bogie-supplier/">Freight Bogie</a><a href="/passenger-bogie-supplier/">Passenger Bogie</a><a href="/products/side-frames/">Side Frame</a><a href="/products/bolsters/">Bolster</a><a href="/products/axle-boxes/">Axle Box</a><a href="/products/brake-shoes/">Brake Shoe</a><a href="/products/brake-hoses/">Brake Hose</a><a href="/products/couplers/">Coupler</a><a href="/products/carbon-brushes/">Carbon Brush</a><a href="/products/gangways/">Gangway</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a><a href="/products/other-railway-components/">Railway Spare Parts</a></div></div></section>`;
 }
 
 function layout({ title, description, path: pagePath, body, active = "", schemas = [], preloadHero = false }) {
@@ -644,7 +709,12 @@ const homeProducts = [
   ["Railway Bolster", "bolsters", "railway-bolster.webp"],
   ["Railway Axle", "axles", "railway-axle.webp"],
   ["Railway Axle Box", "axle-boxes", "railway-axle-box.webp"],
-  ["Railway Spare Parts", "other-railway-components", "railway-components.webp"]
+  ["Railway Spare Parts", "other-railway-components", "railway-components.webp"],
+  ["Railway Brake Shoe", "brake-shoes", "railway-components.webp"],
+  ["Railway Brake Hose", "brake-hoses", "railway-components.webp"],
+  ["Railway Coupler", "couplers", "railway-components.webp"],
+  ["Railway Carbon Brush", "carbon-brushes", "railway-components.webp"],
+  ["Railway Gangway", "gangways", "railway-components.webp"]
 ].map(([title, slug, image]) => ({ title, slug, image }));
 
 function homeProductCards() {
@@ -724,14 +794,15 @@ addPage("about/index.html", layout({
 
 addPage("products/index.html", layout({
   title: "Railway Wheel, Wheelset, Bogie, Axle Box & Spare Parts Supplier China",
-  description: "Browse Railwheel products: railway wheel, train wheel, railroad wheel, wheelset, railway axle, bogie, side frame, bolster, axle box, forging and casting parts.",
+  description: "Browse railway wheels, wheelsets, bogies, axles, brake shoes, brake hoses, couplers, carbon brushes, gangways and other rolling-stock parts.",
   path: "/products/",
   active: "Products",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }]), itemListSchema(products, "Railway wheel and railway spare parts categories", "/products/"), faqSchema()],
-  body: `${pageHero("Railway Components Product Categories", "Railwheel supplies railway wheel, railway wheelset, railway bogie, railway axle, axle box, side frame, bolster and railway spare parts for rolling stock manufacturing, maintenance and export procurement.", "Products")}<section><div class="container"><div class="article"><h2>Railway product range for international B2B buyers</h2><p>Our product range supports freight wagon wheels, rail car wheels, locomotive wheels, passenger train wheels, train wheelsets, railroad wheelsets, train bogies, railroad bogies, freight bogies and passenger bogies. OEM and customized manufacturing inquiries are welcome.</p><h3>Technical supply scope</h3><p>Buyers can request railway forging, railway casting, machined railway components and assembled wheelset parts according to drawings, UIC, AAR, EN or project-specific standards.</p></div>${productCards()}<div class="seo-link-row"><a href="/railway-wheel-exporter/">Railway Wheel Exporter</a><a href="/oem-railway-wheel/">OEM Railway Wheel</a><a href="/custom-railway-wheel/">Custom Railway Wheel</a><a href="/railway-spare-parts-manufacturer/">Railway Spare Parts Manufacturer</a><a href="/railway-forging-supplier/">Railway Forging Supplier</a><a href="/railway-casting-supplier/">Railway Casting Supplier</a></div></div></section>${faqSection("railway product categories")}${ctaBand()}`
+  body: `${pageHero("Railway Components Product Categories", "Railwheel supplies railway wheels, wheelsets, bogies, axles, brake shoes, brake hoses, couplers, carbon brushes, gangways and other spare parts for rolling-stock projects.", "Products")}<section><div class="container"><div class="article"><h2>Railway product range for international B2B buyers</h2><p>Our sales range supports freight, locomotive, passenger and metro procurement, including wheels, wheelsets, bogie parts, brake shoes, air brake hoses, couplers, traction motor carbon brushes and inter-car gangways. Drawing-based and replacement-part inquiries are welcome.</p><h3>Technical supply scope</h3><p>Buyers should provide controlled drawings, part numbers, vehicle application, interface data, applicable standards, inspection requirements and quantity. Supply scope and compliance are confirmed for each quotation.</p></div>${productCards()}<div class="seo-link-row"><a href="/products/brake-shoes/">Railway Brake Shoes</a><a href="/products/brake-hoses/">Railway Brake Hoses</a><a href="/products/couplers/">Railway Couplers</a><a href="/products/carbon-brushes/">Railway Carbon Brushes</a><a href="/products/gangways/">Railway Gangways</a><a href="/railway-spare-parts-manufacturer/">Railway Spare Parts Manufacturer</a></div></div></section>${faqSection("railway product categories")}${ctaBand()}`
 }));
 
 for (const product of products) {
+  const isExtendedProduct = Boolean(product.buyerInputs);
   addPage(`products/${product.slug}/index.html`, layout({
     title: `${product.metaTitle} | Railwheel`,
     description: product.metaDescription,
@@ -739,7 +810,7 @@ for (const product of products) {
     active: "Products",
     schemas: [productSchema(product), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url: `/products/${product.slug}/` }]), faqSchema()],
     body: `${pageHero(product.title, product.description, product.title)}
-    <section><div class="container grid grid-2"><article class="article"><img src="/assets/home-products/${product.image}" alt="${product.title} from railway wheel supplier China for ${product.aliases}" title="${product.title}" loading="eager" decoding="async" width="423" height="464"><span class="eyebrow">${product.keyword}</span><h2>${product.title} for international rail projects</h2><p>${product.description} Railwheel supplies products worldwide for buyers searching for railway wheel, train wheel, railroad wheel, railway wheelset, railway bogie, railway axle, axle box and railway components from China.</p><p>Our team supports OEM railway wheel, custom railway wheel, heavy duty railway wheel, railway forging, railway casting and railway spare parts manufacturer inquiries with drawing review, material confirmation, export packing and inspection documentation.</p><h2>Applications and standards</h2><p>Typical applications include freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways. For wheel projects, buyers can discuss forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel requirements.</p><h3>Common buyer keywords</h3><p>This page supports procurement searches for ${product.aliases}, ${product.keyword}, railway components China and railway spare parts supplier inquiries.</p><h2>Typical inquiry information</h2><ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro, mining railway or industrial railway</li></ul><h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality control and export documentation for global B2B customers.</p>${relatedProducts(product.slug)}</article>${inquiryForm()}</div></section>${faqSection(product.title)}${ctaBand()}`
+    <section><div class="container grid grid-2"><article class="article"><img src="/assets/home-products/${product.image}" alt="${product.title} sourcing support for ${product.aliases}" title="${product.title}" loading="eager" decoding="async" width="423" height="464"><span class="eyebrow">${product.keyword}</span><h2>${product.title} for international rail projects</h2><p>${product.description} Railwheel supports international rolling-stock manufacturers, operators and maintenance buyers with technical inquiry review and export communication.</p><p>${isExtendedProduct ? `Supply must be confirmed against the approved vehicle configuration, controlled drawings and project requirements. Product availability, compliance, testing and delivery scope are stated only in the project quotation and contract.` : `Our team supports OEM railway wheel, custom railway wheel, heavy duty railway wheel, railway forging, railway casting and railway spare parts manufacturer inquiries with drawing review, material confirmation, export packing and inspection documentation.`}</p><h2>Applications and technical confirmation</h2><p>${isExtendedProduct ? `Typical applications include ${product.applications}. Buyers should identify the exact system, interface, operating conditions and acceptance requirements rather than selecting a replacement from appearance alone.` : `Typical applications include freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways. For wheel projects, buyers can discuss forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel requirements.`}</p><h3>Common buyer keywords</h3><p>This page supports procurement searches for ${product.aliases}, ${product.keyword}, railway components China and railway spare parts supplier inquiries.</p><h2>Typical inquiry information</h2>${isExtendedProduct ? `<p>Please send ${product.buyerInputs}. Railwheel will identify open technical and commercial assumptions before quotation.</p><ul><li>Controlled drawing, part number, revision and applicable standard</li><li>Vehicle, system interface and operating requirements</li><li>Quantity, inspection documents, packing and destination</li><li>Required delivery window and quotation terms</li></ul>` : `<ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro, mining railway or industrial railway</li></ul>`}<h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality documentation and export requirements. No page statement replaces project-specific technical approval.</p>${relatedProducts(product.slug)}</article>${inquiryForm()}</div></section>${faqSection(product.title)}${ctaBand()}`
   }));
 }
 
