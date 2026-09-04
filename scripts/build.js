@@ -1,6 +1,7 @@
 import { mkdir, rm, writeFile, copyFile, cp } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { brakeHoseBlog } from "./brake-hose-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -294,6 +295,7 @@ const blogs = [
   ["Reducing Railway Component Procurement Risk with Technical Communication", "reduce-railway-component-procurement-risk", "railway component supplier", "How clear drawings, standards, test plans and packing requirements reduce sourcing risk."],
   ["Heavy Haul Railway Wheels: Buyer Guide for Mining, Freight and Industrial Railways", "heavy-haul-railway-wheels-buyer-guide", "heavy haul railway wheels", "A practical guide to selecting heavy haul railway wheels for mining railways, freight wagons, steel plants, ports and industrial rail systems."]
 ].map(([title, slug, keyword, summary]) => ({ title, slug, keyword, summary }));
+blogs.unshift(brakeHoseBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1047,6 +1049,17 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === brakeHoseBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]),
+        { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 4, 2026</time></p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked September 4, 2026 against the linked BSI catalogue and AAR index. Confirm contractually applicable editions and approval requirements.</p><h2>Discuss your brake hose requirement</h2><p>Send the controlled assembly drawing, vehicle and circuit, quantity and required documentation for scope review.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Brake Hose Quote</a><a class="btn btn-outline" href="/products/brake-hoses/">View Railway Brake Hoses</a></div></div></section>`
+    }));
+    continue;
+  }
   const isBolsterSupplierGuide = blog.slug === "railway-bolster-supplier-rfq-guide";
   const isBogieSupplierGuide = blog.slug === "railway-bogie-supplier-truck-assembly-guide";
   const isSupplierAuditGuide = blog.slug === "railway-wheel-supplier-audit-checklist";
