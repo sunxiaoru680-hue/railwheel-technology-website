@@ -2,6 +2,7 @@ import { mkdir, rm, writeFile, copyFile, cp } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { brakeHoseBlog } from "./brake-hose-blog.js";
+import { sideFrameBlog } from "./side-frame-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -296,6 +297,7 @@ const blogs = [
   ["Heavy Haul Railway Wheels: Buyer Guide for Mining, Freight and Industrial Railways", "heavy-haul-railway-wheels-buyer-guide", "heavy haul railway wheels", "A practical guide to selecting heavy haul railway wheels for mining railways, freight wagons, steel plants, ports and industrial rail systems."]
 ].map(([title, slug, keyword, summary]) => ({ title, slug, keyword, summary }));
 blogs.unshift(brakeHoseBlog);
+blogs.unshift(sideFrameBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1049,6 +1051,17 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === sideFrameBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]),
+        { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 5, 2026</time></p><p><strong>Primary keyword:</strong> railway side frame replacement. <strong>Related procurement terms:</strong> freight bogie side frame replacement, AAR truck side frame replacement, replacement railway side frame casting, cast steel side frame supplier, railway side frame supplier quotation.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked September 5, 2026 against official AAR Technical Services pages and the current public MSRP index. Confirm controlled contractual editions and approvals.</p><h2>Request a replacement side frame review</h2><p>Send the controlled drawing, truck identity, marks, mating components, condition, inspection scope, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Side Frame Quote</a><a class="btn btn-outline" href="/products/side-frames/">View Railway Side Frames</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === brakeHoseBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
