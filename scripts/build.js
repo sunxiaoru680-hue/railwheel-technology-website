@@ -3,6 +3,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import { brakeHoseBlog } from "./brake-hose-blog.js";
 import { sideFrameBlog } from "./side-frame-blog.js";
+import { wheelBlankBlog } from "./wheel-blank-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -298,6 +299,7 @@ const blogs = [
 ].map(([title, slug, keyword, summary]) => ({ title, slug, keyword, summary }));
 blogs.unshift(brakeHoseBlog);
 blogs.unshift(sideFrameBlog);
+blogs.unshift(wheelBlankBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1051,6 +1053,17 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === wheelBlankBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]),
+        { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 8, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related procurement terms:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked September 8, 2026 against official ISO, BSI and AAR catalogue or technical-services pages. Obtain the controlled standards and confirm the contractually applicable editions.</p><h2>Request a wheel blank quotation review</h2><p>Send the finished and supply-condition drawings, material, standard, machining split, inspection plan, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Railway Wheel Quote</a><a class="btn btn-outline" href="/products/railway-wheels/">View Railway Wheels</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === sideFrameBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
