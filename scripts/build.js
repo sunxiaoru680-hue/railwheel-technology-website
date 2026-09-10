@@ -5,6 +5,7 @@ import { brakeHoseBlog } from "./brake-hose-blog.js";
 import { sideFrameBlog } from "./side-frame-blog.js";
 import { wheelBlankBlog } from "./wheel-blank-blog.js";
 import { wheelMaterialBlog } from "./wheel-material-blog.js";
+import { wheelDefectsBlog } from "./wheel-defects-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -302,6 +303,7 @@ blogs.unshift(brakeHoseBlog);
 blogs.unshift(sideFrameBlog);
 blogs.unshift(wheelBlankBlog);
 blogs.unshift(wheelMaterialBlog);
+blogs.unshift(wheelDefectsBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1055,6 +1057,17 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === wheelDefectsBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]),
+        { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 10, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related search topics:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked September 10, 2026 against official NRC Canada, National Academies, EUR-Lex and AAR sources. Use the controlled rules and maintenance plan applicable to the vehicle.</p><h2>Request a replacement railway wheel quote</h2><p>Send the approved wheel drawing, material, standard, dimensions, inspection scope, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Railway Wheel Quote</a><a class="btn btn-outline" href="/products/railway-wheels/">View Railway Wheels</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === wheelMaterialBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
