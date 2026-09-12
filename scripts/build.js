@@ -6,6 +6,7 @@ import { sideFrameBlog } from "./side-frame-blog.js";
 import { wheelBlankBlog } from "./wheel-blank-blog.js";
 import { wheelMaterialBlog } from "./wheel-material-blog.js";
 import { wheelDefectsBlog } from "./wheel-defects-blog.js";
+import { wheelPriceBlog } from "./wheel-price-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -304,6 +305,7 @@ blogs.unshift(sideFrameBlog);
 blogs.unshift(wheelBlankBlog);
 blogs.unshift(wheelMaterialBlog);
 blogs.unshift(wheelDefectsBlog);
+blogs.unshift(wheelPriceBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1057,6 +1059,17 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === wheelPriceBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]),
+        { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 12, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related procurement searches:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical and commercial references checked September 12, 2026 against official ISO, BSI, AAR and ICC sources. Confirm the standards and trade terms contractually applicable to the order.</p><h2>Request an itemized railway wheel quotation</h2><p>Send the drawing, material, standard, quantity, inspection scope, packing, delivery term and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Railway Wheel Price</a><a class="btn btn-outline" href="/products/railway-wheels/">View Railway Wheels</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === wheelDefectsBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
