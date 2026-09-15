@@ -7,6 +7,7 @@ import { wheelBlankBlog } from "./wheel-blank-blog.js";
 import { wheelMaterialBlog } from "./wheel-material-blog.js";
 import { wheelDefectsBlog } from "./wheel-defects-blog.js";
 import { wheelPriceBlog } from "./wheel-price-blog.js";
+import { wheelManufacturingBlog } from "./wheel-manufacturing-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -306,6 +307,7 @@ blogs.unshift(wheelBlankBlog);
 blogs.unshift(wheelMaterialBlog);
 blogs.unshift(wheelDefectsBlog);
 blogs.unshift(wheelPriceBlog);
+blogs.unshift(wheelManufacturingBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1059,6 +1061,15 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === wheelManufacturingBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]), { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date }, { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 15, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related searches:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked September 15, 2026 against official ISO, BSI, AAR and Australian Government sources. Confirm controlled project editions and requirements.</p><h2>Request a railway wheel manufacturing quotation</h2><p>Send the drawing, material, standards, supply condition, inspection plan, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Railway Wheel Quote</a><a class="btn btn-outline" href="/products/railway-wheels/">View Railway Wheels</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === wheelPriceBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
