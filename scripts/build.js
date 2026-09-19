@@ -10,6 +10,7 @@ import { wheelPriceBlog } from "./wheel-price-blog.js";
 import { wheelManufacturingBlog } from "./wheel-manufacturing-blog.js";
 import { wheelTypesBlog } from "./wheel-types-blog.js";
 import { wheelProfileBlog } from "./wheel-profile-blog.js";
+import { wheelsetAssemblyBlog } from "./wheelset-assembly-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -312,6 +313,7 @@ blogs.unshift(wheelPriceBlog);
 blogs.unshift(wheelManufacturingBlog);
 blogs.unshift(wheelTypesBlog);
 blogs.unshift(wheelProfileBlog);
+blogs.unshift(wheelsetAssemblyBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1065,6 +1067,15 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === wheelsetAssemblyBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]), { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date }, { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">September 17, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related searches:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked September 17, 2026 against official BSI and AAR sources. Confirm controlled standards, drawings and approval requirements for the actual vehicle and network.</p><h2>Request a railway wheelset assembly quotation</h2><p>Send the wheel, axle and assembly drawings, standards, fitting specification, inspection scope, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Wheelset Quote</a><a class="btn btn-outline" href="/products/wheelsets/">View Railway Wheelsets</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === wheelProfileBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
