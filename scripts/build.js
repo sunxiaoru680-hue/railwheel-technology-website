@@ -13,6 +13,7 @@ import { wheelProfileBlog } from "./wheel-profile-blog.js";
 import { wheelsetAssemblyBlog } from "./wheelset-assembly-blog.js";
 import { axleInspectionBlog } from "./axle-inspection-blog.js";
 import { axleLoadBlog } from "./axle-load-blog.js";
+import { wheelsetBearingsBlog } from "./wheelset-bearings-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -318,6 +319,7 @@ blogs.unshift(wheelProfileBlog);
 blogs.unshift(wheelsetAssemblyBlog);
 blogs.unshift(axleInspectionBlog);
 blogs.unshift(axleLoadBlog);
+blogs.unshift(wheelsetBearingsBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1071,6 +1073,15 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === wheelsetBearingsBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]), { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date }, { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">November 4, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related searches:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked November 4, 2026 against official BSI and AAR sources. Confirm controlled standards, approved bearing system and requirements for the actual vehicle and jurisdiction.</p><h2>Request a railway bearing quotation</h2><p>Send the bearing or unit designation, axle and axlebox drawings, duty data, fits, seals, grease, test scope, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Railway Bearing Quote</a><a class="btn btn-outline" href="/products/bearings/">View Railway Bearings</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === axleLoadBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
