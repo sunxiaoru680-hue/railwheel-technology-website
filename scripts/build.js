@@ -14,6 +14,7 @@ import { wheelsetAssemblyBlog } from "./wheelset-assembly-blog.js";
 import { axleInspectionBlog } from "./axle-inspection-blog.js";
 import { axleLoadBlog } from "./axle-load-blog.js";
 import { wheelsetBearingsBlog } from "./wheelset-bearings-blog.js";
+import { bogieSuspensionBlog } from "./bogie-suspension-blog.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -320,6 +321,7 @@ blogs.unshift(wheelsetAssemblyBlog);
 blogs.unshift(axleInspectionBlog);
 blogs.unshift(axleLoadBlog);
 blogs.unshift(wheelsetBearingsBlog);
+blogs.unshift(bogieSuspensionBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1073,6 +1075,15 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === bogieSuspensionBlog) {
+    const pagePath = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: blog.metaTitle, description: blog.summary, path: pagePath, active: "News",
+      schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]), { ...articleSchema(blog), datePublished: blog.date, dateModified: blog.date }, { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p>Published and updated: <time datetime="${blog.date}">November 10, 2026</time></p><p><strong>Primary keyword:</strong> ${blog.keyword}. <strong>Related searches:</strong> ${blog.longTails.join(", ")}.</p>${blog.body}<h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}<p>Technical references checked November 10, 2026 against official BSI and RDSO sources. Confirm controlled standards, drawings and validation requirements for the actual vehicle and jurisdiction.</p><h2>Request a railway bogie component quotation</h2><p>Send the component and bogie drawings, position, load and motion data, curves, environment, test scope, quantity and destination.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Request a Bogie Component Quote</a><a class="btn btn-outline" href="/products/bogies-truck-assemblies/">View Railway Bogies</a></div></div></section>`
+    }));
+    continue;
+  }
   if (blog === wheelsetBearingsBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
