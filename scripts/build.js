@@ -797,17 +797,7 @@ function productCards(items = products) {
 }
 
 function mobilityCards() {
-  const photographs = {
-    "railway-gangway": gangwayApplicationPhotos[0],
-    "railway-gangway-bellows": gangwayApplicationPhotos[2],
-    "inter-car-connection": gangwayApplicationPhotos[1]
-  };
-  return `<div class="grid grid-3 mobility-products">${mobilityProducts.map((p) => {
-    const photo = photographs[p.slug];
-    const src = photo ? `/assets/gangway-applications/${photo.image}` : `/assets/home-products/${p.slug}-illustration.webp`;
-    const alt = photo ? photo.alt : `Illustration of ${p.title.toLowerCase()} for vehicle connection applications`;
-    return `<article class="card product-list-card"><a class="mobility-product-image${photo ? " application-reference-image" : ""}" href="/products/${p.slug}/" aria-label="View ${p.title}"><img src="${src}" alt="${alt}" title="${p.title}" loading="lazy" decoding="async" width="${photo ? photo.width : 800}" height="${photo ? photo.height : 533}"></a><small class="image-disclosure">${photo ? "Application reference photograph" : "AI-generated product illustration"}</small><h3><a href="/products/${p.slug}/">${p.title}</a></h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View product &rarr;</a></article>`;
-  }).join("")}</div>`;
+  return `<div class="grid grid-3 mobility-products">${mobilityProducts.map((p) => `<article class="card product-list-card"><a class="mobility-product-image" href="/products/${p.slug}/" aria-label="View ${p.title}"><img src="/assets/home-products/${p.slug}-illustration.webp" alt="Illustration of ${p.title.toLowerCase()} for vehicle connection applications" title="${p.title}" loading="lazy" decoding="async" width="800" height="533"></a><small class="image-disclosure">AI-generated product illustration</small><h3><a href="/products/${p.slug}/">${p.title}</a></h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View product &rarr;</a></article>`).join("")}</div>`;
 }
 
 function mobilityRange() {
@@ -842,10 +832,7 @@ const homeProducts = [
 ].map(([title, slug, image]) => ({ title, slug, image }));
 
 function homeProductCards() {
-  return `<div class="home-product-track">${homeProducts.map((p) => {
-    const photo = p.slug === "gangways" ? gangwayApplicationPhotos[0] : null;
-    return `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image${photo ? " application-reference-image" : ""}"><img src="${photo ? `/assets/gangway-applications/${photo.image}` : `/assets/home-products/${p.image}`}" alt="${photo ? photo.alt : `${p.title} — individual railway component`}" title="${p.title}" loading="lazy" decoding="async" width="${photo ? photo.width : 423}" height="${photo ? photo.height : 464}"></span><strong>${p.title}</strong>${photo ? '<small class="image-disclosure home-photo-disclosure">Application reference photograph</small>' : ""}</a>`;
-  }).join("")}</div>${mobilityRange()}`;
+  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} — individual railway component" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"></span><strong>${p.title}</strong></a>`).join("")}</div>${mobilityRange()}`;
 }
 
 function ctaBand() {
@@ -1742,7 +1729,7 @@ async function main() {
       loc: `${siteUrl}/`,
       images: [
         ["railway-wheel-manufacturing.webp", "Railway wheel manufacturer workshop producing train wheels and railroad wheels"],
-        ...homeProducts.filter((product) => product.slug !== "gangways").map((product) => [`home-products/${product.image}`, `${product.title} product image for railway component buyers`]),
+        ...homeProducts.map((product) => [`home-products/${product.image}`, `${product.title} product image for railway component buyers`]),
         ...gangwayApplicationPhotos.slice(0, 3).map((photo) => [`gangway-applications/${photo.image}`, photo.alt])
       ]
     },

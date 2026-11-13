@@ -46,18 +46,11 @@ const mobilityProducts = [
 const home = await readFile("dist/index.html", "utf8");
 const catalog = await readFile("dist/products/index.html", "utf8");
 const imageSitemap = await readFile("dist/image-sitemap.xml", "utf8");
-const mobilityCardPhotos = {
-  "railway-gangway": "railway-gangway-car-end-installation.webp",
-  "railway-gangway-bellows": "railway-gangway-bellows-assembly.webp",
-  "inter-car-connection": "railway-gangway-interior-passage.webp"
-};
 for (const [slug, title] of mobilityProducts) {
   const image = `/assets/home-products/${slug}-illustration.webp`;
-  const cardImage = mobilityCardPhotos[slug] ? `/assets/gangway-applications/${mobilityCardPhotos[slug]}` : image;
   await stat(`dist${image}`);
   for (const html of [home, catalog]) {
-    if (!html.includes(cardImage) || !html.includes(`/products/${slug}/`)) throw new Error(`Missing product card: ${slug}`);
-    if (mobilityCardPhotos[slug] && html.includes(image)) throw new Error(`Expected real photograph instead of illustration for ${slug}`);
+    if (!html.includes(image) || !html.includes(`/products/${slug}/`)) throw new Error(`Missing product card: ${slug}`);
   }
   const detail = await readFile(`dist/products/${slug}/index.html`, "utf8");
   if (!detail.includes(image) || !detail.includes(`<option selected>${title}</option>`)) throw new Error(`Missing image or selected inquiry product: ${slug}`);
