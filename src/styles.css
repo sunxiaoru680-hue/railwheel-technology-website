@@ -211,6 +211,11 @@ h1, h2, h3 { color: var(--blue-950); line-height: 1.14; margin: 0 0 16px; }
 .mobility-products .card-link { margin-top: auto; padding-top: 16px; }
 .mobility-product-image { display: block; background: #f2f4f6; aspect-ratio: 4 / 3; }
 .mobility-products .mobility-product-image img { height: 100%; object-fit: contain; margin: 0; }
+.home-product-image.application-reference-image { padding: 0; }
+.application-reference-image { overflow: hidden; }
+.home-product-image.application-reference-image img,
+.mobility-products .application-reference-image img { object-fit: cover; object-position: center; }
+.home-photo-disclosure { padding: 0 18px 14px; margin: -8px 0 0; }
 .image-disclosure { display: block; color: #526171; margin: 8px 0 16px; font-size: 12px; }
 .mobility-detail-image { margin: 0 0 28px; }
 .mobility-detail-image img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; background: #f2f4f6; }
