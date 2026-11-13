@@ -87,8 +87,9 @@ for (const [slug, image, title] of additionalComponents) {
   for (const match of detail.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) JSON.parse(match[1]);
   if (detail.includes('schema.org/InStock')) throw new Error(`Unconfirmed stock claim: ${slug}`);
 }
-for (const image of ["railway-brake-shoe-studio.webp", "railway-hose-studio.webp", "railway-coupler-studio.webp", "railway-carbon-brush-studio.webp"]) {
+for (const image of ["railway-brake-shoe-studio.webp", "railway-hose-studio.webp", "railway-coupler-studio.webp", "railway-carbon-brush-studio.webp", "railway-gangway-studio.webp"]) {
   await stat(`dist/assets/home-products/${image}`);
   if (!home.includes(image) || !catalog.includes(image)) throw new Error(`Missing studio product image: ${image}`);
 }
+if (home.includes('/assets/home-products/railway-gangway.webp')) throw new Error("Homepage gangway product card must not use the old interior photograph");
 console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, image sitemap, robots.txt, QR assets and WebP product images.`);

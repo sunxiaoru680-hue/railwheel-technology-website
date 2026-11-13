@@ -28,6 +28,9 @@ marks or collage. Style reference: existing `railway-axle-box.webp`.
 - `railway-carbon-brush-studio.webp`: one representative graphite block with
   curved contact face, braided copper pigtail and ring terminal; no motor or holder.
   This is generic, not a reconstruction of the obscured brush in the old photograph.
+- `railway-gangway-studio.webp`: edit the existing isolated gangway illustration
+  into the steel-grey studio style. Preserve the black bellows, silver mounting
+  frames, walking floor and complete outline. No carriage-interior scene.
 - `railway-spring-studio.webp`: one heavy steel coil compression spring, upright,
   closed ground ends, thick bar and dark finish; not a specific stiffness or model.
 - `railway-bearing-adapter-studio.webp`: one representative cast bearing saddle

@@ -240,7 +240,8 @@ const products = [
     title: "Railway Gangway",
     slug: "gangways",
     keyword: "railway gangway supplier",
-    image: "railway-gangway.webp",
+    image: "railway-gangway-studio.webp",
+    generatedImage: true,
     aliases: "train gangway, railway inter-car gangway, passenger coach gangway, metro gangway bellows",
     metaTitle: "Railway Gangway Supplier | Train Inter-car Gangway Systems",
     description: "Railway gangway and inter-car connection sourcing for passenger coaches and metro vehicles based on the approved vehicle envelope, interface and safety requirements.",
@@ -248,7 +249,7 @@ const products = [
     material: "Project-specified bellows, frame, bridge plate, seals and connection components",
     applications: "Passenger coach, metro and other approved inter-car connections",
     buyerInputs: "vehicle type, controlled general arrangement and interface drawings, car-end movement envelope, fire and environmental requirements, quantity and destination",
-    imageCredit: { author: "San Mateo County Transit District", source: "https://commons.wikimedia.org/wiki/File:Caltrain_EMU_interior_gangway.jpg", license: "Public domain", licenseUrl: "https://commons.wikimedia.org/wiki/Commons:Public_domain" }
+    imageReference: "AI-generated isolated gangway assembly; illustrative configuration only"
   }
 ];
 
@@ -836,7 +837,7 @@ const homeProducts = [
   ["Railway Hose", "brake-hoses", "railway-hose-studio.webp"],
   ["Railway Coupler", "couplers", "railway-coupler-studio.webp"],
   ["Railway Carbon Brush", "carbon-brushes", "railway-carbon-brush-studio.webp"],
-  ["Railway Gangway", "gangways", "railway-gangway.webp"],
+  ["Railway Gangway", "gangways", "railway-gangway-studio.webp"],
   ...additionalComponents.map((product) => [product.title, product.slug, product.image])
 ].map(([title, slug, image]) => ({ title, slug, image, generatedImage: Boolean(products.find((product) => product.slug === slug)?.generatedImage) }));
 
@@ -1734,7 +1735,7 @@ async function writeAssets() {
     const file = path.join("home-products", product.image);
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
-  for (const image of ["railway-brake-shoe.webp", "railway-brake-hose.webp", "railway-coupler.webp", "railway-carbon-brush.webp"]) {
+  for (const image of ["railway-brake-shoe.webp", "railway-brake-hose.webp", "railway-coupler.webp", "railway-carbon-brush.webp", "railway-gangway.webp"]) {
     await copyFile(path.join("assets/home-products", image), path.join("dist/assets/home-products", image));
   }
   await mkdir("dist/assets/gangway-applications", { recursive: true });
