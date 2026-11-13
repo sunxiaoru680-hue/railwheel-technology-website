@@ -41,7 +41,8 @@ const mobilityProducts = [
   ["railway-gangway-bellows", "Railway Gangway Bellows"],
   ["inter-car-connection", "Inter-Car Connection"],
   ["bus-articulated-bellows", "Bus Articulated Bellows"],
-  ["flexible-vehicle-bellows", "Flexible Vehicle Bellows"]
+  ["flexible-vehicle-bellows", "Flexible Vehicle Bellows"],
+  ["passenger-boarding-bridge", "Passenger Boarding Bridge"]
 ];
 const home = await readFile("dist/index.html", "utf8");
 const catalog = await readFile("dist/products/index.html", "utf8");
@@ -64,7 +65,7 @@ for (const slug of ["railway-gangway", "railway-gangway-bellows", "inter-car-con
     if (!detail.includes(image.slice(4))) throw new Error(`Missing application photo in ${slug}: ${image}`);
   }
 }
-for (const slug of ["bus-articulated-bellows", "flexible-vehicle-bellows"]) {
+for (const slug of ["bus-articulated-bellows", "flexible-vehicle-bellows", "passenger-boarding-bridge"]) {
   const detail = await readFile(`dist/products/${slug}/index.html`, "utf8");
   if (detail.includes('/assets/gangway-applications/')) throw new Error(`Railway reference photos must not be presented as ${slug}`);
 }

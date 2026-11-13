@@ -314,6 +314,18 @@ const mobilityProducts = [
     inspection: "Confirm the agreed material, dimensions, joint construction and attachment fit. Establish a representative movement or leak test where needed, and identify wear locations before approving a repeat order.",
     question: "What is needed to quote a custom vehicle bellows?",
     answer: "Provide the function, interface drawing, opening dimensions, movement range, exposure conditions, quantity and required test evidence. Photos help identify the arrangement but do not replace dimensions."
+  },
+  {
+    title: "Passenger Boarding Bridge", slug: "passenger-boarding-bridge",
+    category: "Airport passenger access equipment",
+    description: "Airport passenger boarding bridge and flexible docking canopy inquiries, with project-specific interface, operating envelope and supply-scope review.",
+    overview: "A passenger boarding bridge, also called an aerobridge or jet bridge, provides an enclosed passage between an airport terminal and an aircraft boarding door. It is an airport access system, not a railway inter-car gangway. A complete bridge, a docking canopy and replacement bellows are different procurement scopes. State which assembly or component is required; feasibility and supplier responsibilities must be confirmed before a quotation or delivery commitment.",
+    application: "Airport terminal gates and boarding-bridge refurbishment inquiries. The aircraft door position, stand arrangement, terminal interface and existing bridge configuration determine the project definition. No aircraft compatibility or airport approval is implied by this listing.",
+    features: ["Supply scope: complete bridge project, docking canopy, bellows or defined replacement parts", "Terminal and bridge interfaces, existing model, controlled drawings and installation envelope", "Required extension, height and rotation envelope for the approved stand layout", "For canopy and bellows: attachment profiles, compression range, contact arrangement and material requirements", "Project acceptance basis, required approvals, operating controls and integration responsibilities"],
+    inspection: "Agree component inspections and system acceptance separately. Canopy or bellows replacement requires dimensional and attachment checks against the existing assembly. Complete bridge projects need a defined engineering, installation, commissioning and airport acceptance scope. Test evidence, weather resistance, fire-performance requirements and any aircraft-contact criteria must be specified and confirmed for the actual project; they are not established by the illustration.",
+    packing: "For a complete bridge, agree transport module sizes, lifting points, restraints, route limits and site assembly responsibilities before shipment planning. For a replacement canopy or bellows, protect attachment profiles and flexible surfaces from distortion. Confirm destination, installation access, packing dimensions and delivery terms after scope review.",
+    question: "Can I request only the docking canopy or bellows?",
+    answer: "Yes, an inquiry can specify canopy or bellows only. Provide the existing boarding-bridge model, attachment drawings, dimensions, movement requirements and required test evidence. Supply feasibility and exact scope are confirmed after review, separately from a complete passenger boarding bridge project."
   }
 ];
 
@@ -809,7 +821,7 @@ function mobilityCards() {
 }
 
 function mobilityRange() {
-  return `<div class="mobility-range"><div class="section-head"><div><span class="eyebrow">Vehicle connection systems</span><h2>Gangways, inter-car connections &amp; flexible bellows</h2></div><p>Explore passenger passage systems and flexible enclosures for rail and road vehicles. Supply scope and compatibility are reviewed against your drawings.</p></div>${mobilityCards()}${gangwayApplications("railway-gangway", true)}</div>`;
+  return `<div class="mobility-range"><div class="section-head"><div><span class="eyebrow">Passenger access &amp; connection systems</span><h2>Gangways, flexible bellows &amp; airport boarding bridges</h2></div><p>Explore passenger passage systems for rail, road and airport applications. Supply scope, compatibility and project feasibility are reviewed against your drawings.</p></div>${mobilityCards()}${gangwayApplications("railway-gangway", true)}</div>`;
 }
 
 function gangwayApplications(slug, compact = false) {
@@ -973,7 +985,7 @@ for (const product of mobilityProducts) {
     path: url,
     active: "Products",
     schemas: [
-      { "@context": "https://schema.org", "@type": "Product", name: product.title, description: product.description, image: `${siteUrl}/assets/home-products/${product.slug}-illustration.webp`, url: `${siteUrl}${url}`, brand: { "@type": "Brand", name: "Railwheel" }, category: "Vehicle gangways and flexible bellows" },
+      { "@context": "https://schema.org", "@type": "Product", name: product.title, description: product.description, image: `${siteUrl}/assets/home-products/${product.slug}-illustration.webp`, url: `${siteUrl}${url}`, brand: { "@type": "Brand", name: "Railwheel" }, category: product.category || "Vehicle gangways and flexible bellows" },
       breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url }]), faq
     ],
     body: `${pageHero(product.title, product.description, product.title)}
@@ -982,7 +994,7 @@ for (const product of mobilityProducts) {
     <h2>Product overview</h2><p>${product.overview}</p><h2>Applications</h2><p>${product.application}</p><h2>Technical information to confirm</h2><ul>${product.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>
     <h2>Inspection and acceptance</h2><p>${product.inspection}</p><p>Material selection, test methods and any applicable fire, smoke or vehicle requirements must be confirmed for the project. No certification or interchangeability is implied by this listing.</p>
 ${["railway-gangway", "railway-gangway-bellows", "inter-car-connection"].includes(product.slug) ? `<div id="application-references">${gangwayApplications(product.slug)}</div>` : ""}
-    <h2>Packaging and shipping</h2><p>Confirm packed dimensions, support points and storage limits after drawing review. Protect flexible folds from crushing and attachment profiles from distortion. Provide the destination, handling constraints and requested delivery terms for the shipping proposal.</p>
+    <h2>Packaging and shipping</h2><p>${product.packing || "Confirm packed dimensions, support points and storage limits after drawing review. Protect flexible folds from crushing and attachment profiles from distortion. Provide the destination, handling constraints and requested delivery terms for the shipping proposal."}</p>
     <h2>Request a technical quotation</h2><p>Send drawings, vehicle type, operating conditions, quantity and required delivery date to <a href="mailto:${contact.email}">${contact.email}</a>. Amy Sun will coordinate a scope and feasibility review before quotation.</p><p>Please request model-specific photographs and drawings when making an inquiry.</p>
     <h2>Frequently asked question</h2><h3>${product.question}</h3><p>${product.answer}</p><h2>Related products and technical support</h2><ul>${mobilityProducts.filter((p) => p.slug !== product.slug).map((p) => `<li><a href="/products/${p.slug}/">${p.title}</a></li>`).join("")}<li><a href="/quality-control/">Quality control</a></li><li><a href="/manufacturing-capability/">Manufacturing capabilities</a></li><li><a href="/products/">All product categories</a></li></ul></article>${inquiryForm(product.title)}</div></section>${ctaBand()}`
   }));

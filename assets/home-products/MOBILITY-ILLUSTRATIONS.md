@@ -1,6 +1,6 @@
 # Gangway and bellows illustrations
 
-These five WebP assets were created with the built-in image generation tool.
+These WebP assets were created with the built-in image generation tool.
 They are illustrative product visualizations, not photographs of Railwheel
 inventory or approved engineering designs. Cards and detail pages disclose this.
 Original generated PNG files remain in the Codex generated-images directory.
@@ -24,6 +24,11 @@ watermarks, people, vehicles or collage.
 - `flexible-vehicle-bellows-illustration.webp`: short rectangular black elastomer
   transition boot, four deep convolutions, rounded corners and mounting flanges,
   without a walking floor.
+- `passenger-boarding-bridge-illustration.webp`: complete airport aerobridge,
+  enclosed telescopic white-and-glass tunnel, terminal-side rotunda support,
+  wheeled elevating support and docking cabin with black flexible canopy;
+  entire assembly on a pale-grey studio floor, no aircraft, airport scenery,
+  brand marks or certification claims. Representative visualization only.
 
 Replace these files with approved model-specific photography when available and
 update the visible disclosures, alt text and structured data accordingly.
