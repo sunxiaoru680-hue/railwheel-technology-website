@@ -163,6 +163,59 @@ const products = [
   }
 ];
 
+const mobilityProducts = [
+  {
+    title: "Railway Gangway", slug: "railway-gangway",
+    description: "Complete inter-car passenger passage systems for metro trains and passenger coaches, reviewed against vehicle geometry and operating movements.",
+    overview: "A railway gangway connects adjacent vehicles while allowing passengers to move between cars. The complete system may include bellows, end frames, a floor bridge, interior panels and interfaces to the vehicle body. Scope must be agreed at assembly level: a replacement bellows is not the same procurement item as a complete gangway.",
+    application: "Passenger coaches, metro vehicles and multiple-unit trains with an enclosed inter-car passage. New-build and replacement projects require a review of the existing car-end interface.",
+    features: ["Car-end mounting geometry and available installation envelope", "Combined yaw, pitch, roll and longitudinal movement", "Floor bridge arrangement, clear passage width and accessibility", "Weather sealing, drainage and access for maintenance"],
+    inspection: "Review the assembly drawing, mounting datums, passage clearance and movement envelope. Agree a functional articulation check and sealing assessment with the buyer before manufacture.",
+    question: "Does a railway gangway include the floor bridge?",
+    answer: "Not automatically. Specify whether the quotation must include the floor bridge, bellows, end frames, interior trim and vehicle mounting hardware."
+  },
+  {
+    title: "Railway Gangway Bellows", slug: "railway-gangway-bellows",
+    description: "Flexible bellows envelopes for railway inter-car gangways, with project-specific folds, attachment details and environmental requirements.",
+    overview: "Railway gangway bellows form the flexible enclosure around an inter-car passage. Their folds accommodate repeated vehicle movement while the attachment interfaces connect to the gangway frames. Buyers should distinguish the flexible envelope from the supporting frame and walking surface when specifying a replacement.",
+    application: "Bellows renewal on passenger trains and metro fleets, or supply as part of a new gangway assembly. Compatibility depends on the frame profile and attachment method, not simply external dimensions.",
+    features: ["Extended and compressed lengths and number of convolutions", "Attachment strips, corner profiles and frame interfaces", "Project-specified coated fabric or elastomer construction", "UV exposure, temperature range, cleaning agents and fire-performance requirements"],
+    inspection: "Confirm fold geometry, seams or joints, attachment profiles and surface condition. Material and fire-performance evidence must match the proposed construction and the customer's acceptance requirements.",
+    question: "Can a bellows be ordered without the gangway frame?",
+    answer: "Request a bellows-only scope and provide frame drawings, attachment details, installed dimensions and movement requirements. Compatibility must be reviewed before an order is accepted."
+  },
+  {
+    title: "Inter-Car Connection", slug: "inter-car-connection",
+    description: "Coordinated passenger passage interfaces between rail vehicles, covering gangway, bridge and car-end installation requirements.",
+    overview: "Inter-car connection is a broad term. On this page it refers to the passenger passage interface between adjacent rail vehicles, rather than a traction coupler, electrical jumper or brake hose. Defining these boundaries early helps vehicle builders and maintenance buyers avoid incomplete quotations.",
+    application: "Vehicle integration projects and refurbishment programs where gangway mounting, bridge movement and interior passage interfaces must work together. Couplers and electrical systems require separate specifications.",
+    features: ["Supply boundary and responsibility for each vehicle interface", "Relative car-end movement and coupler spacing", "Bridge overlap, anti-slip surface and trip-edge control", "Installation sequence and maintenance removal space"],
+    inspection: "Use an interface-control drawing to verify mounting positions, bridge overlap and clearance through the agreed movement range. Define which interfaces are inspected at component level and which require vehicle-level validation.",
+    question: "Is an inter-car connection the same as a coupler?",
+    answer: "Not in this product scope. Here it means the passenger passage system. Identify couplers, cables, hoses and other connections separately in your inquiry."
+  },
+  {
+    title: "Bus Articulated Bellows", slug: "bus-articulated-bellows",
+    description: "Flexible bellows enclosures for articulated buses, specified around the articulation joint, body interfaces and passenger passage.",
+    overview: "Bus articulated bellows enclose the moving joint between bus sections. They must accommodate steering articulation and road-induced movement while fitting the body contours. The bellows enclosure should not be confused with the structural articulation joint, turntable or steering-control system.",
+    application: "Articulated city buses and other multi-section passenger buses. Replacement inquiries should identify the bus model, articulation layout and existing attachment profiles.",
+    features: ["Maximum steering articulation and vertical movement", "Roof, sidewall and floor attachment contours", "Inner and outer bellows scope where applicable", "Road splash, sunlight, cleaning and project fire-performance requirements"],
+    inspection: "Check contour fit, attachment dimensions, fold clearance and possible interference around the articulation joint. Agree movement and water-ingress checks with the bus integrator; component inspection does not replace vehicle approval.",
+    question: "Can railway gangway bellows be used on a bus?",
+    answer: "They are not interchangeable by default. Bus steering angles, body contours, attachments and approval requirements differ and need a vehicle-specific design review."
+  },
+  {
+    title: "Flexible Vehicle Bellows", slug: "flexible-vehicle-bellows",
+    description: "Custom flexible bellows for vehicle-body transitions and equipment protection, subject to drawing, movement and material review.",
+    overview: "Flexible vehicle bellows cover a broad range of custom enclosures. A body-to-body passage boot, an equipment gaiter and a small dust boot perform different functions and cannot be selected by appearance alone. Railwheel reviews the actual application and drawing before confirming a supply proposal.",
+    application: "Special-purpose vehicles, recreational-vehicle body transitions and equipment protection where a flexible enclosure is required. Passenger access, weather sealing and dust protection need different acceptance criteria.",
+    features: ["Function: passenger passage, weather seal or equipment protection", "Opening shape, mounting profiles and available envelope", "Compression, extension, lateral offset and movement frequency", "Temperature, oil, ozone, abrasion and outdoor exposure"],
+    inspection: "Confirm the agreed material, dimensions, joint construction and attachment fit. Establish a representative movement or leak test where needed, and identify wear locations before approving a repeat order.",
+    question: "What is needed to quote a custom vehicle bellows?",
+    answer: "Provide the function, interface drawing, opening dimensions, movement range, exposure conditions, quantity and required test evidence. Photos help identify the arrangement but do not replace dimensions."
+  }
+];
+
 const targetPages = [
   ["Railway Wheel Manufacturer", "railway-wheel-manufacturer", "railway wheel manufacturer"],
   ["Railway Wheel Supplier", "railway-wheel-supplier", "railway wheel supplier"],
@@ -490,7 +543,15 @@ function pageHero(title, desc, crumb) {
 }
 
 function productCards(items = products) {
-  return `<div class="grid grid-3">${items.map((p) => `<article class="card product-list-card"><img src="/assets/home-products/${p.image}" alt="${p.title} supplier for ${p.aliases}" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>`;
+  return `<div class="grid grid-3">${items.map((p) => `<article class="card product-list-card"><img src="/assets/home-products/${p.image}" alt="${p.title} supplier for ${p.aliases}" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>${items === products ? mobilityRange() : ""}`;
+}
+
+function mobilityCards() {
+  return `<div class="grid grid-3 mobility-products">${mobilityProducts.map((p) => `<article class="card"><span class="eyebrow">Gangways &amp; Bellows</span><h3><a href="/products/${p.slug}/">${p.title}</a></h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View specifications &rarr;</a></article>`).join("")}</div>`;
+}
+
+function mobilityRange() {
+  return `<div class="mobility-range"><div class="section-head"><div><span class="eyebrow">Vehicle connection systems</span><h2>Gangways, inter-car connections &amp; flexible bellows</h2></div><p>Explore passenger passage systems and flexible enclosures for rail and road vehicles. Supply scope and compatibility are reviewed against your drawings.</p></div>${mobilityCards()}</div>`;
 }
 
 const homeProducts = [
@@ -505,7 +566,7 @@ const homeProducts = [
 ].map(([title, slug, image]) => ({ title, slug, image }));
 
 function homeProductCards() {
-  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} product image for train wheel railroad wheel and railway component procurement" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"></span><strong>${p.title}</strong></a>`).join("")}</div>`;
+  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} — individual railway component" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"></span><strong>${p.title}</strong></a>`).join("")}</div>${mobilityRange()}`;
 }
 
 function ctaBand() {
@@ -597,6 +658,25 @@ for (const product of products) {
     schemas: [productSchema(product), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url: `/products/${product.slug}/` }]), faqSchema()],
     body: `${pageHero(product.title, product.description, product.title)}
     <section><div class="container grid grid-2"><article class="article"><img src="/assets/home-products/${product.image}" alt="${product.title} from railway wheel supplier China for ${product.aliases}" title="${product.title}" loading="eager" decoding="async" width="423" height="464"><span class="eyebrow">${product.keyword}</span><h2>${product.title} for international rail projects</h2><p>${product.description} Railwheel supplies products worldwide for buyers searching for railway wheel, train wheel, railroad wheel, railway wheelset, railway bogie, railway axle, axle box and railway components from China.</p><p>Our team supports OEM railway wheel, custom railway wheel, heavy duty railway wheel, railway forging, railway casting and railway spare parts manufacturer inquiries with drawing review, material confirmation, export packing and inspection documentation.</p><h2>Applications and standards</h2><p>Typical applications include freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways. For wheel projects, buyers can discuss forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel requirements.</p><h3>Common buyer keywords</h3><p>This page supports procurement searches for ${product.aliases}, ${product.keyword}, railway components China and railway spare parts supplier inquiries.</p><h2>Typical inquiry information</h2><ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro, mining railway or industrial railway</li></ul><h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality control and export documentation for global B2B customers.</p>${relatedProducts(product.slug)}</article>${inquiryForm()}</div></section>${faqSection(product.title)}${ctaBand()}`
+  }));
+}
+
+for (const product of mobilityProducts) {
+  const url = `/products/${product.slug}/`;
+  const faq = {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: [{ "@type": "Question", name: product.question, acceptedAnswer: { "@type": "Answer", text: product.answer } }]
+  };
+  addPage(`products/${product.slug}/index.html`, layout({
+    title: `${product.title} | Custom Supply & Technical Inquiry | Railwheel`,
+    description: product.description,
+    path: url,
+    active: "Products",
+    schemas: [
+      { "@context": "https://schema.org", "@type": "Product", name: product.title, description: product.description, url: `${siteUrl}${url}`, brand: { "@type": "Brand", name: "Railwheel" }, category: "Vehicle gangways and flexible bellows" },
+      breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url }]), faq
+    ],
+    body: `${pageHero(product.title, product.description, product.title)}<section><div class="container grid grid-2"><article class="article"><h2>Product overview</h2><p>${product.overview}</p><h2>Applications</h2><p>${product.application}</p><h2>Technical information to confirm</h2><ul>${product.features.map((feature) => `<li>${feature}</li>`).join("")}</ul><h2>Inspection and acceptance</h2><p>${product.inspection}</p><p>Material selection, test methods and any applicable fire, smoke or vehicle requirements must be confirmed for the project. No certification or interchangeability is implied by this listing.</p><h2>Packaging and shipping</h2><p>Confirm packed dimensions, support points and storage limits after drawing review. Protect flexible folds from crushing and attachment profiles from distortion. Provide the destination, handling constraints and requested delivery terms for the shipping proposal.</p><h2>Request a technical quotation</h2><p>Send drawings, vehicle type, operating conditions, quantity and required delivery date to <a href="mailto:${contact.email}">${contact.email}</a>. Amy Sun will coordinate a scope and feasibility review before quotation.</p><p>Product photography for this range is being prepared. Please request model-specific images and drawings when making an inquiry.</p><h2>Frequently asked question</h2><h3>${product.question}</h3><p>${product.answer}</p><h2>Related products and technical support</h2><ul>${mobilityProducts.filter((p) => p.slug !== product.slug).map((p) => `<li><a href="/products/${p.slug}/">${p.title}</a></li>`).join("")}<li><a href="/quality-control/">Quality control</a></li><li><a href="/manufacturing-capability/">Manufacturing capabilities</a></li><li><a href="/products/">All product categories</a></li></ul></article>${inquiryForm()}</div></section>${ctaBand()}`
   }));
 }
 

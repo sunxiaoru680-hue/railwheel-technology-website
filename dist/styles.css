@@ -195,14 +195,24 @@ h1, h2, h3 { color: var(--blue-950); line-height: 1.14; margin: 0 0 16px; }
 }
 .home-product-image {
   display: block;
-  height: 168px;
-  background: #132638;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  padding: 16px;
+  background: #f2f4f6;
   overflow: hidden;
 }
+.mobility-range {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #dbe5ef;
+}
+.mobility-products h3 { font-size: 20px; line-height: 1.4; }
+.mobility-products .card { display: flex; flex-direction: column; }
+.mobility-products .card-link { margin-top: auto; padding-top: 16px; }
 .home-product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .home-product-card strong {
   display: block;
@@ -542,7 +552,7 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
   .home-hero h1 { font-size: 40px; }
   .home-hero p { font-size: 17px; }
   .home-points, .home-product-track, .home-qr-panel, .home-bottom-bar .container { grid-template-columns: 1fr; }
-  .home-product-image { height: 190px; }
+  .home-product-image { height: auto; }
   .hero { min-height: 590px; }
   .hero-content { padding: 54px 0 96px; }
   .hero h1 { font-size: 40px; }
