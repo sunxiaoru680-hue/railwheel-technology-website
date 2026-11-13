@@ -68,4 +68,27 @@ for (const slug of ["bus-articulated-bellows", "flexible-vehicle-bellows"]) {
   const detail = await readFile(`dist/products/${slug}/index.html`, "utf8");
   if (detail.includes('/assets/gangway-applications/')) throw new Error(`Railway reference photos must not be presented as ${slug}`);
 }
+const additionalComponents = [
+  ["railway-springs", "railway-spring-studio.webp", "Railway Spring"],
+  ["railway-bearing-adapters", "railway-bearing-adapter-studio.webp", "Railway Bearing Adapter"],
+  ["railway-friction-wedges", "railway-friction-wedge-studio.webp", "Railway Friction Wedge"]
+];
+const sitemap = await readFile("dist/sitemap.xml", "utf8");
+for (const [slug, image, title] of additionalComponents) {
+  await stat(`dist/assets/home-products/${image}`);
+  const route = `/products/${slug}/`;
+  const detail = await readFile(`dist${route}index.html`, "utf8");
+  for (const html of [home, catalog]) {
+    if (!html.includes(route) || !html.includes(image)) throw new Error(`Missing new component: ${slug}`);
+  }
+  if (!sitemap.includes(route) || !imageSitemap.includes(image)) throw new Error(`Missing sitemap entry: ${slug}`);
+  if (!detail.includes(`<option selected>${title}</option>`)) throw new Error(`Missing selected inquiry option: ${slug}`);
+  if ((detail.match(/<h1[ >]/g) || []).length !== 1) throw new Error(`Invalid H1 count: ${slug}`);
+  for (const match of detail.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) JSON.parse(match[1]);
+  if (detail.includes('schema.org/InStock')) throw new Error(`Unconfirmed stock claim: ${slug}`);
+}
+for (const image of ["railway-brake-shoe-studio.webp", "railway-hose-studio.webp", "railway-coupler-studio.webp", "railway-carbon-brush-studio.webp"]) {
+  await stat(`dist/assets/home-products/${image}`);
+  if (!home.includes(image) || !catalog.includes(image)) throw new Error(`Missing studio product image: ${image}`);
+}
 console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, image sitemap, robots.txt, QR assets and WebP product images.`);

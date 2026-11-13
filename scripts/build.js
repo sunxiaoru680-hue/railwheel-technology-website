@@ -15,6 +15,7 @@ import { axleInspectionBlog } from "./axle-inspection-blog.js";
 import { axleLoadBlog } from "./axle-load-blog.js";
 import { wheelsetBearingsBlog } from "./wheelset-bearings-blog.js";
 import { bogieSuspensionBlog } from "./bogie-suspension-blog.js";
+import { additionalComponents } from "./additional-components.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -179,7 +180,8 @@ const products = [
     title: "Railway Brake Shoe",
     slug: "brake-shoes",
     keyword: "railway brake shoe supplier",
-    image: "railway-brake-shoe.webp",
+    image: "railway-brake-shoe-studio.webp",
+    generatedImage: true,
     aliases: "train brake shoe, locomotive brake shoe, freight wagon brake shoe, rail brake block",
     metaTitle: "Railway Brake Shoe Supplier | Train & Freight Wagon Brake Shoes",
     description: "Railway brake shoe sourcing for locomotives, freight wagons, passenger vehicles and maintenance programs based on approved drawings and braking-system requirements.",
@@ -190,24 +192,26 @@ const products = [
     imageCredit: { author: "100yen", source: "https://commons.wikimedia.org/wiki/File:Train_brake_shoe.JPG", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/" }
   },
   {
-    title: "Railway Brake Hose",
+    title: "Railway Hose",
     slug: "brake-hoses",
     keyword: "railway brake hose supplier",
-    image: "railway-brake-hose.webp",
-    aliases: "train air brake hose, railway air hose, locomotive brake hose, freight car brake hose assembly",
-    metaTitle: "Railway Brake Hose Supplier | Train Air Brake Hose Assembly",
+    image: "railway-hose-studio.webp",
+    generatedImage: true,
+    aliases: "railway brake hose, train air brake hose, railway air hose, locomotive brake hose, freight car brake hose assembly",
+    metaTitle: "Railway Hose Supplier | Train Air Brake Hose Assembly",
     description: "Railway air brake hose and hose assembly sourcing for rolling-stock pneumatic brake connections, supplied against approved interface, pressure and test requirements.",
     metaDescription: "Buy railway brake hose and train air brake hose assemblies for locomotives, freight cars and passenger vehicles to approved drawings and test requirements.",
     material: "Project-specified reinforced elastomer hose with approved end fittings",
     applications: "Pneumatic brake connections on locomotives, freight cars and passenger vehicles",
     buyerInputs: "controlled drawing or hose standard, nominal bore, length, end fittings and threads, working conditions, test and marking requirements, quantity and destination",
-    imageCredit: { author: "Toshinori Baba", source: "https://commons.wikimedia.org/wiki/File:Auto_brake.JPG", license: "Public domain", licenseUrl: "https://commons.wikimedia.org/wiki/Commons:Public_domain" }
+    imageReference: "Customer-provided complete hose photograph; representative configuration only"
   },
   {
     title: "Railway Coupler",
     slug: "couplers",
     keyword: "railway coupler supplier",
-    image: "railway-coupler.webp",
+    image: "railway-coupler-studio.webp",
+    generatedImage: true,
     aliases: "train coupler, railroad coupler, freight car coupler, locomotive coupler, draft gear components",
     metaTitle: "Railway Coupler Supplier | Train & Freight Car Coupler Parts",
     description: "Railway coupler and related component sourcing for freight, locomotive and passenger rolling stock based on the approved coupler system, drawings and acceptance plan.",
@@ -221,7 +225,8 @@ const products = [
     title: "Railway Carbon Brush",
     slug: "carbon-brushes",
     keyword: "railway carbon brush supplier",
-    image: "railway-carbon-brush.webp",
+    image: "railway-carbon-brush-studio.webp",
+    generatedImage: true,
     aliases: "train carbon brush, traction motor carbon brush, locomotive carbon brush, railway motor brush",
     metaTitle: "Railway Carbon Brush Supplier | Traction Motor Carbon Brushes",
     description: "Railway carbon brush sourcing for traction motors and auxiliary electrical equipment, matched to the approved brush grade, holder interface and operating requirements.",
@@ -246,6 +251,8 @@ const products = [
     imageCredit: { author: "San Mateo County Transit District", source: "https://commons.wikimedia.org/wiki/File:Caltrain_EMU_interior_gangway.jpg", license: "Public domain", licenseUrl: "https://commons.wikimedia.org/wiki/Commons:Public_domain" }
   }
 ];
+
+products.push(...additionalComponents);
 
 const gangwayApplicationPhotos = [
   { image: "railway-gangway-car-end-installation.webp", title: "Car-end installation", alt: "Railway gangway bellows installed around a passenger vehicle car-end opening", caption: "Exterior view of the bellows, mounting frame and car-body interface.", width: 800, height: 866 },
@@ -793,7 +800,7 @@ function pageHero(title, desc, crumb) {
 }
 
 function productCards(items = products) {
-  return `<div class="grid grid-3">${items.map((p) => `<article class="card product-list-card"><img src="/assets/home-products/${p.image}" alt="${p.title} supplier for ${p.aliases}" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"><h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>${items === products ? mobilityRange() : ""}`;
+  return `<div class="grid grid-3">${items.map((p) => `<article class="card product-list-card"><img src="/assets/home-products/${p.image}" alt="${p.generatedImage ? `Illustration of ${p.title}` : `${p.title} supplier for ${p.aliases}`}" title="${p.title}" loading="lazy" decoding="async" width="423" height="464">${p.generatedImage ? '<small class="image-disclosure">AI-generated product illustration</small>' : ""}<h3>${p.title}</h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View ${p.title}</a></article>`).join("")}</div>${items === products ? mobilityRange() : ""}`;
 }
 
 function mobilityCards() {
@@ -811,6 +818,7 @@ function gangwayApplications(slug, compact = false) {
 }
 
 function imageCredit(product) {
+  if (product.generatedImage) return `<div class="container"><p class="muted"><small>AI-generated product illustration; not a model-specific photograph. Final configuration is subject to approved drawings.${product.imageCredit ? ` Reference: <a href="${product.imageCredit.source}">${esc(product.imageCredit.author)}</a>, <a href="${product.imageCredit.licenseUrl}">${esc(product.imageCredit.license)}</a>; image adapted for catalog presentation.` : ""}</small></p></div>`;
   if (!product.imageCredit) return "";
   return `<div class="container"><p class="muted"><small>Illustrative image: <a href="${product.imageCredit.source}">${esc(product.imageCredit.author)}</a>, <a href="${product.imageCredit.licenseUrl}">${esc(product.imageCredit.license)}</a>; cropped and resized for web display.</small></p></div>`;
 }
@@ -824,15 +832,16 @@ const homeProducts = [
   ["Railway Axle", "axles", "railway-axle.webp"],
   ["Railway Axle Box", "axle-boxes", "railway-axle-box.webp"],
   ["Railway Spare Parts", "other-railway-components", "railway-components.webp"],
-  ["Railway Brake Shoe", "brake-shoes", "railway-brake-shoe.webp"],
-  ["Railway Brake Hose", "brake-hoses", "railway-brake-hose.webp"],
-  ["Railway Coupler", "couplers", "railway-coupler.webp"],
-  ["Railway Carbon Brush", "carbon-brushes", "railway-carbon-brush.webp"],
-  ["Railway Gangway", "gangways", "railway-gangway.webp"]
-].map(([title, slug, image]) => ({ title, slug, image }));
+  ["Railway Brake Shoe", "brake-shoes", "railway-brake-shoe-studio.webp"],
+  ["Railway Hose", "brake-hoses", "railway-hose-studio.webp"],
+  ["Railway Coupler", "couplers", "railway-coupler-studio.webp"],
+  ["Railway Carbon Brush", "carbon-brushes", "railway-carbon-brush-studio.webp"],
+  ["Railway Gangway", "gangways", "railway-gangway.webp"],
+  ...additionalComponents.map((product) => [product.title, product.slug, product.image])
+].map(([title, slug, image]) => ({ title, slug, image, generatedImage: Boolean(products.find((product) => product.slug === slug)?.generatedImage) }));
 
 function homeProductCards() {
-  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.title} — individual railway component" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"></span><strong>${p.title}</strong></a>`).join("")}</div>${mobilityRange()}`;
+  return `<div class="home-product-track">${homeProducts.map((p) => `<a class="home-product-card" href="/products/${p.slug}/"><span class="home-product-image"><img src="/assets/home-products/${p.image}" alt="${p.generatedImage ? `Illustration of ${p.title}` : `${p.title} — individual railway component`}" title="${p.title}" loading="lazy" decoding="async" width="423" height="464"></span><strong>${p.title}</strong>${p.generatedImage ? '<small class="studio-image-disclosure">AI-generated product illustration</small>' : ""}</a>`).join("")}</div>${mobilityRange()}`;
 }
 
 function ctaBand() {
@@ -916,6 +925,29 @@ addPage("products/index.html", layout({
 }));
 
 for (const product of products) {
+  if (product.specifications) {
+    const url = `/products/${product.slug}/`;
+    const schema = productSchema(product);
+    delete schema.offers;
+    delete schema.manufacturer;
+    const faq = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: product.faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) };
+    addPage(`products/${product.slug}/index.html`, layout({
+      title: `${product.metaTitle} | Railwheel`, description: product.metaDescription,
+      path: url, active: "Products",
+      schemas: [schema, breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url }]), faq],
+      body: `${pageHero(product.title, product.description, product.title)}<section><div class="container grid grid-2"><article class="article">
+      <figure class="component-product-figure"><img src="/assets/home-products/${product.image}" alt="Illustrative ${product.title.toLowerCase()} component on a steel-grey background" title="${product.title}" width="640" height="800" decoding="async" loading="eager"><figcaption>AI-generated product illustration. Dimensions, configuration and supply feasibility are subject to approved drawings and quotation.</figcaption></figure>
+      <h2>Product overview</h2><p>${product.overview}</p><h2>Application and configuration</h2><p>${product.selection}</p>
+      <h2>Technical information for quotation</h2><table class="component-specifications"><caption>Project-specific information to confirm</caption><tbody>${product.specifications.map(([label, value]) => `<tr><th scope="row">${label}</th><td>${value}</td></tr>`).join("")}</tbody></table>
+      <h2>Manufacturing and supply review</h2><p>${product.process}</p><h2>Inspection and documentation</h2><p>${product.inspection}</p><h2>Packaging and shipment</h2><p>${product.packing}</p>
+      <h2>Request a technical quotation</h2><p>Send the controlled drawing and revision, vehicle or bogie application, quantity, exact standards and editions, acceptance plan, required documents, packing requirements and destination. Amy Sun will coordinate technical and commercial clarification before a supply commitment. This listing does not confirm stock availability, certification or model interchangeability.</p><p><a href="mailto:${contact.email}">${contact.email}</a> | <a href="https://wa.me/${contact.whatsapp}">WhatsApp: ${contact.phone}</a></p>
+      <h2>Frequently asked questions</h2>${product.faqs.map(([q, a]) => `<h3>${q}</h3><p>${a}</p>`).join("")}
+      <h2>Related railway components</h2><ul>${product.related.map((slug) => products.find((p) => p.slug === slug)).filter(Boolean).map((p) => `<li><a href="/products/${p.slug}/">${p.title}</a></li>`).join("")}<li><a href="/quality-control/">Quality control and inspection coordination</a></li><li><a href="/manufacturing-capability/">Manufacturing capabilities</a></li></ul>
+      <h2>Industry category reference</h2><p><a href="${product.reference.url}">${product.reference.title}</a>. Provided for industry context only; no affiliation, equivalent design or shared approval is implied.</p>
+      </article>${inquiryForm(product.title)}</div></section>${ctaBand()}`
+    }));
+    continue;
+  }
   const isExtendedProduct = Boolean(product.buyerInputs);
   addPage(`products/${product.slug}/index.html`, layout({
     title: `${product.metaTitle} | Railwheel`,
@@ -1701,6 +1733,9 @@ async function writeAssets() {
   for (const product of [...homeProducts, ...mobilityProducts.map((p) => ({ image: `${p.slug}-illustration.webp` }))]) {
     const file = path.join("home-products", product.image);
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
+  }
+  for (const image of ["railway-brake-shoe.webp", "railway-brake-hose.webp", "railway-coupler.webp", "railway-carbon-brush.webp"]) {
+    await copyFile(path.join("assets/home-products", image), path.join("dist/assets/home-products", image));
   }
   await mkdir("dist/assets/gangway-applications", { recursive: true });
   for (const photo of gangwayApplicationPhotos) {
