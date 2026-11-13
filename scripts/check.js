@@ -56,4 +56,16 @@ for (const [slug, title] of mobilityProducts) {
   if (!detail.includes(image) || !detail.includes(`<option selected>${title}</option>`)) throw new Error(`Missing image or selected inquiry product: ${slug}`);
   if (!imageSitemap.includes(image)) throw new Error(`Missing image sitemap entry: ${slug}`);
 }
+const applicationImages = files.filter((file) => file.startsWith("dist/assets/gangway-applications/") && file.endsWith(".webp"));
+if (applicationImages.length !== 6) throw new Error("Expected six supplied gangway application photos");
+for (const slug of ["railway-gangway", "railway-gangway-bellows", "inter-car-connection", "gangways"]) {
+  const detail = await readFile(`dist/products/${slug}/index.html`, "utf8");
+  for (const image of applicationImages) {
+    if (!detail.includes(image.slice(4))) throw new Error(`Missing application photo in ${slug}: ${image}`);
+  }
+}
+for (const slug of ["bus-articulated-bellows", "flexible-vehicle-bellows"]) {
+  const detail = await readFile(`dist/products/${slug}/index.html`, "utf8");
+  if (detail.includes('/assets/gangway-applications/')) throw new Error(`Railway reference photos must not be presented as ${slug}`);
+}
 console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, image sitemap, robots.txt, QR assets and WebP product images.`);

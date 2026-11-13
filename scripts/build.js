@@ -247,6 +247,15 @@ const products = [
   }
 ];
 
+const gangwayApplicationPhotos = [
+  { image: "railway-gangway-car-end-installation.webp", title: "Car-end installation", alt: "Railway gangway bellows installed around a passenger vehicle car-end opening", caption: "Exterior view of the bellows, mounting frame and car-body interface.", width: 800, height: 866 },
+  { image: "railway-gangway-interior-passage.webp", title: "Interior passenger passage", alt: "Installed inter-car gangway with interior side panels, handrails and floor transition", caption: "Interior reference showing side panels, handrails and the transition between vehicles.", width: 800, height: 1067 },
+  { image: "railway-gangway-bellows-assembly.webp", title: "Bellows assembly access", alt: "Railway gangway bellows being fitted at a vehicle end in a workshop", caption: "Installation reference showing the bellows envelope and access around the car end.", width: 800, height: 1125 },
+  { image: "railway-gangway-three-piece-reference.webp", title: "Three-piece configuration", alt: "Vehicle-end gangway configuration identified as three-piece type in the supplied brochure", caption: "Three-piece configuration reference; confirm the exact assembly scope against drawings.", width: 352, height: 436 },
+  { image: "railway-gangway-single-piece-reference.webp", title: "Single-piece configuration", alt: "Rail vehicle gangway mounting at the car end identified as single-piece type in the brochure", caption: "Single-piece configuration reference showing the car-end passage opening.", width: 266, height: 328 },
+  { image: "railway-gangway-interior-interface.webp", title: "Passage and floor interface", alt: "Passenger gangway interior with sidewall panels and metal floor plates", caption: "Interior arrangement for reviewing panel clearance, access and the walking-surface interface.", width: 800, height: 1018 }
+];
+
 const mobilityProducts = [
   {
     title: "Railway Gangway", slug: "railway-gangway",
@@ -792,7 +801,13 @@ function mobilityCards() {
 }
 
 function mobilityRange() {
-  return `<div class="mobility-range"><div class="section-head"><div><span class="eyebrow">Vehicle connection systems</span><h2>Gangways, inter-car connections &amp; flexible bellows</h2></div><p>Explore passenger passage systems and flexible enclosures for rail and road vehicles. Supply scope and compatibility are reviewed against your drawings.</p></div>${mobilityCards()}</div>`;
+  return `<div class="mobility-range"><div class="section-head"><div><span class="eyebrow">Vehicle connection systems</span><h2>Gangways, inter-car connections &amp; flexible bellows</h2></div><p>Explore passenger passage systems and flexible enclosures for rail and road vehicles. Supply scope and compatibility are reviewed against your drawings.</p></div>${mobilityCards()}${gangwayApplications("railway-gangway", true)}</div>`;
+}
+
+function gangwayApplications(slug, compact = false) {
+  if (!["gangways", "railway-gangway", "railway-gangway-bellows", "inter-car-connection"].includes(slug)) return "";
+  const photos = compact ? gangwayApplicationPhotos.slice(0, 3) : gangwayApplicationPhotos;
+  return `<div class="gangway-applications"><h2>Railway gangway application references</h2><p>See installed gangway arrangements, passenger passage interiors and car-end interfaces. These photographs are supplied brochure references, not evidence of Railwheel-owned facilities or completed Railwheel projects. Configuration and suitability require project-specific review.</p><div class="application-photo-grid">${photos.map((photo) => `<figure><img src="/assets/gangway-applications/${photo.image}" alt="${photo.alt}" title="${photo.title}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async"><figcaption><h3>${photo.title}</h3><p>${photo.caption}</p></figcaption></figure>`).join("")}</div><p class="application-source">Source: customer-provided gangway brochure, application photographs on pages 11–12; partner reference material.</p>${compact ? `<a class="card-link" href="/products/railway-gangway/#application-references">View all application photographs &rarr;</a>` : ""}</div>`;
 }
 
 function imageCredit(product) {
@@ -908,7 +923,7 @@ for (const product of products) {
     path: `/products/${product.slug}/`,
     active: "Products",
     schemas: [productSchema(product), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url: `/products/${product.slug}/` }]), faqSchema()],
-    body: `${pageHero(product.title, product.description, product.title)}${imageCredit(product)}
+    body: `${pageHero(product.title, product.description, product.title)}${imageCredit(product)}${product.slug === "gangways" ? `<section><div class="container">${gangwayApplications(product.slug)}</div></section>` : ""}
     <section><div class="container grid grid-2"><article class="article"><img src="/assets/home-products/${product.image}" alt="${product.title} sourcing support for ${product.aliases}" title="${product.title}" loading="eager" decoding="async" width="423" height="464"><span class="eyebrow">${product.keyword}</span><h2>${product.title} for international rail projects</h2><p>${product.description} Railwheel supports international rolling-stock manufacturers, operators and maintenance buyers with technical inquiry review and export communication.</p><p>${isExtendedProduct ? `Supply must be confirmed against the approved vehicle configuration, controlled drawings and project requirements. Product availability, compliance, testing and delivery scope are stated only in the project quotation and contract.` : `Our team supports OEM railway wheel, custom railway wheel, heavy duty railway wheel, railway forging, railway casting and railway spare parts manufacturer inquiries with drawing review, material confirmation, export packing and inspection documentation.`}</p><h2>Applications and technical confirmation</h2><p>${isExtendedProduct ? `Typical applications include ${product.applications}. Buyers should identify the exact system, interface, operating conditions and acceptance requirements rather than selecting a replacement from appearance alone.` : `Typical applications include freight wagons, passenger coaches, metro vehicles, locomotives, mining railways and industrial railways. For wheel projects, buyers can discuss forged railway wheel, steel railway wheel, UIC railway wheel, AAR railway wheel and EN railway wheel requirements.`}</p><h3>Common buyer keywords</h3><p>This page supports procurement searches for ${product.aliases}, ${product.keyword}, railway components China and railway spare parts supplier inquiries.</p><h2>Typical inquiry information</h2>${isExtendedProduct ? `<p>Please send ${product.buyerInputs}. Railwheel will identify open technical and commercial assumptions before quotation.</p><ul><li>Controlled drawing, part number, revision and applicable standard</li><li>Vehicle, system interface and operating requirements</li><li>Quantity, inspection documents, packing and destination</li><li>Required delivery window and quotation terms</li></ul>` : `<ul><li>Drawing number, applicable standard and material grade</li><li>Quantity, destination port and delivery schedule</li><li>Inspection, certificate and packing requirements</li><li>Application: freight wagon, passenger coach, locomotive, metro, mining railway or industrial railway</li></ul>`}<h2>Why contact Railwheel</h2><p>Buyers receive focused communication from Amy Sun and a supplier team familiar with railway component sourcing, quality documentation and export requirements. No page statement replaces project-specific technical approval.</p>${relatedProducts(product.slug)}</article>${inquiryForm()}</div></section>${faqSection(product.title)}${ctaBand()}`
   }));
 }
@@ -933,6 +948,7 @@ for (const product of mobilityProducts) {
     <figure class="mobility-detail-image"><img src="/assets/home-products/${product.slug}-illustration.webp" alt="Illustrative ${product.title.toLowerCase()} assembly" title="${product.title}" width="800" height="533" decoding="async" loading="eager"><figcaption>AI-generated product illustration. Final design and supplied configuration are subject to approved drawings.</figcaption></figure>
     <h2>Product overview</h2><p>${product.overview}</p><h2>Applications</h2><p>${product.application}</p><h2>Technical information to confirm</h2><ul>${product.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>
     <h2>Inspection and acceptance</h2><p>${product.inspection}</p><p>Material selection, test methods and any applicable fire, smoke or vehicle requirements must be confirmed for the project. No certification or interchangeability is implied by this listing.</p>
+${["railway-gangway", "railway-gangway-bellows", "inter-car-connection"].includes(product.slug) ? `<div id="application-references">${gangwayApplications(product.slug)}</div>` : ""}
     <h2>Packaging and shipping</h2><p>Confirm packed dimensions, support points and storage limits after drawing review. Protect flexible folds from crushing and attachment profiles from distortion. Provide the destination, handling constraints and requested delivery terms for the shipping proposal.</p>
     <h2>Request a technical quotation</h2><p>Send drawings, vehicle type, operating conditions, quantity and required delivery date to <a href="mailto:${contact.email}">${contact.email}</a>. Amy Sun will coordinate a scope and feasibility review before quotation.</p><p>Please request model-specific photographs and drawings when making an inquiry.</p>
     <h2>Frequently asked question</h2><h3>${product.question}</h3><p>${product.answer}</p><h2>Related products and technical support</h2><ul>${mobilityProducts.filter((p) => p.slug !== product.slug).map((p) => `<li><a href="/products/${p.slug}/">${p.title}</a></li>`).join("")}<li><a href="/quality-control/">Quality control</a></li><li><a href="/manufacturing-capability/">Manufacturing capabilities</a></li><li><a href="/products/">All product categories</a></li></ul></article>${inquiryForm(product.title)}</div></section>${ctaBand()}`
@@ -1686,6 +1702,10 @@ async function writeAssets() {
     const file = path.join("home-products", product.image);
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
+  await mkdir("dist/assets/gangway-applications", { recursive: true });
+  for (const photo of gangwayApplicationPhotos) {
+    await copyFile(path.join("assets/gangway-applications", photo.image), path.join("dist/assets/gangway-applications", photo.image));
+  }
   if (existsSync("public/catalog")) {
     await cp("public/catalog", "dist/catalog", { recursive: true });
   }
@@ -1714,7 +1734,10 @@ async function main() {
     },
     ...mobilityProducts.map((product) => ({
       loc: `${siteUrl}/products/${product.slug}/`,
-      images: [[`home-products/${product.slug}-illustration.webp`, `${product.title} - AI-generated product illustration`]]
+      images: [
+        [`home-products/${product.slug}-illustration.webp`, `${product.title} - AI-generated product illustration`],
+        ...(["railway-gangway", "railway-gangway-bellows", "inter-car-connection"].includes(product.slug) ? gangwayApplicationPhotos.map((photo) => [`gangway-applications/${photo.image}`, photo.alt]) : [])
+      ]
     })),
     ...products.map((product) => ({
       loc: `${siteUrl}/products/${product.slug}/`,
