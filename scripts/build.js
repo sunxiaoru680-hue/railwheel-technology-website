@@ -782,7 +782,7 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   </header>
   <main>${body}</main>
   ${footer()}
-  ${floatingContact()}
+  ${floatingContact()}${pagePath === "/" ? '\n  <script src="/hero-slideshow.js" defer></script>' : ""}
 </body>
 </html>`;
 }
@@ -1736,6 +1736,7 @@ for (const [index, blog] of expandedBlogs.entries()) {
 async function writeAssets() {
   await mkdir("dist/assets", { recursive: true });
   await copyFile("src/styles.css", "dist/styles.css");
+  await copyFile("src/hero-slideshow.js", "dist/hero-slideshow.js");
   await mkdir("dist/assets/home-products", { recursive: true });
   for (const file of ["whatsapp-qr.png", "wechat-qr.png", "railwheel-logo-new.png"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));

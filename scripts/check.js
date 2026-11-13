@@ -45,6 +45,9 @@ const mobilityProducts = [
   ["passenger-boarding-bridge", "Passenger Boarding Bridge"]
 ];
 const home = await readFile("dist/index.html", "utf8");
+if (!home.includes('<script src="/hero-slideshow.js" defer></script>')) throw new Error("Missing homepage slideshow script");
+await stat("dist/hero-slideshow.js");
+for (const file of ["catalog-forged-wheels-hero.webp", "factory-cnc.webp"]) await stat(`dist/catalog/images/${file}`);
 const catalog = await readFile("dist/products/index.html", "utf8");
 const imageSitemap = await readFile("dist/image-sitemap.xml", "utf8");
 for (const [slug, title] of mobilityProducts) {
