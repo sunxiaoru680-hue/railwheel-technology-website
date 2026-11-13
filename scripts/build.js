@@ -788,7 +788,7 @@ function productCards(items = products) {
 }
 
 function mobilityCards() {
-  return `<div class="grid grid-3 mobility-products">${mobilityProducts.map((p) => `<article class="card"><span class="eyebrow">Gangways &amp; Bellows</span><h3><a href="/products/${p.slug}/">${p.title}</a></h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View specifications &rarr;</a></article>`).join("")}</div>`;
+  return `<div class="grid grid-3 mobility-products">${mobilityProducts.map((p) => `<article class="card product-list-card"><a class="mobility-product-image" href="/products/${p.slug}/" aria-label="View ${p.title}"><img src="/assets/home-products/${p.slug}-illustration.webp" alt="Illustration of ${p.title.toLowerCase()} for vehicle connection applications" title="${p.title} — illustrative view" loading="lazy" decoding="async" width="800" height="533"></a><small class="image-disclosure">Product illustration</small><h3><a href="/products/${p.slug}/">${p.title}</a></h3><p>${p.description}</p><a class="card-link" href="/products/${p.slug}/">View product &rarr;</a></article>`).join("")}</div>`;
 }
 
 function mobilityRange() {
@@ -824,13 +824,13 @@ function ctaBand() {
   return `<section class="dark-band"><div class="container section-head"><div><span class="eyebrow">Global inquiry support</span><h2>Send drawings, standards and quantity for a focused railway component quotation.</h2></div><div class="cta-row"><a class="btn btn-light" href="/catalog/">Download Catalog</a><a class="btn btn-light" href="/contact/#quote">Request a Quote</a><a class="btn btn-outline" style="background:transparent;color:white;border-color:rgba(255,255,255,.35)" href="mailto:${contact.email}">Contact Supplier</a></div></div></section>`;
 }
 
-function inquiryForm() {
+function inquiryForm(selectedProduct = "") {
   return `<form class="form" id="quote" action="mailto:${contact.email}" method="post" enctype="text/plain">
   <h3>Send Inquiry</h3>
   <input name="name" placeholder="Your name" aria-label="Your name" required>
   <input name="company" placeholder="Company name" aria-label="Company name">
   <input name="email" type="email" placeholder="Email address" aria-label="Email address" required>
-  <select name="product" aria-label="Product category">${products.map((p) => `<option>${p.title}</option>`).join("")}</select>
+  <select name="product" aria-label="Product category">${[...products, ...mobilityProducts.filter((p) => !products.some((existing) => existing.title === p.title))].map((p) => `<option${p.title === selectedProduct ? " selected" : ""}>${p.title}</option>`).join("")}</select>
   <textarea name="message" placeholder="Tell us the component, drawing standard, quantity and destination." aria-label="Inquiry details"></textarea>
   <button class="btn btn-primary" type="submit">Send Inquiry</button>
 </form>`;
@@ -925,10 +925,17 @@ for (const product of mobilityProducts) {
     path: url,
     active: "Products",
     schemas: [
-      { "@context": "https://schema.org", "@type": "Product", name: product.title, description: product.description, url: `${siteUrl}${url}`, brand: { "@type": "Brand", name: "Railwheel" }, category: "Vehicle gangways and flexible bellows" },
+      { "@context": "https://schema.org", "@type": "Product", name: product.title, description: product.description, image: `${siteUrl}/assets/home-products/${product.slug}-illustration.webp`, url: `${siteUrl}${url}`, brand: { "@type": "Brand", name: "Railwheel" }, category: "Vehicle gangways and flexible bellows" },
       breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Products", url: "/products/" }, { name: product.title, url }]), faq
     ],
-    body: `${pageHero(product.title, product.description, product.title)}<section><div class="container grid grid-2"><article class="article"><h2>Product overview</h2><p>${product.overview}</p><h2>Applications</h2><p>${product.application}</p><h2>Technical information to confirm</h2><ul>${product.features.map((feature) => `<li>${feature}</li>`).join("")}</ul><h2>Inspection and acceptance</h2><p>${product.inspection}</p><p>Material selection, test methods and any applicable fire, smoke or vehicle requirements must be confirmed for the project. No certification or interchangeability is implied by this listing.</p><h2>Packaging and shipping</h2><p>Confirm packed dimensions, support points and storage limits after drawing review. Protect flexible folds from crushing and attachment profiles from distortion. Provide the destination, handling constraints and requested delivery terms for the shipping proposal.</p><h2>Request a technical quotation</h2><p>Send drawings, vehicle type, operating conditions, quantity and required delivery date to <a href="mailto:${contact.email}">${contact.email}</a>. Amy Sun will coordinate a scope and feasibility review before quotation.</p><p>Product photography for this range is being prepared. Please request model-specific images and drawings when making an inquiry.</p><h2>Frequently asked question</h2><h3>${product.question}</h3><p>${product.answer}</p><h2>Related products and technical support</h2><ul>${mobilityProducts.filter((p) => p.slug !== product.slug).map((p) => `<li><a href="/products/${p.slug}/">${p.title}</a></li>`).join("")}<li><a href="/quality-control/">Quality control</a></li><li><a href="/manufacturing-capability/">Manufacturing capabilities</a></li><li><a href="/products/">All product categories</a></li></ul></article>${inquiryForm()}</div></section>${ctaBand()}`
+    body: `${pageHero(product.title, product.description, product.title)}
+    <section><div class="container grid grid-2"><article class="article">
+    <figure class="mobility-detail-image"><img src="/assets/home-products/${product.slug}-illustration.webp" alt="Illustrative ${product.title.toLowerCase()} assembly" title="${product.title}" width="800" height="533" decoding="async" loading="eager"><figcaption>AI-generated product illustration. Final design and supplied configuration are subject to approved drawings.</figcaption></figure>
+    <h2>Product overview</h2><p>${product.overview}</p><h2>Applications</h2><p>${product.application}</p><h2>Technical information to confirm</h2><ul>${product.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>
+    <h2>Inspection and acceptance</h2><p>${product.inspection}</p><p>Material selection, test methods and any applicable fire, smoke or vehicle requirements must be confirmed for the project. No certification or interchangeability is implied by this listing.</p>
+    <h2>Packaging and shipping</h2><p>Confirm packed dimensions, support points and storage limits after drawing review. Protect flexible folds from crushing and attachment profiles from distortion. Provide the destination, handling constraints and requested delivery terms for the shipping proposal.</p>
+    <h2>Request a technical quotation</h2><p>Send drawings, vehicle type, operating conditions, quantity and required delivery date to <a href="mailto:${contact.email}">${contact.email}</a>. Amy Sun will coordinate a scope and feasibility review before quotation.</p><p>Please request model-specific photographs and drawings when making an inquiry.</p>
+    <h2>Frequently asked question</h2><h3>${product.question}</h3><p>${product.answer}</p><h2>Related products and technical support</h2><ul>${mobilityProducts.filter((p) => p.slug !== product.slug).map((p) => `<li><a href="/products/${p.slug}/">${p.title}</a></li>`).join("")}<li><a href="/quality-control/">Quality control</a></li><li><a href="/manufacturing-capability/">Manufacturing capabilities</a></li><li><a href="/products/">All product categories</a></li></ul></article>${inquiryForm(product.title)}</div></section>${ctaBand()}`
   }));
 }
 
@@ -1675,7 +1682,7 @@ async function writeAssets() {
   for (const file of ["railway-wheel-manufacturing.webp", "home-hero-railway-wheel-manufacturing.jpg"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
-  for (const product of homeProducts) {
+  for (const product of [...homeProducts, ...mobilityProducts.map((p) => ({ image: `${p.slug}-illustration.webp` }))]) {
     const file = path.join("home-products", product.image);
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
   }
@@ -1705,6 +1712,10 @@ async function main() {
         ...homeProducts.map((product) => [`home-products/${product.image}`, `${product.title} product image for railway component buyers`])
       ]
     },
+    ...mobilityProducts.map((product) => ({
+      loc: `${siteUrl}/products/${product.slug}/`,
+      images: [[`home-products/${product.slug}-illustration.webp`, `${product.title} - AI-generated product illustration`]]
+    })),
     ...products.map((product) => ({
       loc: `${siteUrl}/products/${product.slug}/`,
       images: [[`home-products/${product.image}`, `${product.title} from Railwheel railway component supplier`]]

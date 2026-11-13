@@ -36,4 +36,24 @@ for (const required of ["dist/sitemap.xml", "dist/image-sitemap.xml", "dist/robo
 }
 const webpProductImages = files.filter((file) => file.startsWith("dist/assets/home-products/") && file.endsWith(".webp"));
 if (webpProductImages.length < 8) throw new Error(`Expected at least 8 WebP product images, found ${webpProductImages.length}`);
+const mobilityProducts = [
+  ["railway-gangway", "Railway Gangway"],
+  ["railway-gangway-bellows", "Railway Gangway Bellows"],
+  ["inter-car-connection", "Inter-Car Connection"],
+  ["bus-articulated-bellows", "Bus Articulated Bellows"],
+  ["flexible-vehicle-bellows", "Flexible Vehicle Bellows"]
+];
+const home = await readFile("dist/index.html", "utf8");
+const catalog = await readFile("dist/products/index.html", "utf8");
+const imageSitemap = await readFile("dist/image-sitemap.xml", "utf8");
+for (const [slug, title] of mobilityProducts) {
+  const image = `/assets/home-products/${slug}-illustration.webp`;
+  await stat(`dist${image}`);
+  for (const html of [home, catalog]) {
+    if (!html.includes(image) || !html.includes(`/products/${slug}/`)) throw new Error(`Missing product card: ${slug}`);
+  }
+  const detail = await readFile(`dist/products/${slug}/index.html`, "utf8");
+  if (!detail.includes(image) || !detail.includes(`<option selected>${title}</option>`)) throw new Error(`Missing image or selected inquiry product: ${slug}`);
+  if (!imageSitemap.includes(image)) throw new Error(`Missing image sitemap entry: ${slug}`);
+}
 console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, image sitemap, robots.txt, QR assets and WebP product images.`);
