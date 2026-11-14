@@ -129,3 +129,23 @@ for (const article of componentArticles) {
   }
 }
 console.log("Verified 20 unique technical articles, content structure, FAQ/Article schema, references and all local links.");
+for (const route of ["about", "manufacturing-capability"]) {
+  const html = await readFile(`dist/${route}/index.html`, "utf8");
+  if (html.includes('class="visual-panel"')) throw new Error(`Unfilled visual placeholder: ${route}`);
+  for (const image of ["workshop-visit.webp", "metrology-review.webp", "technical-meeting.webp"]) {
+    if (!html.includes(`/assets/company/${image}`)) throw new Error(`Missing company reference photo: ${route}/${image}`);
+    await stat(`dist/assets/company/${image}`);
+  }
+  if (route === "about" && html.includes("Brand identity</h3>")) throw new Error("Outdated About placeholder content");
+}
+const checkedImages = new Set();
+for (const file of htmlFiles) {
+  const html = await readFile(file, "utf8");
+  for (const match of html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)) {
+    const source = match[1];
+    if (/^(https?:|data:)/.test(source)) continue;
+    const target = source.startsWith("/") ? path.join("dist", source.split(/[?#]/)[0]) : path.resolve(path.dirname(file), source.split(/[?#]/)[0]);
+    if (!checkedImages.has(target)) { await stat(target); checkedImages.add(target); }
+  }
+}
+console.log(`Checked all local image references across ${htmlFiles.length} pages and company-photo sections.`);

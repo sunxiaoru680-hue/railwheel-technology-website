@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.railwheelchina.com/about/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/workshop-visit.webp</image:loc><image:caption>Company-supplied workshop visit reference</image:caption><image:title>Company-supplied workshop visit reference</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/metrology-review.webp</image:loc><image:caption>Component dimensional measurement reference</image:caption><image:title>Component dimensional measurement reference</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/technical-meeting.webp</image:loc><image:caption>Technical discussion reference from company materials</image:caption><image:title>Technical discussion reference from company materials</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/manufacturing-capability/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/workshop-visit.webp</image:loc><image:caption>Company-supplied workshop visit reference</image:caption><image:title>Company-supplied workshop visit reference</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/metrology-review.webp</image:loc><image:caption>Component dimensional measurement reference</image:caption><image:title>Component dimensional measurement reference</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/technical-meeting.webp</image:loc><image:caption>Technical discussion reference from company materials</image:caption><image:title>Technical discussion reference from company materials</image:title></image:image>
+  </url>
+  <url>
     <loc>https://www.railwheelchina.com/</loc>
     <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Railway wheel manufacturer workshop producing train wheels and railroad wheels</image:caption><image:title>Railway wheel manufacturer workshop producing train wheels and railroad wheels</image:title></image:image>
     <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Railway Wheel product image for railway component buyers</image:caption><image:title>Railway Wheel product image for railway component buyers</image:title></image:image>

@@ -17,6 +17,7 @@ import { wheelsetBearingsBlog } from "./wheelset-bearings-blog.js";
 import { bogieSuspensionBlog } from "./bogie-suspension-blog.js";
 import { additionalComponents } from "./additional-components.js";
 import { componentArticles, componentArticleSources } from "./component-articles.js";
+import { aboutCompanyPage, companyWorkshopPhoto, companyReferenceGallery } from "./company-pages.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -921,13 +922,12 @@ addPage("index.html", layout({
 }));
 
 addPage("about/index.html", layout({
-  title: `About Railwheel | Railway Wheel, Train Wheel & Railway Components Manufacturer`,
-  description: "Learn about Ma'anshan Railwheel, a China railway wheel, train wheel, railroad wheel, wheelset, bogie, axle box and spare parts supplier for global buyers.",
+  title: "About Railwheel | Railway Component Supply & Export from China",
+  description: "Meet Ma'anshan Railwheel: railway wheels, wheelsets, bogie parts and passenger connections, with drawing review, inspection coordination and export support.",
   path: "/about/",
   active: "About Us",
-  schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About Us", url: "/about/" }]), faqSchema()],
-  body: `${pageHero("About Ma'anshan Railwheel Industrial Technology Co., Ltd.", "A focused railway wheel manufacturer, exporter and railway components supplier serving global B2B procurement.", "About Us")}
-  <section><div class="container grid grid-2"><div><h2>Professional rail component supply</h2><p class="muted">Railwheel serves industrial buyers who need dependable railway wheel, train wheel, railroad wheel, railway wheelset, railway bogie, freight bogie, passenger bogie, railway axle, railroad axle and railway spare parts with clear communication and practical documentation.</p><p class="muted">The company works with project drawings, OEM specifications, UIC, AAR, EN and customer standards, inspection expectations and export requirements so buyers can move from inquiry to quotation with fewer delays.</p><h3>International B2B focus</h3><p class="muted">Our content, quotation process and contact channels are structured for overseas buyers comparing railway wheel manufacturer, train wheel supplier, railroad wheel supplier and railway components China options.</p><div class="seo-link-row"><a href="/products/">Products</a><a href="/quality-control/">Quality Control</a><a href="/manufacturing-capability/">Capabilities</a><a href="/contact/">Contact Us</a></div></div><div class="card"><h3>Brand identity</h3><p>The Railwheel identity combines a railway wheel, rail track and steel-blue industrial palette to communicate motion, precision and heavy-duty engineering.</p><ul class="spec-list"><li>Railway wheel manufacturer in China</li><li>Train wheel and railroad wheel supplier</li><li>Railway forging and railway casting support</li><li>Railway components exporter for worldwide buyers</li></ul></div></div></section>${internalLinkHub()}${faqSection("Railwheel company and export supply")}${ctaBand()}`
+  schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About Us", url: "/about/" }]), { "@context": "https://schema.org", "@type": "AboutPage", url: `${siteUrl}/about/`, mainEntity: { "@type": "Organization", name: company, url: siteUrl } }],
+  body: aboutCompanyPage({ pageHero, ctaBand, company, contact })
 }));
 
 addPage("products/index.html", layout({
@@ -1042,13 +1042,14 @@ function manufacturingCapabilityMainPage() {
     <div class="container">
       <div class="section-head"><div><span class="eyebrow">Factory capability</span><h2>From railway component drawings to export-ready supply.</h2></div><p>Railwheel coordinates manufacturing and sourcing channels for railway wheel, train wheel, railroad wheel, railway axle, side frame, bolster, axle box and assembled railway wheelset projects.</p></div>
       <div class="grid grid-2 split-panel">
-        <div class="visual-panel" role="img" aria-label="Railway wheel manufacturing capability illustration"></div>
+        ${companyWorkshopPhoto()}
         <article class="article"><h2>Manufacturing categories</h2><p>Capability information should help buyers judge whether a supplier can support the required product route, not just display marketing claims. Railwheel focuses on practical quotation inputs: drawings, standards, material grades, quantity, inspection records, packing and destination.</p><ul class="spec-list"><li>Forged railway wheel and steel railway wheel supply support</li><li>OEM railway wheel and custom railway wheel manufacturing inquiries</li><li>Railway forging, railway casting and machining for bogie parts</li><li>Wheelset, axle, axle box and bearing housing project coordination</li><li>Packing, labeling and shipment communication for worldwide export</li></ul></article>
       </div>
       <div class="process-list process-list-horizontal">
         ${["Technical inquiry", "Drawing review", "Material planning", "Forging or casting", "Machining", "Inspection", "Packing", "Shipping"].map((step, index) => `<div><b>${index + 1}</b><span>${step}</span></div>`).join("")}
       </div>
       <div class="grid grid-4">${["Forging", "Casting", "CNC Machining", "Assembly"].map((x) => `<article class="card"><div class="icon">MC</div><h3>${x}</h3><p>Capability support for railway wheels, axles, bogie parts and related railway spare parts based on drawings and project standards.</p></article>`).join("")}</div>
+      ${companyReferenceGallery()}
       <div class="seo-link-row"><a href="/train-wheel-factory/">Train Wheel Factory</a><a href="/chinese-railway-wheel-factory/">Chinese Railway Wheel Factory</a><a href="/heavy-duty-railway-wheel/">Heavy Duty Railway Wheel</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a></div>
     </div>
   </section>${faqSection("railway wheel manufacturing capability")}${ctaBand()}`;
@@ -1768,6 +1769,10 @@ async function writeAssets() {
   await mkdir("dist/assets", { recursive: true });
   await copyFile("src/styles.css", "dist/styles.css");
   await copyFile("src/hero-slideshow.js", "dist/hero-slideshow.js");
+  await mkdir("dist/assets/company", { recursive: true });
+  for (const image of ["workshop-visit.webp", "metrology-review.webp", "technical-meeting.webp"]) {
+    await copyFile(path.join("assets/company", image), path.join("dist/assets/company", image));
+  }
   await mkdir("dist/assets/home-products", { recursive: true });
   for (const file of ["whatsapp-qr.png", "wechat-qr.png", "railwheel-logo-new.png"]) {
     if (existsSync(path.join("assets", file))) await copyFile(path.join("assets", file), path.join("dist/assets", file));
@@ -1806,6 +1811,14 @@ async function main() {
   }).join("\n");
   await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
   const imageUrls = [
+    ...["about", "manufacturing-capability"].map((slug) => ({
+      loc: `${siteUrl}/${slug}/`,
+      images: [
+        ["company/workshop-visit.webp", "Company-supplied workshop visit reference"],
+        ["company/metrology-review.webp", "Component dimensional measurement reference"],
+        ["company/technical-meeting.webp", "Technical discussion reference from company materials"]
+      ]
+    })),
     {
       loc: `${siteUrl}/`,
       images: [
