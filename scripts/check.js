@@ -1,5 +1,6 @@
 import { readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
+import { componentArticles, componentArticleSources } from "./component-articles.js";
 
 const requiredSnippets = [
   "<title>",
@@ -97,3 +98,34 @@ for (const image of ["railway-brake-shoe-studio.webp", "railway-hose-studio.webp
 }
 if (home.includes('/assets/home-products/railway-gangway.webp')) throw new Error("Homepage gangway product card must not use the old interior photograph");
 console.log(`Checked ${htmlFiles.length} HTML pages, sitemap, image sitemap, robots.txt, QR assets and WebP product images.`);
+if (componentArticles.length !== 20) throw new Error("Expected exactly 20 new technical articles");
+const articleSlugs = new Set();
+const articleTitles = new Set();
+const paragraphs = new Set();
+const newsIndex = await readFile("dist/news/index.html", "utf8");
+for (const article of componentArticles) {
+  if (articleSlugs.has(article.slug) || articleTitles.has(article.title)) throw new Error(`Duplicate article identity: ${article.slug}`);
+  articleSlugs.add(article.slug);
+  articleTitles.add(article.title);
+  if (article.sections.length !== 6 || article.table.length < 4 || article.faqs.length < 2) throw new Error(`Incomplete technical article: ${article.slug}`);
+  const text = [...article.sections.flat(), article.scenario, ...article.table.flat(), ...article.faqs.flat()].join(" ");
+  if (text.split(/\s+/).length < 500) throw new Error(`Insufficient article depth: ${article.slug}`);
+  for (const [, paragraph] of article.sections) {
+    if (paragraphs.has(paragraph)) throw new Error(`Repeated article paragraph: ${article.slug}`);
+    paragraphs.add(paragraph);
+  }
+  for (const source of article.sources) if (!componentArticleSources[source]) throw new Error(`Unknown reference: ${source}`);
+  const route = `/news/${article.slug}/`;
+  const html = await readFile(`dist${route}index.html`, "utf8");
+  if ((html.match(/<h1[ >]/g) || []).length !== 1) throw new Error(`Invalid article H1: ${article.slug}`);
+  if (!newsIndex.includes(route) || !sitemap.includes(route) || !imageSitemap.includes(route)) throw new Error(`Missing article discovery link: ${article.slug}`);
+  const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) => JSON.parse(match[1]));
+  const faq = schemas.find((schema) => schema["@type"] === "FAQPage");
+  const articleSchema = schemas.find((schema) => schema["@type"] === "Article");
+  if (faq?.mainEntity.length !== article.faqs.length || articleSchema?.datePublished !== "2026-11-14") throw new Error(`Incorrect article schema: ${article.slug}`);
+  for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)(?:[?#][^"]*)?"/g)) {
+    const target = match[1];
+    await stat(`dist${target}${target.endsWith("/") ? "index.html" : ""}`);
+  }
+}
+console.log("Verified 20 unique technical articles, content structure, FAQ/Article schema, references and all local links.");

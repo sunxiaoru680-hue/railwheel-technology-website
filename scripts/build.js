@@ -16,6 +16,7 @@ import { axleLoadBlog } from "./axle-load-blog.js";
 import { wheelsetBearingsBlog } from "./wheelset-bearings-blog.js";
 import { bogieSuspensionBlog } from "./bogie-suspension-blog.js";
 import { additionalComponents } from "./additional-components.js";
+import { componentArticles, componentArticleSources } from "./component-articles.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -404,6 +405,7 @@ blogs.unshift(axleInspectionBlog);
 blogs.unshift(axleLoadBlog);
 blogs.unshift(wheelsetBearingsBlog);
 blogs.unshift(bogieSuspensionBlog);
+blogs.unshift(...componentArticles.map((article) => ({ ...article, date: "2026-11-14", technicalSeries: true })));
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -1080,12 +1082,12 @@ addPage("applications/index.html", layout({
 }));
 
 addPage("news/index.html", layout({
-  title: "Railway Wheel Blog | Train Wheel, Railroad Wheel & Railway Parts Guides",
-  description: "Read Railwheel SEO guides about railway wheel, train wheel, railroad wheel, wheelset, bogie, axle box, railway forging, casting and spare parts.",
+  title: "Railway Component Technical Articles | Engineering & Procurement | Railwheel",
+  description: "Technical articles on railway springs, bogie interfaces, brake hoses, couplers, carbon brushes and gangways, with application scenarios and inspection checklists.",
   path: "/news/",
   active: "News",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }]), faqSchema()],
-  body: `${pageHero("News / Blog", "SEO articles and procurement guides for railway wheels and components.", "News / Blog")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Procurement insights</span><h2>Railway wheel, train wheel and railway components buying guides.</h2></div><p>Use these articles to prepare technical inquiries for global railway component sourcing.</p></div><div class="grid grid-2">${blogs.map((b) => `<article class="card"><span class="eyebrow">${b.keyword}</span><h3>${b.title}</h3><p>${b.summary}</p><a class="card-link" href="/news/${b.slug}/">Read article</a></article>`).join("")}</div></div></section>${internalLinkHub()}`
+  body: `${pageHero("News / Blog", "Engineering perspectives, application scenarios and procurement guidance for railway components and passenger access systems.", "News / Blog")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Technical library</span><h2>From component interfaces to inspection evidence.</h2></div><p>Explore suspension, braking, vehicle connections and passenger access requirements.</p></div><div class="grid grid-2">${blogs.map((b) => `<article class="card news-card">${b.technicalSeries ? `<a href="/news/${b.slug}/" aria-label="${esc(b.title)}"><img src="/assets/home-products/${b.image}" alt="Illustrative component for ${esc(b.title)}" width="640" height="800" loading="lazy" decoding="async"></a>` : ""}<span class="eyebrow">${esc(b.category || "Procurement insights")}</span><h3><a href="/news/${b.slug}/">${esc(b.title)}</a></h3>${b.technicalSeries ? '<p class="muted"><time datetime="2026-11-14">November 14, 2026</time></p>' : ""}<p>${esc(b.summary)}</p><a class="card-link" href="/news/${b.slug}/">Read article</a></article>`).join("")}</div></div></section>${internalLinkHub()}`
 }));
 
 function blogArticleBody(blog) {
@@ -1223,6 +1225,35 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog.technicalSeries) {
+    const pagePath = `/news/${blog.slug}/`;
+    const product = [...products, ...mobilityProducts].find((item) => item.slug === blog.product);
+    const photograph = gangwayApplicationPhotos.find((photo) => photo.image === blog.photo);
+    const related = componentArticles.filter((article) => article.slug !== blog.slug && (article.category === blog.category || article.product === blog.product)).slice(0, 3);
+    const index = componentArticles.findIndex((article) => article.slug === blog.slug);
+    const adjacent = [componentArticles[(index + 19) % 20], componentArticles[(index + 1) % 20]];
+    addPage(`news/${blog.slug}/index.html`, layout({
+      title: `${blog.title} | Railwheel`, description: blog.summary, path: pagePath, active: "News",
+      schemas: [
+        { ...articleSchema(blog), image: `${siteUrl}/assets/home-products/${blog.image}`, datePublished: blog.date, dateModified: blog.date, articleSection: blog.category, keywords: blog.keyword, wordCount: [...blog.sections.flat(), blog.scenario, ...blog.table.flat(), ...blog.faqs.flat()].join(" ").split(/\s+/).length },
+        breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }, { name: blog.title, url: pagePath }]),
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) }
+      ],
+      body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article technical-article">
+      <p class="muted"><time datetime="2026-11-14">November 14, 2026</time> · ${esc(blog.category)} · ${esc(company)}</p>
+      <figure class="technical-article-figure"><img src="/assets/home-products/${blog.image}" alt="Illustrative ${esc(product.title.toLowerCase())} component discussed in this technical article" width="640" height="800" decoding="async" fetchpriority="high"><figcaption>AI-generated product illustration, not a controlled engineering drawing or model-specific photograph.</figcaption></figure>
+      ${blog.sections.map(([heading, paragraph]) => `<h2>${esc(heading)}</h2><p>${esc(paragraph)}</p>`).join("")}
+      <h2>Application scenario</h2><p>${esc(blog.scenario)}</p>
+      ${photograph ? `<figure class="technical-application-figure"><img src="/assets/gangway-applications/${photograph.image}" alt="${photograph.alt}" width="${photograph.width}" height="${photograph.height}" loading="lazy" decoding="async"><figcaption>${photograph.caption} Partner application reference from the supplied brochure; not evidence of a Railwheel delivery or owned facility.</figcaption></figure>` : ""}
+      <h2>Technical review checklist</h2><table class="component-specifications"><caption>Checks to define in the project documentation</caption><thead><tr><th scope="col">Review item</th><th scope="col">Required definition</th><th scope="col">Purpose</th></tr></thead><tbody>${blog.table.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>
+      <h2>Frequently asked questions</h2>${blog.faqs.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}
+      <h2>Technical references and scope</h2><ul>${blog.sources.map((key) => componentArticleSources[key]).map(([label, url]) => `<li><a href="${url}">${esc(label)}</a></li>`).join("")}</ul><p class="muted">Public sources reviewed November 14, 2026 provide industry or standards-scope context. They do not transfer another manufacturer's approvals to Railwheel. Confirm the controlled standard edition, vehicle documents and acceptance criteria with the responsible authority. This article is procurement guidance, not installation, repair or service-release instructions.</p>
+      <h2>Discuss your ${esc(product.title.toLowerCase())} requirement</h2><p>Send the approved drawing and revision, application, quantity, required evidence and destination to Amy Sun at <a href="mailto:${contact.email}">${contact.email}</a>. Scope and feasibility are confirmed through technical review before quotation.</p><div class="cta-row"><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a><a class="btn btn-outline" href="/products/${blog.product}/">${esc(product.title)}</a></div>
+      <nav class="article-related" aria-label="Related technical reading"><h2>Related technical reading</h2><ul>${[...new Map([...related, ...adjacent].map((article) => [article.slug, article])).values()].map((article) => `<li><a href="/news/${article.slug}/">${esc(article.title)}</a></li>`).join("")}<li><a href="/quality-control/">Quality control and documentation</a></li><li><a href="/news/">All news and technical articles</a></li></ul></nav>
+      </div></section>`
+    }));
+    continue;
+  }
   if (blog === bogieSuspensionBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
@@ -1770,7 +1801,8 @@ async function main() {
   }
   const urls = pages.map((page) => {
     const loc = page.filePath === "index.html" ? `${siteUrl}/` : `${siteUrl}/${page.filePath.replace(/index\.html$/, "")}`;
-    return `  <url><loc>${loc}</loc><changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
+    const lastModified = componentArticles.some((article) => page.filePath === `news/${article.slug}/index.html`) ? "<lastmod>2026-11-14</lastmod>" : "";
+    return `  <url><loc>${loc}</loc>${lastModified}<changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
   }).join("\n");
   await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
   const imageUrls = [
@@ -1782,6 +1814,13 @@ async function main() {
         ...gangwayApplicationPhotos.slice(0, 3).map((photo) => [`gangway-applications/${photo.image}`, photo.alt])
       ]
     },
+    ...componentArticles.map((article) => ({
+      loc: `${siteUrl}/news/${article.slug}/`,
+      images: [
+        [`home-products/${article.image}`, `${article.title} - illustrative product view`],
+        ...(article.photo ? [[`gangway-applications/${article.photo}`, "Supplied partner application reference photograph"]] : [])
+      ]
+    })),
     ...mobilityProducts.map((product) => ({
       loc: `${siteUrl}/products/${product.slug}/`,
       images: [
