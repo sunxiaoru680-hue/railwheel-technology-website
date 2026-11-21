@@ -2,15 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.railwheelchina.com/about/</loc>
-    <image:image><image:loc>https://www.railwheelchina.com/assets/company/workshop-visit.webp</image:loc><image:caption>Company-supplied workshop visit reference</image:caption><image:title>Company-supplied workshop visit reference</image:title></image:image>
-    <image:image><image:loc>https://www.railwheelchina.com/assets/company/metrology-review.webp</image:loc><image:caption>Component dimensional measurement reference</image:caption><image:title>Component dimensional measurement reference</image:title></image:image>
-    <image:image><image:loc>https://www.railwheelchina.com/assets/company/technical-meeting.webp</image:loc><image:caption>Technical discussion reference from company materials</image:caption><image:title>Technical discussion reference from company materials</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-machining-line.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-material-inspection.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-forging.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-heat-treatment.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-cnc-machining.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-ndt-inspection.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-assembly-packing.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-wheelset.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-bogie.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-gangway.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
   </url>
   <url>
     <loc>https://www.railwheelchina.com/manufacturing-capability/</loc>
-    <image:image><image:loc>https://www.railwheelchina.com/assets/company/workshop-visit.webp</image:loc><image:caption>Company-supplied workshop visit reference</image:caption><image:title>Company-supplied workshop visit reference</image:title></image:image>
-    <image:image><image:loc>https://www.railwheelchina.com/assets/company/metrology-review.webp</image:loc><image:caption>Component dimensional measurement reference</image:caption><image:title>Component dimensional measurement reference</image:title></image:image>
-    <image:image><image:loc>https://www.railwheelchina.com/assets/company/technical-meeting.webp</image:loc><image:caption>Technical discussion reference from company materials</image:caption><image:title>Technical discussion reference from company materials</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-machining-line.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-material-inspection.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-forging.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-heat-treatment.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-cnc-machining.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-ndt-inspection.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/company/accio-assembly-packing.webp</image:loc><image:caption>ACCIO manufacturing or product illustration</image:caption><image:title>ACCIO manufacturing or product illustration</image:title></image:image>
   </url>
   <url>
     <loc>https://www.railwheelchina.com/</loc>
@@ -34,6 +45,196 @@
     <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-car-end-installation.webp</image:loc><image:caption>Railway gangway bellows installed around a passenger vehicle car-end opening</image:caption><image:title>Railway gangway bellows installed around a passenger vehicle car-end opening</image:title></image:image>
     <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-interior-passage.webp</image:loc><image:caption>Installed inter-car gangway with interior side panels, handrails and floor transition</image:caption><image:title>Installed inter-car gangway with interior side panels, handrails and floor transition</image:title></image:image>
     <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-bellows-assembly.webp</image:loc><image:caption>Railway gangway bellows being fitted at a vehicle end in a workshop</image:caption><image:title>Railway gangway bellows being fitted at a vehicle end in a workshop</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/es/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Ruedas y componentes ferroviarios de China</image:caption><image:title>Ruedas y componentes ferroviarios de China</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/es/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Ruedas ferroviarias</image:caption><image:title>Ruedas ferroviarias</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Conjuntos de ruedas y eje</image:caption><image:title>Conjuntos de ruedas y eje</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Pasarelas entre coches</image:caption><image:title>Pasarelas entre coches</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ru/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Железнодорожные колеса и комплектующие из Китая</image:caption><image:title>Железнодорожные колеса и комплектующие из Китая</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ru/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Железнодорожные колеса</image:caption><image:title>Железнодорожные колеса</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Колесные пары</image:caption><image:title>Колесные пары</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Межвагонные переходы</image:caption><image:title>Межвагонные переходы</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/fr/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Roues et composants ferroviaires de Chine</image:caption><image:title>Roues et composants ferroviaires de Chine</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/fr/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Roues ferroviaires</image:caption><image:title>Roues ferroviaires</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Essieux montés</image:caption><image:title>Essieux montés</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Intercirculations ferroviaires</image:caption><image:title>Intercirculations ferroviaires</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/de/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Eisenbahnräder und Bahnkomponenten aus China</image:caption><image:title>Eisenbahnräder und Bahnkomponenten aus China</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/de/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Eisenbahnräder</image:caption><image:title>Eisenbahnräder</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Radsätze</image:caption><image:title>Radsätze</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Fahrzeugübergänge</image:caption><image:title>Fahrzeugübergänge</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/pt/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Rodas e componentes ferroviários da China</image:caption><image:title>Rodas e componentes ferroviários da China</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/pt/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Rodas ferroviárias</image:caption><image:title>Rodas ferroviárias</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Rodeiros ferroviários</image:caption><image:title>Rodeiros ferroviários</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Passagens entre carros</image:caption><image:title>Passagens entre carros</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ja/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>中国から世界へ、鉄道車輪と鉄道部品を供給</image:caption><image:title>中国から世界へ、鉄道車輪と鉄道部品を供給</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ja/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>鉄道車輪</image:caption><image:title>鉄道車輪</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>輪軸</image:caption><image:title>輪軸</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>車両間貫通路</image:caption><image:title>車両間貫通路</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ko/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>중국 철도 차륜 및 철도 부품 공급</image:caption><image:title>중국 철도 차륜 및 철도 부품 공급</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ko/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>철도 차륜</image:caption><image:title>철도 차륜</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>윤축</image:caption><image:title>윤축</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>차량 간 연결 통로</image:caption><image:title>차량 간 연결 통로</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ar/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>عجلات ومكونات السكك الحديدية من الصين</image:caption><image:title>عجلات ومكونات السكك الحديدية من الصين</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/ar/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>عجلات السكك الحديدية</image:caption><image:title>عجلات السكك الحديدية</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>مجموعات العجلات</image:caption><image:title>مجموعات العجلات</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>ممرات الربط بين العربات</image:caption><image:title>ممرات الربط بين العربات</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/it/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Ruote e componenti ferroviari dalla Cina</image:caption><image:title>Ruote e componenti ferroviari dalla Cina</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/it/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Ruote ferroviarie</image:caption><image:title>Ruote ferroviarie</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Sale montate</image:caption><image:title>Sale montate</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Intercomunicanti ferroviari</image:caption><image:title>Intercomunicanti ferroviari</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/pl/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Koła i komponenty kolejowe z Chin</image:caption><image:title>Koła i komponenty kolejowe z Chin</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/pl/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Koła kolejowe</image:caption><image:title>Koła kolejowe</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Zestawy kołowe</image:caption><image:title>Zestawy kołowe</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Przejścia międzywagonowe</image:caption><image:title>Przejścia międzywagonowe</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/tr/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Çin&#39;den demiryolu tekerlekleri ve bileşenleri</image:caption><image:title>Çin&#39;den demiryolu tekerlekleri ve bileşenleri</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/tr/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Demiryolu tekerlekleri</image:caption><image:title>Demiryolu tekerlekleri</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Tekerlek takımları</image:caption><image:title>Tekerlek takımları</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Vagonlar arası geçişler</image:caption><image:title>Vagonlar arası geçişler</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/id/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Roda dan komponen kereta api dari Tiongkok</image:caption><image:title>Roda dan komponen kereta api dari Tiongkok</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/id/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Roda kereta api</image:caption><image:title>Roda kereta api</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Perangkat roda</image:caption><image:title>Perangkat roda</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Gangway antar kereta</image:caption><image:title>Gangway antar kereta</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/vi/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>Bánh xe và linh kiện đường sắt từ Trung Quốc</image:caption><image:title>Bánh xe và linh kiện đường sắt từ Trung Quốc</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/vi/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>Bánh xe đường sắt</image:caption><image:title>Bánh xe đường sắt</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>Bộ trục bánh xe</image:caption><image:title>Bộ trục bánh xe</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>Lối nối giữa các toa</image:caption><image:title>Lối nối giữa các toa</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/th/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/railway-wheel-manufacturing.webp</image:loc><image:caption>ล้อและชิ้นส่วนรถไฟจากประเทศจีน</image:caption><image:title>ล้อและชิ้นส่วนรถไฟจากประเทศจีน</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/th/products/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheel.webp</image:loc><image:caption>ล้อรถไฟ</image:caption><image:title>ล้อรถไฟ</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-wheelset.webp</image:loc><image:caption>ชุดล้อและเพลา</image:caption><image:title>ชุดล้อและเพลา</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-illustration.webp</image:loc><image:caption>ทางเชื่อมระหว่างตู้รถไฟ</image:caption><image:title>ทางเชื่อมระหว่างตู้รถไฟ</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-interface-control-drawing/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Interface Drawings: Controlling the Car-End Boundary - illustrative product view</image:caption><image:title>Railway Gangway Interface Drawings: Controlling the Car-End Boundary - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-car-end-installation.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/train-gangway-combined-movement-envelope/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Train Gangway Movement Envelopes: Why Separate Maximum Angles Are Not Enough - illustrative product view</image:caption><image:title>Train Gangway Movement Envelopes: Why Separate Maximum Angles Are Not Enough - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-interior-passage.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-fire-evidence-scope/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Fire Documentation: Material Reports Versus Assembly Evidence - illustrative product view</image:caption><image:title>Railway Gangway Fire Documentation: Material Reports Versus Assembly Evidence - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-bellows-assembly.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-water-ingress-drainage/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Water Ingress: Separating Seals, Drainage and Condensation - illustrative product view</image:caption><image:title>Railway Gangway Water Ingress: Separating Seals, Drainage and Condensation - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-car-end-installation.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/train-gangway-bridge-plate-floor-interface/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Train Gangway Bridge Plates: Floor Interfaces Under Relative Vehicle Motion - illustrative product view</image:caption><image:title>Train Gangway Bridge Plates: Floor Interfaces Under Relative Vehicle Motion - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-interior-passage.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-maintenance-defect-records/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Maintenance Records: Turning Visible Damage into a Useful RFQ - illustrative product view</image:caption><image:title>Railway Gangway Maintenance Records: Turning Visible Damage into a Useful RFQ - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-bellows-assembly.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-endurance-test-plan/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Endurance Testing: Configuration, Duty and Acceptance Evidence - illustrative product view</image:caption><image:title>Railway Gangway Endurance Testing: Configuration, Duty and Acceptance Evidence - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-car-end-installation.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/train-gangway-acoustic-interface-review/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Train Gangway Noise Control: Sealing, Transmission Paths and Measurement Scope - illustrative product view</image:caption><image:title>Train Gangway Noise Control: Sealing, Transmission Paths and Measurement Scope - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-interior-passage.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-retrofit-survey/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Retrofit Surveys: Managing Unknowns on Older Passenger Vehicles - illustrative product view</image:caption><image:title>Railway Gangway Retrofit Surveys: Managing Unknowns on Older Passenger Vehicles - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-bellows-assembly.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.railwheelchina.com/news/railway-gangway-export-packing-receiving/</loc>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/home-products/railway-gangway-studio.webp</image:loc><image:caption>Railway Gangway Export Packing: Protecting Frames, Folds and Configuration Identity - illustrative product view</image:caption><image:title>Railway Gangway Export Packing: Protecting Frames, Folds and Configuration Identity - illustrative product view</image:title></image:image>
+    <image:image><image:loc>https://www.railwheelchina.com/assets/gangway-applications/railway-gangway-car-end-installation.webp</image:loc><image:caption>Supplied partner application reference photograph</image:caption><image:title>Supplied partner application reference photograph</image:title></image:image>
   </url>
   <url>
     <loc>https://www.railwheelchina.com/news/railway-coil-spring-load-deflection-selection/</loc>

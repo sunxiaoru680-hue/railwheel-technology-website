@@ -1,6 +1,9 @@
 import { readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 import { componentArticles, componentArticleSources } from "./component-articles.js";
+import { gangwayArticles } from "./gangway-articles.js";
+import { locales, corePaths } from "./localized-pages.js";
+import { companyProcessStages } from "./company-pages.js";
 
 const requiredSnippets = [
   "<title>",
@@ -103,6 +106,42 @@ const articleSlugs = new Set();
 const articleTitles = new Set();
 const paragraphs = new Set();
 const newsIndex = await readFile("dist/news/index.html", "utf8");
+for (const file of htmlFiles.filter((file) => file.startsWith("dist/technical-blog/"))) {
+  const html = await readFile(file, "utf8");
+  const route = `https://www.railwheelchina.com/${file.replace(/^dist\//, "").replace(/index\.html$/, "")}`;
+  if (!html.includes('content="noindex, follow, max-image-preview:large"') || sitemap.includes(`<loc>${route}</loc>`)) throw new Error(`Legacy duplicate page must remain outside indexing sitemap: ${file}`);
+}
+if (gangwayArticles.length !== 10) throw new Error("Expected ten additional gangway articles");
+for (const [code] of Object.entries(locales)) {
+  for (const base of corePaths) {
+    const route = `/${code}${base}`;
+    const html = await readFile(`dist${route}index.html`, "utf8");
+    if (!html.includes(`<html lang="${code}"`) || (code === "ar" && !html.includes('dir="rtl"'))) throw new Error(`Incorrect language or direction: ${route}`);
+    if (!html.includes(`rel="canonical" href="https://www.railwheelchina.com${route}"`)) throw new Error(`Incorrect localized canonical: ${route}`);
+    for (const alternate of ["en", ...Object.keys(locales)]) {
+      const href = `https://www.railwheelchina.com${alternate === "en" ? "" : `/${alternate}`}${base}`;
+      if (!html.includes(`hreflang="${alternate}" href="${href}"`)) throw new Error(`Missing reciprocal alternate: ${route} ${alternate}`);
+    }
+    if (!sitemap.includes(`https://www.railwheelchina.com${route}</loc>`)) throw new Error(`Missing localized sitemap URL: ${route}`);
+    if ((html.match(/<h1[ >]/g) || []).length !== 1) throw new Error(`Invalid localized H1: ${route}`);
+    for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)(?:[?#][^"]*)?"/g)) await stat(`dist${match[1]}${match[1].endsWith("/") ? "index.html" : ""}`);
+  }
+}
+console.log(`Verified ${Object.keys(locales).length} translated languages across ${corePaths.length} core pages and ten gangway articles.`);
+for (const article of gangwayArticles) {
+  const route = `/news/${article.slug}/`;
+  const html = await readFile(`dist${route}index.html`, "utf8");
+  if (!newsIndex.includes(route) || !sitemap.includes(route) || !imageSitemap.includes(route)) throw new Error(`Missing gangway article discovery: ${article.slug}`);
+  const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) => JSON.parse(match[1]));
+  if (schemas.find((schema) => schema["@type"] === "Article")?.datePublished !== article.date) throw new Error(`Incorrect gangway article date: ${article.slug}`);
+  if (article.sections.length < 6 || article.faqs.length < 2) throw new Error(`Incomplete gangway article: ${article.slug}`);
+  const words = [...article.sections.flat(), article.scenario, ...article.table.flat(), ...article.faqs.flat()].join(" ").split(/\s+/).length;
+  if (words < 450 || article.table.length < 4) throw new Error(`Insufficient gangway article depth: ${article.slug}`);
+  for (const [, paragraph] of article.sections) {
+    if (paragraphs.has(paragraph)) throw new Error(`Duplicate gangway paragraph: ${article.slug}`);
+    paragraphs.add(paragraph);
+  }
+}
 for (const article of componentArticles) {
   if (articleSlugs.has(article.slug) || articleTitles.has(article.title)) throw new Error(`Duplicate article identity: ${article.slug}`);
   articleSlugs.add(article.slug);
@@ -132,9 +171,12 @@ console.log("Verified 20 unique technical articles, content structure, FAQ/Artic
 for (const route of ["about", "manufacturing-capability"]) {
   const html = await readFile(`dist/${route}/index.html`, "utf8");
   if (html.includes('class="visual-panel"')) throw new Error(`Unfilled visual placeholder: ${route}`);
-  for (const image of ["workshop-visit.webp", "metrology-review.webp", "technical-meeting.webp"]) {
+  for (const image of ["accio-machining-line.webp", ...companyProcessStages.map(([image]) => image)]) {
     if (!html.includes(`/assets/company/${image}`)) throw new Error(`Missing company reference photo: ${route}/${image}`);
     await stat(`dist/assets/company/${image}`);
+  }
+  for (const oldImage of ["workshop-visit.webp", "metrology-review.webp", "technical-meeting.webp"]) {
+    if (html.includes(`/assets/company/${oldImage}`)) throw new Error(`Previous material selection still displayed: ${route}/${oldImage}`);
   }
   if (route === "about" && html.includes("Brand identity</h3>")) throw new Error("Outdated About placeholder content");
 }

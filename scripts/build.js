@@ -17,7 +17,9 @@ import { wheelsetBearingsBlog } from "./wheelset-bearings-blog.js";
 import { bogieSuspensionBlog } from "./bogie-suspension-blog.js";
 import { additionalComponents } from "./additional-components.js";
 import { componentArticles, componentArticleSources } from "./component-articles.js";
-import { aboutCompanyPage, companyWorkshopPhoto, companyReferenceGallery } from "./company-pages.js";
+import { gangwayArticles } from "./gangway-articles.js";
+import { locales, corePaths, languageLinks, localizedPages } from "./localized-pages.js";
+import { aboutCompanyPage, companyWorkshopPhoto, companyReferenceGallery, accioCompanyImages } from "./company-pages.js";
 
 const siteUrl = "https://www.railwheelchina.com";
 const company = "Ma'anshan Railwheel Industrial Technology Co., Ltd.";
@@ -257,6 +259,21 @@ const products = [
 
 products.push(...additionalComponents);
 
+const chinaSourcingMetadata = {
+  "railway-wheels": ["Railway Wheel Supplier China | Forged Train Wheels | Railwheel", "Source railway and train wheels from Railwheel in China. Send wheel drawings, material grades, axle loads and inspection requirements for an export quotation."],
+  "wheelsets": ["Railway Wheelset Supplier China | Train Wheelsets | Railwheel", "Source railway wheelsets from China with Railwheel. Confirm wheel and axle drawings, bearing interfaces, assembly records and export packing before ordering."],
+  "axles": ["Railway Axle Supplier China | Train & Railroad Axles | Railwheel", "Railwheel supports railway axle sourcing from China. Submit axle drawings, material grade, journal dimensions and testing requirements for technical review."],
+  "bogies-truck-assemblies": ["Railway Bogie Supplier China | Freight & Passenger | Railwheel", "Discuss railway bogie supply from China with Railwheel. Define gauge, axle load, suspension, braking interfaces and project acceptance requirements."],
+  "brake-hoses": ["Railway Brake Hose Supplier China | Hose Assemblies | Railwheel", "Source railway air brake hose assemblies from China. Specify coupling heads, hose length, pressure, temperature range and vehicle interfaces for quotation."],
+  "railway-springs": ["Railway Spring Supplier China | Bogie Suspension | Railwheel", "Discuss railway suspension springs from China with Railwheel. Submit load-deflection requirements, installed height, fatigue criteria and controlled drawings."],
+  "gangways": ["Railway Gangway Supplier China | Train Bellows | Railwheel", "Source railway gangways and bellows from China. Review car-end interfaces, movement envelopes, floor transitions and fire requirements with Railwheel."]
+};
+
+for (const product of products) {
+  const metadata = chinaSourcingMetadata[product.slug];
+  if (metadata) [product.metaTitle, product.metaDescription] = metadata;
+}
+
 const gangwayApplicationPhotos = [
   { image: "railway-gangway-car-end-installation.webp", title: "Car-end installation", alt: "Railway gangway bellows installed around a passenger vehicle car-end opening", caption: "Exterior view of the bellows, mounting frame and car-body interface.", width: 800, height: 866 },
   { image: "railway-gangway-interior-passage.webp", title: "Interior passenger passage", alt: "Installed inter-car gangway with interior side panels, handrails and floor transition", caption: "Interior reference showing side panels, handrails and the transition between vehicles.", width: 800, height: 1067 },
@@ -406,7 +423,7 @@ blogs.unshift(axleInspectionBlog);
 blogs.unshift(axleLoadBlog);
 blogs.unshift(wheelsetBearingsBlog);
 blogs.unshift(bogieSuspensionBlog);
-blogs.unshift(...componentArticles.map((article) => ({ ...article, date: "2026-11-14", technicalSeries: true })));
+blogs.unshift(...[...gangwayArticles, ...componentArticles].map((article) => ({ ...article, date: article.date || "2026-11-14", technicalSeries: true })));
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -745,19 +762,46 @@ function internalLinkHub() {
   return `<section class="link-hub"><div class="container"><span class="eyebrow">Railway product links</span><h2>Explore related railway wheel and component solutions.</h2><div class="seo-link-row"><a href="/products/railway-wheels/">Railway Wheel</a><a href="/railway-wheel-applications/">Railway Wheel Applications</a><a href="/train-wheel-manufacturer/">Train Wheel Manufacturer</a><a href="/railroad-wheel-manufacturer/">Railroad Wheel Manufacturer</a><a href="/products/wheelsets/">Railway Wheelset</a><a href="/products/axles/">Railway Axle</a><a href="/railroad-axle-supplier/">Railroad Axle</a><a href="/products/bogies-truck-assemblies/">Railway Bogie</a><a href="/freight-bogie-supplier/">Freight Bogie</a><a href="/passenger-bogie-supplier/">Passenger Bogie</a><a href="/products/side-frames/">Side Frame</a><a href="/products/bolsters/">Bolster</a><a href="/products/axle-boxes/">Axle Box</a><a href="/products/brake-shoes/">Brake Shoe</a><a href="/products/brake-hoses/">Brake Hose</a><a href="/products/couplers/">Coupler</a><a href="/products/carbon-brushes/">Carbon Brush</a><a href="/products/gangways/">Gangway</a><a href="/railway-forging-supplier/">Railway Forging</a><a href="/railway-casting-supplier/">Railway Casting</a><a href="/products/other-railway-components/">Railway Spare Parts</a></div></div></section>`;
 }
 
-function layout({ title, description, path: pagePath, body, active = "", schemas = [], preloadHero = false }) {
+function layout({ title, description, path: pagePath, body, active = "", schemas = [], preloadHero = false, locale = "en", basePath = pagePath }) {
+  const indexable = !pagePath.startsWith("/technical-blog/");
+  if (pagePath === "/") {
+    const articles = gangwayArticles.slice(-3);
+    body = body.replace('<div class="home-bottom-bar">', `<section><div class="container"><div class="section-head"><div><span class="eyebrow">Technical insights</span><h2>Gangway engineering and procurement</h2></div><a href="/news/">All technical articles</a></div><div class="grid grid-3">${articles.map((article) => `<article class="card"><h3><a href="/news/${article.slug}/">${esc(article.title)}</a></h3><p>${esc(article.summary)}</p><a class="card-link" href="/products/railway-gangway/">Railway gangway product information</a></article>`).join("")}</div></div></section><div class="home-bottom-bar">`);
+  }
+  const sourcingChecks = {
+    "railway-wheels": ["Railway wheel sourcing from China", "Provide the wheel drawing revision, new and condemning diameters, tread profile, bore fit, axle load and braking arrangement. Define the material grade and the exact standard edition rather than requesting an unspecified 'international standard' wheel.", "Compare heat identification, heat-treatment records, hardness requirements, ultrasonic examination coverage and dimensional reports. Confirm marking, corrosion protection and packing supports without allowing the tread or bore to become an unprotected lifting surface."],
+    "wheelsets": ["Buying railway wheelsets from China", "Specify track gauge, back-to-back dimensions, axle drawing, wheel-seat interference, bearing arrangement and any brake discs or drive gears included in the assembly. A wheelset quotation must distinguish loose components from a fully assembled and inspected unit.", "Agree assembly acceptance records, including press-fit force/displacement documentation where required, final geometry and component traceability. Confirm transport restraints, journal protection and lifting instructions before the shipment is released."],
+    "axles": ["Railway axle procurement from China", "Send the controlled axle drawing with journal, wheel-seat and transition geometry, surface finish and material requirements. Identify whether the axle is powered or non-powered and state the fatigue-design and inspection requirements set by the vehicle engineering authority.", "Compare material traceability, forging and heat-treatment records, non-destructive examination and final dimensional results. Bearing seats and wheel seats require suitable protection during storage and shipment; packing must not introduce contact damage to these interfaces."],
+    "bogies-truck-assemblies": ["Railway bogie supply from China", "Define gauge, axle load, wheelbase, operating speed, suspension arrangement and braking interfaces. State whether the requirement covers a bogie frame, running-gear components or a complete assembly; these are different supply and validation scopes.", "Request an agreed interface list, inspection plan and assembly scope. Structural validation and vehicle compatibility remain project-specific engineering responsibilities. A similar appearance or matching gauge alone does not establish interchangeability."],
+    "brake-hoses": ["Railway brake hose sourcing from China", "Identify the coupling head and mating standard, end fittings, hose bore, overall length and installed movement envelope. Include working pressure, temperature range and environmental exposure. Photos help identify the assembly but cannot replace controlled interface dimensions.", "Agree pressure and leak-test acceptance, hose marking, batch traceability and storage requirements. Check fitting retention and assembly clearance under the approved vehicle movement conditions. Keep coupling faces capped and protect rubber from unsuitable storage environments."],
+    "railway-springs": ["Railway suspension spring supply from China", "Provide load-deflection points, free and installed heights, spring envelope, end configuration and material requirements. State whether the spring is part of a nested assembly and identify clearance and matching requirements; wire diameter alone is not a sufficient replacement specification.", "Confirm fatigue acceptance, dimensional tolerances, load testing, surface treatment and traceability. Any presetting, shot peening or coating requirement must be stated in the agreed manufacturing route rather than assumed from a catalog photograph."],
+    "gangways": ["Railway gangway procurement from China", "Provide the car-end opening, mounting interfaces, relative movement envelope and passenger passage dimensions. Identify the bridge plate, floor transition, bellows, seals and interior panels included in the requested scope.", "Define applicable fire, smoke, environmental and movement-testing requirements with the responsible vehicle engineering team. Review drainage, maintenance access and shipping supports so that flexible bellows and frames are not distorted during transport."]
+  };
+  const sourcingSlug = pagePath.match(/^\/products\/([^/]+)\/$/)?.[1];
+  const sourcing = sourcingChecks[sourcingSlug];
+  if (sourcing) {
+    body += `<section><div class="container article"><span class="eyebrow">China supply and export</span><h2>${sourcing[0]}</h2><p>Railwheel, based in Ma'anshan, Anhui, supports overseas procurement with technical clarification and export coordination. Confirm the production facility, supply responsibilities and applicable approval scope in the quotation and contract.</p><h3>Define the technical scope before comparing quotations</h3><p>${sourcing[1]}</p><h3>Agree inspection and shipment acceptance</h3><p>${sourcing[2]}</p><p>Send the drawing revision, quantity, destination and required delivery window to Amy Sun. Lead time, minimum order quantity and documentation are confirmed individually, not inferred from this listing.</p><div class="seo-link-row"><a href="/about/">About the China-based supply team</a><a href="/quality-control/">Quality and inspection planning</a><a href="/manufacturing-capability/">Manufacturing and sourcing scope</a><a href="/contact/#quote">Request a technical quotation</a></div></div></section>`;
+  }
+  if (pagePath === "/") {
+    body += `<section><div class="container article"><span class="eyebrow">Sourcing from China</span><h2>A China-based supply partner for railway wheels and components</h2><p>Based in Ma'anshan, Anhui, Railwheel supports overseas buyers evaluating railway wheel manufacturers and component suppliers in China. We coordinate drawing review, manufacturing and sourcing requirements, inspection documentation and export preparation. The production facility, contracted supply scope and applicable approvals must be confirmed for each order.</p><h3>From supplier comparison to a technical quotation</h3><p>Send your controlled drawing, vehicle application, order quantity and destination. For wheels and wheelsets, include material requirements, wheel profile, axle interfaces and acceptance criteria. For hoses, springs and gangways, identify the mating interfaces and operating conditions so that quotations can be compared on an equivalent technical basis.</p><div class="seo-link-row"><a href="/products/railway-wheels/">Railway wheel supply from China</a><a href="/products/wheelsets/">Wheelset assemblies</a><a href="/manufacturing-capability/">Manufacturing and sourcing scope</a><a href="/quality-control/">Inspection requirements</a><a href="/contact/#quote">Request an export quotation</a></div></div></section>`;
+  }
   const canonical = `${siteUrl}${pagePath}`;
+  const translation = locales[locale];
+  const menuItems = translation ? corePaths.map((href, i) => [translation.nav[i], `/${locale}${href}`]) : nav;
+  const alternates = corePaths.includes(basePath) ? `<link rel="alternate" hreflang="en" href="${siteUrl}${basePath}"><link rel="alternate" hreflang="x-default" href="${siteUrl}${basePath}">${Object.keys(locales).map((code) => `<link rel="alternate" hreflang="${code}" href="${siteUrl}/${code}${basePath}">`).join("")}` : "";
   const allSchemas = [orgSchema(), manufacturerSchema(), localBusinessSchema(), websiteSchema(), ...schemas];
   return `<!doctype html>
-<html lang="en">
+<html lang="${locale}"${locale === "ar" ? ' dir="rtl"' : ""}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <meta name="keywords" content="${esc(primaryKeywords.join(", "))}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="${indexable ? "index" : "noindex"}, follow, max-image-preview:large">
   <link rel="canonical" href="${canonical}">
+  ${alternates}
+  <meta property="og:locale" content="${({ en: "en_US", es: "es_ES", ru: "ru_RU", fr: "fr_FR", de: "de_DE", pt: "pt_BR", ja: "ja_JP", ko: "ko_KR", ar: "ar_AR", it: "it_IT", pl: "pl_PL", tr: "tr_TR", id: "id_ID", vi: "vi_VN", th: "th_TH" })[locale]}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
@@ -775,16 +819,17 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   ${allSchemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`).join("\n  ")}
 </head>
 <body>
-  <div class="topbar"><div class="container"><span>Railway wheels, wheelsets, bogies and railway components</span><span>WhatsApp: ${contact.phone} &nbsp;|&nbsp; WeChat: ${contact.phone} &nbsp;|&nbsp; Email: ${contact.email}</span></div></div>
+  ${translation ? "" : `<div class="topbar"><div class="container"><span>Railway wheels, wheelsets, bogies and railway components</span><span>WhatsApp: ${contact.phone} &nbsp;|&nbsp; WeChat: ${contact.phone} &nbsp;|&nbsp; Email: ${contact.email}</span></div></div>`}
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="/" aria-label="Railwheel home">${logo()}<span class="brand-company">${company}</span></a>
-      <nav class="menu" aria-label="Main navigation">${nav.map(([label, href]) => `<a class="${active === label ? "active" : ""}" href="${href}">${label}</a>`).join("")}</nav>
-      <div class="nav-actions"><a class="nav-link-action" href="/catalog/">Catalog</a><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a></div>
+      <a class="brand" href="${translation ? `/${locale}/` : "/"}" aria-label="Railwheel" dir="ltr">${logo()}<span class="brand-company">${company}</span></a>
+      <nav class="menu" aria-label="${translation ? translation.nav.join(" / ") : "Main navigation"}">${menuItems.map(([label, href]) => `<a class="${active === label || pagePath === href ? "active" : ""}" href="${href}">${label}</a>`).join("")}</nav>
+      <div class="nav-actions">${translation ? `<a class="btn btn-primary" href="/${locale}/contact/">${translation.request}</a>` : '<a class="nav-link-action" href="/catalog/">Catalog</a><a class="btn btn-primary" href="/contact/#quote">Send Inquiry</a>'}</div>
     </div>
   </header>
+  ${languageLinks(basePath, locale)}
   <main>${body}</main>
-  ${footer()}
+  ${translation ? `<footer class="footer"><div class="container"><p dir="ltr">${company}</p><p>${translation.contact}: Amy Sun</p><a href="mailto:${contact.email}">${contact.email}</a><p dir="ltr">WhatsApp / WeChat: ${contact.phone}</p><p>${translation.note}</p></div></footer>` : footer()}
   ${floatingContact()}${pagePath === "/" ? '\n  <script src="/hero-slideshow.js" defer></script>' : ""}
 </body>
 </html>`;
@@ -908,7 +953,7 @@ function addPage(filePath, html) { pages.push({ filePath, html }); }
 
 addPage("index.html", layout({
   title: "Railway Wheel Manufacturer China | Train Wheel, Railroad Wheel & Wheelset Supplier",
-  description: "Ma'anshan Railwheel supplies railway wheel, train wheel, railroad wheel, wheelset, railway axle, bogie, side frame, bolster, axle box and spare parts worldwide.",
+  description: "Railwheel is a railway wheel and component supplier in China. Source train wheels, wheelsets, axles and bogie parts with drawing review and export support.",
   path: "/",
   active: "Home",
   preloadHero: true,
@@ -1088,7 +1133,7 @@ addPage("news/index.html", layout({
   path: "/news/",
   active: "News",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News / Blog", url: "/news/" }]), faqSchema()],
-  body: `${pageHero("News / Blog", "Engineering perspectives, application scenarios and procurement guidance for railway components and passenger access systems.", "News / Blog")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Technical library</span><h2>From component interfaces to inspection evidence.</h2></div><p>Explore suspension, braking, vehicle connections and passenger access requirements.</p></div><div class="grid grid-2">${blogs.map((b) => `<article class="card news-card">${b.technicalSeries ? `<a href="/news/${b.slug}/" aria-label="${esc(b.title)}"><img src="/assets/home-products/${b.image}" alt="Illustrative component for ${esc(b.title)}" width="640" height="800" loading="lazy" decoding="async"></a>` : ""}<span class="eyebrow">${esc(b.category || "Procurement insights")}</span><h3><a href="/news/${b.slug}/">${esc(b.title)}</a></h3>${b.technicalSeries ? '<p class="muted"><time datetime="2026-11-14">November 14, 2026</time></p>' : ""}<p>${esc(b.summary)}</p><a class="card-link" href="/news/${b.slug}/">Read article</a></article>`).join("")}</div></div></section>${internalLinkHub()}`
+  body: `${pageHero("News / Blog", "Engineering perspectives, application scenarios and procurement guidance for railway components and passenger access systems.", "News / Blog")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Technical library</span><h2>From component interfaces to inspection evidence.</h2></div><p>Explore suspension, braking, vehicle connections and passenger access requirements.</p></div><div class="grid grid-2">${blogs.map((b) => `<article class="card news-card">${b.technicalSeries ? `<a href="/news/${b.slug}/" aria-label="${esc(b.title)}"><img src="/assets/home-products/${b.image}" alt="Illustrative component for ${esc(b.title)}" width="640" height="800" loading="lazy" decoding="async"></a>` : ""}<span class="eyebrow">${esc(b.category || "Procurement insights")}</span><h3><a href="/news/${b.slug}/">${esc(b.title)}</a></h3>${b.technicalSeries ? `<p class="muted"><time datetime="${b.date}">${b.date}</time></p>` : ""}<p>${esc(b.summary)}</p><a class="card-link" href="/news/${b.slug}/">Read article</a></article>`).join("")}</div></div></section>${internalLinkHub()}`
 }));
 
 function blogArticleBody(blog) {
@@ -1232,7 +1277,7 @@ for (const blog of blogs) {
     const photograph = gangwayApplicationPhotos.find((photo) => photo.image === blog.photo);
     const related = componentArticles.filter((article) => article.slug !== blog.slug && (article.category === blog.category || article.product === blog.product)).slice(0, 3);
     const index = componentArticles.findIndex((article) => article.slug === blog.slug);
-    const adjacent = [componentArticles[(index + 19) % 20], componentArticles[(index + 1) % 20]];
+    const adjacent = index < 0 ? gangwayArticles.filter((article) => article.slug !== blog.slug).slice(0, 2) : [componentArticles[(index + componentArticles.length - 1) % componentArticles.length], componentArticles[(index + 1) % componentArticles.length]];
     addPage(`news/${blog.slug}/index.html`, layout({
       title: `${blog.title} | Railwheel`, description: blog.summary, path: pagePath, active: "News",
       schemas: [
@@ -1241,7 +1286,7 @@ for (const blog of blogs) {
         { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: blog.faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) }
       ],
       body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article technical-article">
-      <p class="muted"><time datetime="2026-11-14">November 14, 2026</time> · ${esc(blog.category)} · ${esc(company)}</p>
+      <p class="muted"><time datetime="${blog.date}">${blog.date}</time> · ${esc(blog.category)} · ${esc(company)}</p>
       <figure class="technical-article-figure"><img src="/assets/home-products/${blog.image}" alt="Illustrative ${esc(product.title.toLowerCase())} component discussed in this technical article" width="640" height="800" decoding="async" fetchpriority="high"><figcaption>AI-generated product illustration, not a controlled engineering drawing or model-specific photograph.</figcaption></figure>
       ${blog.sections.map(([heading, paragraph]) => `<h2>${esc(heading)}</h2><p>${esc(paragraph)}</p>`).join("")}
       <h2>Application scenario</h2><p>${esc(blog.scenario)}</p>
@@ -1660,7 +1705,7 @@ addPage("downloads/index.html", layout({
   path: "/downloads/",
   active: "Products",
   schemas: [breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Downloads", url: "/downloads/" }]), faqSchema()],
-  body: `${pageHero("Download Center", "Product catalogs, technical brochures, factory profile and datasheet request links for railway component buyers.", "Downloads")}<section><div class="container grid grid-3">${downloads.map((item) => `<article class="card"><h3>${item}</h3><p>Request the ${item.toLowerCase()} for railway wheel, train wheel, railroad wheel, wheelset, axle, bogie and spare parts projects.</p><a class="card-link" href="/contact/#quote">Request file</a></article>`).join("")}</div></section>${ctaBand()}`
+  body: `${pageHero("Download Center", "Product catalogs, technical brochures, factory profile and datasheet request links for railway component buyers.", "Downloads")}<section><div class="container grid grid-3">${downloads.map((item) => `<article class="card"><h3>${item}</h3><p>Request the ${item.toLowerCase()} for railway wheel, train wheel, railroad wheel, wheelset, axle, bogie and spare parts projects.</p>${item === "Company Profile" ? '<p><a class="card-link" href="/company-profile/railwheel-company-profile.pdf">Full profile · PDF (10 pages)</a></p><p><a class="card-link" href="/company-profile/railwheel-company-profile-short.pdf">Short profile · PDF (4 pages)</a></p><p><a href="/company-profile/railwheel-company-profile.pptx">Editable PowerPoint</a></p>' : '<a class="card-link" href="/contact/#quote">Request file</a>'}</article>`).join("")}</div></section>${ctaBand()}`
 }));
 
 const catalogPages = Array.from({ length: 42 }, (_, index) => index + 1);
@@ -1770,7 +1815,7 @@ async function writeAssets() {
   await copyFile("src/styles.css", "dist/styles.css");
   await copyFile("src/hero-slideshow.js", "dist/hero-slideshow.js");
   await mkdir("dist/assets/company", { recursive: true });
-  for (const image of ["workshop-visit.webp", "metrology-review.webp", "technical-meeting.webp"]) {
+  for (const image of ["workshop-visit.webp", "metrology-review.webp", "technical-meeting.webp", ...accioCompanyImages]) {
     await copyFile(path.join("assets/company", image), path.join("dist/assets/company", image));
   }
   await mkdir("dist/assets/home-products", { recursive: true });
@@ -1794,30 +1839,31 @@ async function writeAssets() {
   if (existsSync("public/catalog")) {
     await cp("public/catalog", "dist/catalog", { recursive: true });
   }
+  if (existsSync("public/company-profile")) {
+    await cp("public/company-profile", "dist/company-profile", { recursive: true });
+  }
 }
 
 async function main() {
+  localizedPages({ addPage, layout, esc, company, contact, breadcrumbSchema });
   await rm("dist", { recursive: true, force: true });
   await writeAssets();
   for (const page of pages) {
     const output = path.join("dist", page.filePath);
     await mkdir(path.dirname(output), { recursive: true });
-    await writeFile(output, page.html);
+    await writeFile(output, page.html.replace(/[\t ]+$/gm, ""));
   }
-  const urls = pages.map((page) => {
+  const urls = pages.filter((page) => !page.filePath.startsWith("technical-blog/")).map((page) => {
     const loc = page.filePath === "index.html" ? `${siteUrl}/` : `${siteUrl}/${page.filePath.replace(/index\.html$/, "")}`;
-    const lastModified = componentArticles.some((article) => page.filePath === `news/${article.slug}/index.html`) ? "<lastmod>2026-11-14</lastmod>" : "";
+    const datedArticle = [...gangwayArticles, ...componentArticles].find((article) => page.filePath === `news/${article.slug}/index.html`);
+    const lastModified = datedArticle ? `<lastmod>${datedArticle.date || "2026-11-14"}</lastmod>` : "";
     return `  <url><loc>${loc}</loc>${lastModified}<changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
   }).join("\n");
   await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
   const imageUrls = [
     ...["about", "manufacturing-capability"].map((slug) => ({
       loc: `${siteUrl}/${slug}/`,
-      images: [
-        ["company/workshop-visit.webp", "Company-supplied workshop visit reference"],
-        ["company/metrology-review.webp", "Component dimensional measurement reference"],
-        ["company/technical-meeting.webp", "Technical discussion reference from company materials"]
-      ]
+      images: accioCompanyImages.filter((image) => slug === "about" || !["accio-wheelset.webp", "accio-bogie.webp", "accio-gangway.webp"].includes(image)).map((image) => [`company/${image}`, "ACCIO manufacturing or product illustration"])
     })),
     {
       loc: `${siteUrl}/`,
@@ -1827,7 +1873,11 @@ async function main() {
         ...gangwayApplicationPhotos.slice(0, 3).map((photo) => [`gangway-applications/${photo.image}`, photo.alt])
       ]
     },
-    ...componentArticles.map((article) => ({
+    ...Object.entries(locales).flatMap(([code, t]) => [
+      { loc: `${siteUrl}/${code}/`, images: [["railway-wheel-manufacturing.webp", t.headline]] },
+      { loc: `${siteUrl}/${code}/products/`, images: [["home-products/railway-wheel.webp", t.products[0]], ["home-products/railway-wheelset.webp", t.products[1]], ["home-products/railway-gangway-illustration.webp", t.products[6]]] }
+    ]),
+    ...[...gangwayArticles, ...componentArticles].map((article) => ({
       loc: `${siteUrl}/news/${article.slug}/`,
       images: [
         [`home-products/${article.image}`, `${article.title} - illustrative product view`],
