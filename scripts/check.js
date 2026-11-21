@@ -3,6 +3,8 @@ import path from "node:path";
 import { componentArticles, componentArticleSources } from "./component-articles.js";
 import { gangwayArticles } from "./gangway-articles.js";
 import { locales, corePaths } from "./localized-pages.js";
+import { applicationGuides } from "./application-guides.js";
+import { focusedProducts } from "./focused-products.js";
 import { companyProcessStages } from "./company-pages.js";
 
 const requiredSnippets = [
@@ -106,6 +108,24 @@ const articleSlugs = new Set();
 const articleTitles = new Set();
 const paragraphs = new Set();
 const newsIndex = await readFile("dist/news/index.html", "utf8");
+const reviewedPages = [
+  ...Object.keys(applicationGuides).map(slug => `railway-wheel-applications/${slug}/`),
+  ...Object.keys(focusedProducts).map(slug => `products/${slug}/`)
+];
+const reviewedParagraphs = new Set();
+for (const route of reviewedPages) {
+  const html = await readFile(`dist/${route}index.html`, "utf8");
+  if (!html.includes('content="index, follow') || !html.includes(`rel="canonical" href="https://www.railwheelchina.com/${route}"`)) throw new Error(`Reviewed page is not self-canonical/indexable: ${route}`);
+  if ((html.match(/<h1[ >]/g) || []).length !== 1 || html.includes("Common buyer keywords")) throw new Error(`Reviewed content structure: ${route}`);
+  for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)(?:[?#][^"]*)?"/g)) await stat(`dist${match[1]}${match[1].endsWith("/") ? "index.html" : ""}`);
+}
+for (const content of [...Object.values(applicationGuides), ...Object.values(focusedProducts)]) {
+  for (const [, paragraph] of content.sections) {
+    if (reviewedParagraphs.has(paragraph)) throw new Error("Duplicate reviewed technical paragraph");
+    reviewedParagraphs.add(paragraph);
+  }
+}
+console.log(`Verified ${reviewedPages.length} reviewed product/application pages: distinct technical content, canonical URLs and local links.`);
 for (const file of htmlFiles.filter((file) => file.startsWith("dist/technical-blog/"))) {
   const html = await readFile(file, "utf8");
   const route = `https://www.railwheelchina.com/${file.replace(/^dist\//, "").replace(/index\.html$/, "")}`;

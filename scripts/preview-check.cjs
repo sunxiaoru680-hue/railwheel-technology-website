@@ -4,7 +4,8 @@ const fs = require('node:fs/promises');
   await fs.mkdir('tmp/site-preview', { recursive: true });
   const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
   const { locales, corePaths } = await import('./localized-pages.js');
-  const routes = ['/', '/about/', '/manufacturing-capability/', '/downloads/', ...Object.keys(locales).flatMap(code => corePaths.map(base => `/${code}${base}`)), '/news/railway-gangway-export-packing-receiving/'];
+  const { applicationGuides } = await import('./application-guides.js');
+  const routes = ['/', '/about/', '/manufacturing-capability/', '/downloads/', '/products/wheelsets/', '/products/bus-articulated-bellows/', ...Object.keys(applicationGuides).map(slug => `/railway-wheel-applications/${slug}/`), ...Object.keys(locales).flatMap(code => corePaths.map(base => `/${code}${base}`)), '/news/railway-gangway-export-packing-receiving/'];
   for (const width of [1440, 390]) {
     const page = await browser.newPage({ viewport: { width, height: 950 }, reducedMotion: 'reduce' });
     for (const route of routes) {

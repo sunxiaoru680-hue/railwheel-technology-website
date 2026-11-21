@@ -20,6 +20,8 @@ import { additionalComponents } from "./additional-components.js";
 import { componentArticles, componentArticleSources } from "./component-articles.js";
 import { gangwayArticles } from "./gangway-articles.js";
 import { locales, corePaths, languageLinks, localizedPages } from "./localized-pages.js";
+import { applicationGuides, applicationPage } from "./application-guides.js";
+import { focusedProducts, focusedProductBody } from "./focused-products.js";
 import { aboutCompanyPage, companyWorkshopPhoto, companyReferenceGallery, accioCompanyImages } from "./company-pages.js";
 
 const siteUrl = "https://www.railwheelchina.com";
@@ -765,6 +767,21 @@ function internalLinkHub() {
 }
 
 function layout({ title, description, path: pagePath, body, active = "", schemas = [], preloadHero = false, locale = "en", basePath = pagePath }) {
+  const focusedSlug = pagePath.match(/^\/products\/([^/]+)\/$/)?.[1];
+  const focused = focusedProducts[focusedSlug];
+  if (focused) {
+    body = focusedProductBody(focusedSlug, { pageHero, inquiryForm, ctaBand });
+    title = `${focused.title} Supplier China | Railwheel`;
+    description = focused.description;
+    schemas = schemas.filter((schema) => schema["@type"] !== "FAQPage").map((schema) => {
+      if (schema["@type"] !== "Product") return schema;
+      const clean = { ...schema, description: focused.description };
+      delete clean.offers;
+      delete clean.manufacturer;
+      return clean;
+    });
+    schemas.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: focused.faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) });
+  }
   const indexable = !pagePath.startsWith("/technical-blog/");
   if (pagePath === "/") {
     const articles = gangwayArticles.slice(-3);
@@ -912,12 +929,13 @@ function ctaBand() {
 }
 
 function inquiryForm(selectedProduct = "") {
+  const customSelection = selectedProduct && ![...products, ...mobilityProducts].some((product) => product.title === selectedProduct);
   return `<form class="form" id="quote" action="mailto:${contact.email}" method="post" enctype="text/plain">
   <h3>Send Inquiry</h3>
   <input name="name" placeholder="Your name" aria-label="Your name" required>
   <input name="company" placeholder="Company name" aria-label="Company name">
   <input name="email" type="email" placeholder="Email address" aria-label="Email address" required>
-  <select name="product" aria-label="Product category">${[...products, ...mobilityProducts.filter((p) => !products.some((existing) => existing.title === p.title))].map((p) => `<option${p.title === selectedProduct ? " selected" : ""}>${p.title}</option>`).join("")}</select>
+  <select name="product" aria-label="Product category">${[...products, ...mobilityProducts.filter((p) => !products.some((existing) => existing.title === p.title))].map((p) => `<option${p.title === selectedProduct ? " selected" : ""}>${p.title}</option>`).join("")}${customSelection ? `<option selected>${esc(selectedProduct)}</option>` : ""}</select>
   <textarea name="message" placeholder="Tell us the component, drawing standard, quantity and destination." aria-label="Inquiry details"></textarea>
   <button class="btn btn-primary" type="submit">Send Inquiry</button>
 </form>`;
@@ -1643,17 +1661,18 @@ addPage("railway-wheel-applications/index.html", layout({
       "item": { "@type": "Product", "name": product.title, "url": `${siteUrl}/railway-wheel-applications/${product.slug}/`, "image": `${siteUrl}/assets/home-products/${product.image}` }
     }))
   }, faqSchema()],
-  body: `${pageHero("Railway Wheel Applications", "Application-focused railway wheel pages for mining, steel plant, metro, passenger, heavy haul, freight, locomotive, crane, port and industrial rail projects.", "Railway Wheel Applications")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Application wheel supply</span><h2>Dedicated railway wheel pages for demanding operating environments.</h2></div><p>Each application page includes specifications, applications, advantages, manufacturing process, inspection, packaging, shipping, FAQ and inquiry support.</p></div><div class="grid grid-3">${wheelApplicationPages.map((product) => `<article class="card"><img src="/assets/home-products/${product.image}" alt="${product.title} product image from Railwheel" loading="lazy" decoding="async" width="423" height="464"><h3>${product.title}</h3><p>${product.applicationDetail}</p><a class="card-link" href="/railway-wheel-applications/${product.slug}/">View ${product.title}</a></article>`).join("")}</div></div></section>${ctaBand()}`
+  body: `${pageHero("Railway Wheel Applications", "Application-focused railway wheel pages for mining, steel plant, metro, passenger, heavy haul, freight, locomotive, crane, port and industrial rail projects.", "Railway Wheel Applications")}<section><div class="container"><div class="section-head"><div><span class="eyebrow">Application wheel supply</span><h2>Dedicated railway wheel pages for demanding operating environments.</h2></div><p>Select an application by the equipment and its approved design, not by wheel diameter alone. Railway rolling stock, crane running gear and factory transfer cars can use different mounting arrangements and acceptance requirements.</p></div><div class="grid grid-3">${wheelApplicationPages.map((product) => `<article class="card"><img src="/assets/home-products/${product.image}" alt="${product.title} product image from Railwheel" loading="lazy" decoding="async" width="423" height="464"><h3>${product.title}</h3><p>${product.applicationDetail}</p><a class="card-link" href="/railway-wheel-applications/${product.slug}/">View ${product.title}</a></article>`).join("")}</div></div></section>${ctaBand()}`
 }));
 
 for (const product of wheelApplicationPages) {
+  const guide = applicationGuides[product.slug];
   addPage(`railway-wheel-applications/${product.slug}/index.html`, layout({
-    title: `${product.title} | Application Railway Wheel Supplier`,
-    description: `${product.title} technical page with specifications, manufacturing, inspection, packaging, shipping, FAQ and inquiry support from Railwheel.`,
+    title: `${product.title} Supplier China | Technical RFQ | Railwheel`,
+    description: guide.summary,
     path: `/railway-wheel-applications/${product.slug}/`,
     active: "Products",
-    schemas: [generatedProductSchema({ ...product, pagePath: `/railway-wheel-applications/${product.slug}/` }), breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Railway Wheel Applications", url: "/railway-wheel-applications/" }, { name: product.title, url: `/railway-wheel-applications/${product.slug}/` }]), faqSchema()],
-    body: generatedProductPage(product)
+    schemas: [{ "@context": "https://schema.org", "@type": "Product", name: product.title, description: guide.summary, image: `${siteUrl}/assets/home-products/${product.image}`, url: `${siteUrl}/railway-wheel-applications/${product.slug}/`, brand: { "@type": "Brand", name: "Railwheel" }, category: "Wheel application inquiry" }, breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Railway Wheel Applications", url: "/railway-wheel-applications/" }, { name: product.title, url: `/railway-wheel-applications/${product.slug}/` }]), { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: guide.question, acceptedAnswer: { "@type": "Answer", text: guide.answer } }, { "@type": "Question", name: "Which numerical specifications does Railwheel need?", acceptedAnswer: { "@type": "Answer", text: "Use the controlled drawing and applicable vehicle or equipment requirements to define dimensions, loads, material and testing limits. No universal capacity or interchangeable wheel model is implied by this application category." } }] }],
+    body: applicationPage(product, { pageHero, inquiryForm, ctaBand, esc })
   }));
 }
 
@@ -1868,7 +1887,8 @@ async function main() {
     const loc = page.filePath === "index.html" ? `${siteUrl}/` : `${siteUrl}/${page.filePath.replace(/index\.html$/, "")}`;
     const datedArticle = [brakeDiscsBlog, ...gangwayArticles, ...componentArticles].find((article) => page.filePath === `news/${article.slug}/index.html`);
     const lastModified = datedArticle ? `<lastmod>${datedArticle.date || "2026-11-14"}</lastmod>` : "";
-    return `  <url><loc>${loc}</loc>${lastModified}<changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
+    const reviewed = page.filePath.startsWith("railway-wheel-applications/") || ["products/wheelsets/index.html", "products/bus-articulated-bellows/index.html"].includes(page.filePath);
+    return `  <url><loc>${loc}</loc>${reviewed ? "<lastmod>2026-11-21</lastmod>" : lastModified}<changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
   }).join("\n");
   await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
   const imageUrls = [

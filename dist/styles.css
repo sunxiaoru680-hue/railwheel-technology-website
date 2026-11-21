@@ -246,7 +246,7 @@ h1, h2, h3 { color: var(--blue-950); line-height: 1.14; margin: 0 0 16px; }
 .mobility-products .mobility-product-image img { height: 100%; object-fit: contain; margin: 0; }
 .image-disclosure { display: block; color: #526171; margin: 8px 0 16px; font-size: 12px; }
 .studio-image-disclosure { display: block; color: #526171; font-size: 12px; padding: 0 18px 16px; }
-.component-specifications { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 14px; }
+.component-specifications { width: 100%; min-width: 0; table-layout: fixed; border-collapse: collapse; margin: 20px 0 28px; font-size: 14px; }
 .component-specifications th, .component-specifications td { border-bottom: 1px solid #dbe5ef; padding: 12px 10px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 .component-specifications th { width: 32%; }
 .component-product-figure { margin: 0 0 28px; }
@@ -567,6 +567,7 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 }
 
 .form {
+  align-self: start;
   display: grid; gap: 14px; background: var(--white); padding: 28px; border-radius: 8px; border: 1px solid #e4ebf2; box-shadow: var(--shadow);
 }
 .form input, .form textarea, .form select {
