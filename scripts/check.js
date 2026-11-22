@@ -5,6 +5,7 @@ import { gangwayArticles } from "./gangway-articles.js";
 import { locales, corePaths } from "./localized-pages.js";
 import { applicationGuides } from "./application-guides.js";
 import { focusedProducts } from "./focused-products.js";
+import { procurementGuides, articleAdditions } from "./procurement-guides.js";
 import { companyProcessStages } from "./company-pages.js";
 
 const requiredSnippets = [
@@ -108,6 +109,16 @@ const articleSlugs = new Set();
 const articleTitles = new Set();
 const paragraphs = new Set();
 const newsIndex = await readFile("dist/news/index.html", "utf8");
+for (const [route, guide] of [...Object.entries(procurementGuides), ...Object.entries(articleAdditions)]) {
+  const html = await readFile(`dist${route}index.html`, "utf8");
+  if (!html.includes(guide.heading) || !html.includes('content="index, follow') || !html.includes(`rel="canonical" href="https://www.railwheelchina.com${route}"`)) throw new Error(`Incorrect procurement review page: ${route}`);
+  if ((html.match(/<h1[ >]/g) || []).length !== 1) throw new Error(`Invalid procurement H1: ${route}`);
+  for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)(?:[?#][^"]*)?"/g)) await stat(`dist${match[1]}${match[1].endsWith("/") ? "index.html" : ""}`);
+  const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(match => JSON.parse(match[1]));
+  if (articleAdditions[route] && schemas.find(schema => schema["@type"] === "Article")?.dateModified !== "2026-11-21") throw new Error(`Missing article review date: ${route}`);
+  if (procurementGuides[route] && schemas.find(schema => schema["@type"] === "FAQPage")?.mainEntity[0]?.name !== guide.faq[0]) throw new Error(`Procurement FAQ mismatch: ${route}`);
+}
+console.log("Verified eight procurement/legacy article reviews: canonical URLs, indexability, headings, links and schemas.");
 const reviewedPages = [
   ...Object.keys(applicationGuides).map(slug => `railway-wheel-applications/${slug}/`),
   ...Object.keys(focusedProducts).map(slug => `products/${slug}/`)

@@ -22,6 +22,7 @@ import { gangwayArticles } from "./gangway-articles.js";
 import { locales, corePaths, languageLinks, localizedPages } from "./localized-pages.js";
 import { applicationGuides, applicationPage } from "./application-guides.js";
 import { focusedProducts, focusedProductBody } from "./focused-products.js";
+import { procurementGuides, articleAdditions, procurementBody, articleReviewSection } from "./procurement-guides.js";
 import { aboutCompanyPage, companyWorkshopPhoto, companyReferenceGallery, accioCompanyImages } from "./company-pages.js";
 
 const siteUrl = "https://www.railwheelchina.com";
@@ -767,6 +768,18 @@ function internalLinkHub() {
 }
 
 function layout({ title, description, path: pagePath, body, active = "", schemas = [], preloadHero = false, locale = "en", basePath = pagePath }) {
+  const procurement = procurementGuides[pagePath];
+  if (procurement) {
+    title = procurement.title;
+    description = procurement.description;
+    body = procurementBody(procurement, { pageHero, inquiryForm, ctaBand });
+    schemas = schemas.filter(schema => schema["@type"] !== "FAQPage");
+    schemas.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: procurement.faq[0], acceptedAnswer: { "@type": "Answer", text: procurement.faq[1] } }] });
+  }
+  if (articleAdditions[pagePath]) {
+    body += articleReviewSection(articleAdditions[pagePath]);
+    schemas = schemas.map(schema => schema["@type"] === "Article" ? { ...schema, dateModified: "2026-11-21" } : schema);
+  }
   const focusedSlug = pagePath.match(/^\/products\/([^/]+)\/$/)?.[1];
   const focused = focusedProducts[focusedSlug];
   if (focused) {
@@ -1887,7 +1900,7 @@ async function main() {
     const loc = page.filePath === "index.html" ? `${siteUrl}/` : `${siteUrl}/${page.filePath.replace(/index\.html$/, "")}`;
     const datedArticle = [brakeDiscsBlog, ...gangwayArticles, ...componentArticles].find((article) => page.filePath === `news/${article.slug}/index.html`);
     const lastModified = datedArticle ? `<lastmod>${datedArticle.date || "2026-11-14"}</lastmod>` : "";
-    const reviewed = page.filePath.startsWith("railway-wheel-applications/") || ["products/wheelsets/index.html", "products/bus-articulated-bellows/index.html"].includes(page.filePath);
+    const reviewed = page.filePath.startsWith("railway-wheel-applications/") || ["products/wheelsets/index.html", "products/bus-articulated-bellows/index.html"].includes(page.filePath) || [...Object.keys(procurementGuides), ...Object.keys(articleAdditions)].some(route => `${route.slice(1)}index.html` === page.filePath);
     return `  <url><loc>${loc}</loc>${reviewed ? "<lastmod>2026-11-21</lastmod>" : lastModified}<changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
   }).join("\n");
   await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
