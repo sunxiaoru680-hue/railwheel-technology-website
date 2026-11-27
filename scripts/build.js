@@ -2,6 +2,7 @@ import { mkdir, rm, writeFile, copyFile, cp } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { brakeDiscsBlog } from "./brake-discs-blog.js";
+import { africaDeliveryBlog } from "./africa-delivery-blog.js";
 import { brakeHoseBlog } from "./brake-hose-blog.js";
 import { sideFrameBlog } from "./side-frame-blog.js";
 import { wheelBlankBlog } from "./wheel-blank-blog.js";
@@ -429,6 +430,7 @@ blogs.unshift(wheelsetBearingsBlog);
 blogs.unshift(bogieSuspensionBlog);
 blogs.unshift(...[...gangwayArticles, ...componentArticles].map((article) => ({ ...article, date: article.date || "2026-11-14", technicalSeries: true })));
 blogs.unshift(brakeDiscsBlog);
+blogs.unshift(africaDeliveryBlog);
 
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -818,6 +820,7 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
     body += `<section><div class="container article"><span class="eyebrow">Sourcing from China</span><h2>A China-based supply partner for railway wheels and components</h2><p>Based in Ma'anshan, Anhui, Railwheel supports overseas buyers evaluating railway wheel manufacturers and component suppliers in China. We coordinate drawing review, manufacturing and sourcing requirements, inspection documentation and export preparation. The production facility, contracted supply scope and applicable approvals must be confirmed for each order.</p><h3>From supplier comparison to a technical quotation</h3><p>Send your controlled drawing, vehicle application, order quantity and destination. For wheels and wheelsets, include material requirements, wheel profile, axle interfaces and acceptance criteria. For hoses, springs and gangways, identify the mating interfaces and operating conditions so that quotations can be compared on an equivalent technical basis.</p><div class="seo-link-row"><a href="/products/railway-wheels/">Railway wheel supply from China</a><a href="/products/wheelsets/">Wheelset assemblies</a><a href="/manufacturing-capability/">Manufacturing and sourcing scope</a><a href="/quality-control/">Inspection requirements</a><a href="/contact/#quote">Request an export quotation</a></div></div></section>`;
   }
   const canonical = `${siteUrl}${pagePath}`;
+  const shareImage = pagePath === `/news/${africaDeliveryBlog.slug}/` ? `${siteUrl}${africaDeliveryBlog.image}` : `${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg`;
   const translation = locales[locale];
   const menuItems = translation ? corePaths.map((href, i) => [translation.nav[i], `/${locale}${href}`]) : nav;
   const alternates = corePaths.includes(basePath) ? `<link rel="alternate" hreflang="en" href="${siteUrl}${basePath}"><link rel="alternate" hreflang="x-default" href="${siteUrl}${basePath}">${Object.keys(locales).map((code) => `<link rel="alternate" hreflang="${code}" href="${siteUrl}/${code}${basePath}">`).join("")}` : "";
@@ -839,11 +842,11 @@ function layout({ title, description, path: pagePath, body, active = "", schemas
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:site_name" content="Railwheel Industrial Technology">
-  <meta property="og:image" content="${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg">
+  <meta property="og:image" content="${shareImage}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
-  <meta name="twitter:image" content="${siteUrl}/assets/home-hero-railway-wheel-manufacturing.jpg">
+  <meta name="twitter:image" content="${shareImage}">
   <link rel="icon" href="/assets/railwheel-logo-new.png" type="image/png">
   ${preloadHero ? `<link rel="preload" href="/assets/railway-wheel-manufacturing.webp" as="image" type="image/webp" fetchpriority="high">` : ""}
   <link rel="preload" href="/styles.css?v=20260806-header" as="style">
@@ -1304,6 +1307,11 @@ function blogArticleBody(blog) {
 }
 
 for (const blog of blogs) {
+  if (blog === africaDeliveryBlog) {
+    const url = `/news/${blog.slug}/`;
+    addPage(`news/${blog.slug}/index.html`, layout({ title: `${blog.title} | Railwheel China`, description: blog.summary, path: url, active: "News", schemas: [{ ...articleSchema(blog), image: `${siteUrl}${blog.image}`, datePublished: blog.date, dateModified: blog.date, articleSection: blog.category }, breadcrumbSchema([{ name: "Home", url: "/" }, { name: "News", url: "/news/" }, { name: blog.title, url }])], body: `${pageHero(blog.title, blog.summary, blog.title)}<section><div class="container article"><p><time datetime="${blog.date}">November 26, 2026</time> · Company news</p>${blog.body}</div></section>` }));
+    continue;
+  }
   if (blog === brakeDiscsBlog) {
     const pagePath = `/news/${blog.slug}/`;
     addPage(`news/${blog.slug}/index.html`, layout({
@@ -1854,6 +1862,7 @@ for (const [index, blog] of expandedBlogs.entries()) {
 }
 
 async function writeAssets() {
+  if (existsSync("public/news-media")) await cp("public/news-media", "dist/news-media", { recursive: true });
   await mkdir("dist/assets", { recursive: true });
   await copyFile("src/styles.css", "dist/styles.css");
   await copyFile("src/hero-slideshow.js", "dist/hero-slideshow.js");
@@ -1898,7 +1907,7 @@ async function main() {
   }
   const urls = pages.filter((page) => !page.filePath.startsWith("technical-blog/")).map((page) => {
     const loc = page.filePath === "index.html" ? `${siteUrl}/` : `${siteUrl}/${page.filePath.replace(/index\.html$/, "")}`;
-    const datedArticle = [brakeDiscsBlog, ...gangwayArticles, ...componentArticles].find((article) => page.filePath === `news/${article.slug}/index.html`);
+    const datedArticle = [africaDeliveryBlog, brakeDiscsBlog, ...gangwayArticles, ...componentArticles].find((article) => page.filePath === `news/${article.slug}/index.html`);
     const lastModified = datedArticle ? `<lastmod>${datedArticle.date || "2026-11-14"}</lastmod>` : "";
     const reviewed = page.filePath.startsWith("railway-wheel-applications/") || ["products/wheelsets/index.html", "products/bus-articulated-bellows/index.html"].includes(page.filePath) || [...Object.keys(procurementGuides), ...Object.keys(articleAdditions)].some(route => `${route.slice(1)}index.html` === page.filePath);
     return `  <url><loc>${loc}</loc>${reviewed ? "<lastmod>2026-11-21</lastmod>" : lastModified}<changefreq>weekly</changefreq><priority>${page.filePath === "index.html" ? "1.0" : "0.8"}</priority></url>`;
